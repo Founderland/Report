@@ -1,1 +1,26 @@
-theme: jekyll-theme-slate
+# Jekyll Config
+
+# Site settings
+title: Rise & Thrive Founderland Report 
+description: 
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://report.founderland.org" # the base hostname & protocol for your site
+
+
+# Sass settings
+#sass:
+#  add_charset: true
+#  sass_dir: assets/sass
+#  style: :compressed
+
+# Build settings
+exclude:
+  - package.json
+  - README.md
+  - CNAME
+#  - assets/sass
+
+# Plugin settings
+#plugins:
+#  - jekyll-feed
+#  - jekyll-sitemap
