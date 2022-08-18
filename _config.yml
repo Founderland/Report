@@ -3,8 +3,8 @@
 # Site settings
 title: Rise & Thrive Founderland Report 
 description: 
-# baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://report.founderland.org" # the base hostname & protocol for your site
+baseurl: "/Report" # the subpath of your site, e.g. /blog
+url: "https://founderland.github.io" # the base hostname & protocol for your site
 
 
 # Sass settings
