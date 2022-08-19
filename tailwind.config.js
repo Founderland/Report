@@ -9,6 +9,9 @@ module.exports = {
     // colors: https://tailwindcss.com/docs/customizing-colors
     colors: {
       'blue': '#1fb6ff',
+      'tahiti': {
+        DEFAULT: '#06b6d4',
+      },
       //'purple': '#7e5bef',
       'pink': '#ff49db',
       //'orange': '#ff7849',
