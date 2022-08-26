@@ -4,12 +4,12 @@
 
 /* Typefaces  */
 @font-face {
-    font-family: Hanson;
+    font-family: Hanson, 'Space Grotesk', sans-serif;
     src: url(../typefaces/hanson-bold.woff2);
     font-weight: bold;
 }
 h1 {
-    font-family: hanson;
+    font-family: Hanson;
 }
 html,
 h2,
