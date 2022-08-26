@@ -6,26 +6,30 @@ module.exports = {
   ],
   // more info https://tailwindcss.com/docs/theme
   theme: {
-    // colors: https://tailwindcss.com/docs/customizing-colors
-    colors: {
-      'blue': '#1fb6ff',
-      'tahiti': {
-        DEFAULT: '#06b6d4',
-      },
-      //'purple': '#7e5bef',
-      'pink': '#ff49db',
-      //'orange': '#ff7849',
-      'green': '#13ce66',
-      'yellow': '#ffc82c',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-    },
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
     },
     extend: {
+      // colors: https://tailwindcss.com/docs/customizing-colors
+      colors: {
+        // brand
+        'blue': {DEFAULT: '#0063E2'}, 
+        'red': {DEFAULT: '#F6331C'}, 
+        'pink': {DEFAULT: '#EE93B5'}, 
+        'lime': {DEFAULT: '#D7FB03'}, 
+        'black': {DEFAULT: '#000'}, 
+        'white': {DEFAULT: '#FFF'},
+
+        // grayscale
+        'gray-dark':  {DEFAULT: '#707070'},
+        'gray': {DEFAULT: '#A4A4A4'},
+        'gray-light': {DEFAULT: '#F1F1F1'},
+        
+        //functional
+        'green': {DEFAULT: '#0063E2'}, 
+        'blue-active': {DEFAULT: '#0A6DEC'}, 
+      },
       spacing: {
         '8xl': '96rem',
         '9xl': '128rem',
