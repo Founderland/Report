@@ -551,6 +551,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -563,4 +569,111 @@ video {
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+// Typefaces 
+@font-face {
+  font-family: Hanson;
+  src: url(../typefaces/hanson-bold.woff2);
+  font-weight: bold;
+}
+
+h1 {
+  font-family: hanson;
+}
+
+html,
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.lead,
+.cta {
+  font-family: 'Space Mono', monospace;
+}
+
+// Typography
+h1, 
+h2,
+h3,
+h4,
+h5,
+button,
+.cta {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+html, 
+body,
+p, 
+a, 
+ul, 
+li, 
+ol, 
+table {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+h2,
+button,
+.cta {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.lead {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media (min-width: 1024px) {
+  html, 
+    body,
+    p, 
+    a, 
+    ul, 
+    li, 
+    ol, 
+    table {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  h2,
+    button,
+    .cta {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .lead {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
