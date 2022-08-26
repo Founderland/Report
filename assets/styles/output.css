@@ -606,6 +606,7 @@ button,
 .cta {
   font-weight: bold;
   text-transform: uppercase;
+  font-color: red;
 }
 
 html, 
