@@ -571,10 +571,13 @@ video {
           text-decoration-line: underline;
 }
 
-// Typefaces 
+/* Typefaces  */
+
 @font-face {
   font-family: Hanson;
+
   src: url(../typefaces/hanson-bold.woff2);
+
   font-weight: bold;
 }
 
@@ -596,7 +599,8 @@ p {
   font-family: 'Space Mono', monospace;
 }
 
-// Typography
+/* Typography */
+
 h1, 
 h2,
 h3,
@@ -606,7 +610,6 @@ button,
 .cta {
   font-weight: bold;
   text-transform: uppercase;
-  font-color: red;
 }
 
 html, 

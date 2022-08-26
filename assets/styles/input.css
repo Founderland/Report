@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-// Typefaces 
+/* Typefaces  */
 @font-face {
     font-family: Hanson;
     src: url(../typefaces/hanson-bold.woff2);
@@ -24,7 +24,7 @@ p {
     font-family: 'Space Mono', monospace;
 }
 
-// Typography
+/* Typography */
 h1, 
 h2,
 h3,
@@ -34,7 +34,6 @@ button,
 .cta {
     font-weight: bold;
     text-transform: uppercase;
-    font-color: red;
 }
 html, 
 body,
