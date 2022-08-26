@@ -612,6 +612,10 @@ button,
   text-transform: uppercase;
 }
 
+h3 {
+  font-weight: normal;
+}
+
 html, 
 body,
 p, 

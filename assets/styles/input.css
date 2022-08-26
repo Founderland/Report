@@ -35,6 +35,9 @@ button,
     font-weight: bold;
     text-transform: uppercase;
 }
+h3 {
+    font-weight: normal;
+}
 html, 
 body,
 p, 
