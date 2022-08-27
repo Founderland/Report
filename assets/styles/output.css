@@ -596,18 +596,12 @@ video {
   padding: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.p-6 {
+  padding: 1.5rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.underline {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+.p-12 {
+  padding: 3rem;
 }
 
 /* Typefaces  */
@@ -759,6 +753,10 @@ button,
 
 /* Components */
 
+/* Blockquotes */
+
+/**/
+
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
@@ -800,5 +798,13 @@ button,
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
   }
 }
