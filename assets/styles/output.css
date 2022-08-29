@@ -605,9 +605,9 @@ video {
 @font-face {
   font-family: Hanson;
 
-  //src: url(../typefaces/hanson-bold.woff2);
+  src: url(../typefaces/hanson-bold.woff2);
 
-  src: url(/assets/typefaces/hanson-bold.woff2);
+  /* src: url(/assets/typefaces/hanson-bold.woff2); didn't work */
 
   font-weight: bold;
 }
