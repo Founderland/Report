@@ -4,12 +4,14 @@
 
 /* Typefaces  */
 @font-face {
-    font-family: Hanson, 'Space Grotesk', sans-serif;
-    src: url(../typefaces/hanson-bold.woff2);
+    font-family: Hanson;
+    //src: url(../typefaces/hanson-bold.woff2);
+    src: url(/assets/typefaces/hanson-bold.woff2);
     font-weight: bold;
 }
-h1 {
-    font-family: Hanson;
+h1,
+blockquote {
+    font-family: Hanson, 'Space Grotesk', sans-serif;
 }
 html,
 h2,
