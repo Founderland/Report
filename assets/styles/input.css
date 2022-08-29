@@ -10,7 +10,8 @@
     font-weight: bold;
 }
 h1,
-blockquote {
+blockquote,
+blockquote p {
     font-family: Hanson, 'Space Grotesk', sans-serif;
 }
 html,
@@ -133,14 +134,17 @@ button,
 
 figure {
     @apply my-12;
+    @apply px-6;
 }
 
-blockquote {
+blockquote,
+blockquote p {
     @apply text-4xl;
 }
 
 @screen lg {
-    blockquote {
+    blockquote,
+    blockquote p  {
         @apply text-5xl;
     }
 }
