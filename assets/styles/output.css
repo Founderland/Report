@@ -586,6 +586,10 @@ video {
   height: 6rem;
 }
 
+.h-\[400\] {
+  height: 400;
+}
+
 .w-auto {
   width: auto;
 }
