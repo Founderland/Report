@@ -150,9 +150,15 @@ blockquote p {
 }
 
 /* Captions */
-
+figcaption {
+    @apply text-gray-dark;
+}
 
 /* Cards */
 .stat-card {
     @apply bg-blue;
+    @apply text-white;
+    @apply px-4;
+    @apply py-8;
+    text-align: center;
 }
