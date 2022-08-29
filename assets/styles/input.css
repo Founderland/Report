@@ -45,27 +45,23 @@ a,
 ul, 
 li, 
 ol, 
-table {
-    font-size: 16px;
-    line-height: 24px;
+table,
+figcaption {
+    @apply text-base;
 }
 h1 {
-    font-size: 30px;
-    line-height: 36px;
+    @apply text-3xl;
 }
 h2,
 button,
 .cta {
-    font-size: 24px;
-    line-height: 32px;
+    @apply text-2xl;
 }
 h3 {
-    font-size: 20px;
-    line-height: 28px;
+    @apply text-xl;
 }
 .lead {
-    font-size: 18px;
-    line-height: 28px;
+    @apply text-lg;
 }
 
 @screen lg {
@@ -76,13 +72,13 @@ h3 {
     ul, 
     li, 
     ol, 
-    table {
+    table,
+    figcaption {
         font-size: 20px;
         line-height: 28px;
     }
     h1 {
-        font-size: 60px;
-        line-height: 60px;
+        @apply text-6xl;
     }
     h2,
     button,
@@ -91,12 +87,10 @@ h3 {
         line-height: 40px;
     }
     h3 {
-        font-size: 30px;
-        line-height: 36px;
+        @apply text-3xl;
     }
     .lead {
-        font-size: 24px;
-        line-height: 32px;
+        @apply text-2xl;
     }
 }
 
@@ -134,5 +128,22 @@ button,
 
 
 /* Blockquotes */
+
+figure {
+    @apply my-12;
+}
+
+blockquote {
+    @apply text-4xl;
+}
+
+@screen lg {
+    blockquote {
+        @apply text-5xl;
+    }
+}
+
+/* Captions */
+
 
 /**/
