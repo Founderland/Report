@@ -602,12 +602,12 @@ video {
   width: auto;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -626,12 +626,12 @@ video {
   align-items: stretch;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .truncate {
@@ -839,6 +839,18 @@ button,
     .cta {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+}
+
+section {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  section {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
   }
 }
 

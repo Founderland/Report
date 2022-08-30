@@ -130,6 +130,16 @@ button,
     }
 }
 
+section {
+    @apply my-16
+}
+
+@screen lg {
+    section {
+        @apply my-24;
+    }
+}
+
 /* Components */
 
 
