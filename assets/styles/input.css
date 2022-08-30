@@ -11,7 +11,8 @@
 }
 h1,
 blockquote,
-blockquote p {
+blockquote p,
+.text-hanson {
     font-family: Hanson, 'Space Grotesk', sans-serif;
 }
 html,
@@ -19,11 +20,13 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+.text-grotesk {
     font-family: 'Space Grotesk', sans-serif;
 }
 .lead,
-.cta {
+.cta,
+.text-mono {
     font-family: 'Space Mono', monospace;
 }
 
