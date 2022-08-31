@@ -568,9 +568,9 @@ video {
   float: right;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-8 {
@@ -578,14 +578,9 @@ video {
   margin-bottom: 2rem;
 }
 
-.my-24 {
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ml-2 {
@@ -618,14 +613,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-\[400\] {
-  height: 400;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-2\/3 {
@@ -674,6 +661,11 @@ video {
   white-space: nowrap;
 }
 
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 51 28 / var(--tw-bg-opacity));
+}
+
 .bg-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(0 99 226 / var(--tw-bg-opacity));
@@ -684,16 +676,16 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-12 {
   padding: 3rem;
 }
 
 .p-6 {
   padding: 1.5rem;
-}
-
-.p-8 {
-  padding: 2rem;
 }
 
 .px-16 {
@@ -967,6 +959,158 @@ figcaption {
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+/* Symbols */
+
+.symbol {
+  width: 48px;
+  height: 48px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: black;
+  display: inline-block;
+}
+
+.Warmth {
+  background-image: url('assets/images/symb/Warmth.svg');
+}
+
+.Blooming {
+  background-image: url('assets/images/symb/Blooming.svg');
+}
+
+.Calm {
+  background-image: url('assets/images/symb/Calm.svg');
+}
+
+.Cents {
+  background-image: url('assets/images/symb/Cents.svg');
+}
+
+.Connected {
+  background-image: url('assets/images/symb/Connected.svg');
+}
+
+.Connective {
+  background-image: url('assets/images/symb/Connective.svg');
+}
+
+.Continuous {
+  background-image: url('assets/images/symb/Continuous Growth.svg');
+}
+
+.Direction {
+  background-image: url('assets/images/symb/Direction.svg');
+}
+
+.Emerging {
+  background-image: url('assets/images/symb/Emerging.svg');
+}
+
+.Energized {
+  background-image: url('assets/images/symb/Energized.svg');
+}
+
+.Enhanced {
+  background-image: url('assets/images/symb/Enhanced.svg');
+}
+
+.Expanding {
+  background-image: url('assets/images/symb/Expanding 2.svg');
+}
+
+.For {
+  background-image: url('assets/images/symb/For People.svg');
+}
+
+.Forward {
+  background-image: url('assets/images/symb/Forward 2.svg');
+  background-image: url('assets/images/symb/Forward.svg');
+}
+
+.Goals {
+  background-image: url('assets/images/symb/Goals.svg');
+}
+
+.Haven {
+  background-image: url('assets/images/symb/Haven 2.svg');
+  background-image: url('assets/images/symb/Haven.svg');
+}
+
+.Inclusive {
+  background-image: url('assets/images/symb/Inclusive.svg');
+}
+
+.Intersectional {
+  background-image: url('assets/images/symb/Intersectional.svg');
+}
+
+.Invest {
+  background-image: url('assets/images/symb/Invest 2.svg');
+  background-image: url('assets/images/symb/Invest.svg');
+}
+
+.Moving {
+  background-image: url('assets/images/symb/Moving Together.svg');
+}
+
+.Multiplication {
+  background-image: url('assets/images/symb/Multiplication.svg');
+}
+
+.Navigating {
+  background-image: url('assets/images/symb/Navigating.svg');
+}
+
+.No {
+  background-image: url('assets/images/symb/No Boundaries.svg');
+}
+
+.Open {
+  background-image: url('assets/images/symb/Open.svg');
+}
+
+.Powerful {
+  background-image: url('assets/images/symb/Powerful.svg');
+}
+
+.Reference {
+  background-image: url('assets/images/symb/Reference.svg');
+}
+
+.Security {
+  background-image: url('assets/images/symb/Security.svg');
+}
+
+.Stability {
+  background-image: url('assets/images/symb/Stability.svg');
+}
+
+.Symbols {
+  background-image: url('assets/images/symb/Symbols.svg');
+  background-image: url('assets/images/symb/Symbols-1.svg');
+}
+
+.Team {
+  background-image: url('assets/images/symb/Team.svg');
+}
+
+.Transparent {
+  background-image: url('assets/images/symb/Transparent 2.svg');
+}
+
+.Uplift {
+  background-image: url('assets/images/symb/Uplift.svg');
+}
+
+.Value {
+  background-image: url('assets/images/symb/Value.svg');
+}
+
+.Visibility {
+  background-image: url('assets/images/symb/Visibility.svg');
 }
 
 @media (min-width: 768px) {
