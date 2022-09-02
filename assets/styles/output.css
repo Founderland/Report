@@ -941,7 +941,7 @@ blockquote p {
     blockquote p {
     font-size: 1.875rem;
     line-height: 2.25rem;
-    line-height: 2;
+    line-height: 1.625;
   }
 }
 
@@ -975,7 +975,7 @@ figcaption {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: black;
+  //background-color: black;
 }
 
 .Warmth {

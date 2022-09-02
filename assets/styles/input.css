@@ -159,7 +159,7 @@ blockquote p {
     blockquote,
     blockquote p  {
         @apply text-3xl;
-        @apply leading-loose;
+        @apply leading-relaxed;
     }
 }
 
@@ -186,7 +186,7 @@ figcaption {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    background-color: black;
+    //background-color: black;
 }
 
 .Warmth {
