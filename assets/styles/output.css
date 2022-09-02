@@ -847,8 +847,9 @@ h3 {
   }
 
   h1 {
-    font-size: 3.75rem;
+    font-size: 3rem;
     line-height: 1;
+    /* 6xl is from the design system  */
   }
 
   h2,
@@ -922,6 +923,9 @@ figure {
   margin-bottom: 3rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  border-left-width: 8px;
+  --tw-border-opacity: 1;
+  border-color: rgb(164 164 164 / var(--tw-border-opacity));
 }
 
 blockquote, 
@@ -972,7 +976,7 @@ figcaption {
   background-repeat: no-repeat;
   background-size: contain;
   margin-bottom: -4px;
-  //background-color: black;
+  /* background-color: black; */
 }
 
 .Warmth {

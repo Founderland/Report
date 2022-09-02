@@ -82,7 +82,7 @@ h3 {
         line-height: 28px;
     }
     h1 {
-        @apply text-5xl; // 6xl is from the design system 
+        @apply text-5xl; /* 6xl is from the design system  */
     }
     h2,
     button,
@@ -146,6 +146,8 @@ section {
 figure {
     @apply my-12;
     @apply px-6;
+    @apply border-l-8;
+    @apply border-gray;
 }
 
 blockquote,
@@ -187,7 +189,7 @@ figcaption {
     background-repeat: no-repeat;
     background-size: contain;
     margin-bottom: -4px;
-    //background-color: black;
+    /* background-color: black; */
 }
 
 .Warmth {
