@@ -1128,6 +1128,28 @@ figcaption {
   background-image: url('../images/symb/Visibility.svg');
 }
 
+/* Nav */
+
+.selection\:bg-lime *::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-lime *::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-lime::-moz-selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
+}
+
+.selection\:bg-lime::selection {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:container {
     width: 100%;
