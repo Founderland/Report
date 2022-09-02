@@ -9,9 +9,7 @@
     /* src: url(/assets/typefaces/hanson-bold.woff2); didn't work */
     font-weight: bold;
 }
-h1,
-blockquote,
-blockquote p {
+h1 {
     font-family: Hanson, 'Space Grotesk', sans-serif;
 }
 html,
@@ -20,6 +18,7 @@ h3,
 h4,
 h5,
 p,
+blockquote,
 .text-grotesk {
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -152,6 +151,7 @@ figure {
 blockquote,
 blockquote p {
     @apply text-2xl;
+    font-weight: bold;
 }
 
 @screen lg {
@@ -185,6 +185,7 @@ figcaption {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    margin-bottom: -4px;
     //background-color: black;
 }
 
