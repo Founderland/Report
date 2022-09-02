@@ -36,9 +36,9 @@ const pie1 = document.getElementById('pieChart').getContext('2d');
 const pieChart = new Chart(pie1, {
     type: 'pie',
     data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        labels: ['Everyone else', 'Women of color founders'],
         datasets: [{
-            data: [12, 19, 3, 5, 2, 3],
+            data: [99.5, 0.5,],
             label: '# of Votes',
             backgroundColor: colors,
             borderColor: colors,
