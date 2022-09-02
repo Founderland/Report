@@ -46,32 +46,8 @@ const pieChart = new Chart(pie1, {
         }]
     },
     options: {
-        gridLines: {
-            display: false
-        },
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
+       
     }
 });
-
-
-// options: {
-//     responsive: true,
-//     scales: {
-//       xAxes: [{
-//         gridLines: {
-//           show: true
-//         }
-//       }],
-//       yAxes: [{
-//         gridLines: {
-//           show: false
-//         }
-//       }]
-//     }
-// }
 
 
