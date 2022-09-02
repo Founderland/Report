@@ -82,7 +82,7 @@ h3 {
         line-height: 28px;
     }
     h1 {
-        @apply text-6xl;
+        @apply text-5xl; // 6xl is from the design system 
     }
     h2,
     button,
