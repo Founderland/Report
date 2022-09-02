@@ -32,27 +32,27 @@ const barChart = new Chart(ctx, {
     }
 });
 
-const ctx = document.getElementById('pieChart').getContext('2d');
-const pieChart = new Chart(ctx, {
-    type: 'pie',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            data: [12, 19, 3, 5, 2, 3],
-            label: '# of Votes',
-            backgroundColor: colors,
-            borderColor: colors,
-            borderWidth: 0
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
+// const ctx = document.getElementById('pieChart').getContext('2d');
+// const pieChart = new Chart(ctx, {
+//     type: 'pie',
+//     data: {
+//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+//         datasets: [{
+//             data: [12, 19, 3, 5, 2, 3],
+//             label: '# of Votes',
+//             backgroundColor: colors,
+//             borderColor: colors,
+//             borderWidth: 0
+//         }]
+//     },
+//     options: {
+//         scales: {
+//             y: {
+//                 beginAtZero: true
+//             }
+//         }
+//     }
+// });
 
 
 
