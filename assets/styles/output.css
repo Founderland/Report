@@ -573,14 +573,14 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .ml-2 {
@@ -968,153 +968,153 @@ figcaption {
 /* Symbols */
 
 .symbol {
+  display: inline-block;
   width: 48px;
   height: 48px;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: black;
-  display: inline-block;
+  //background-color: black;
 }
 
 .Warmth {
-  background-image: url('assets/images/symb/Warmth.svg');
+  background-image: url('../images/symb/Warmth.svg');
 }
 
 .Blooming {
-  background-image: url('assets/images/symb/Blooming.svg');
+  background-image: url('../images/symb/Blooming.svg');
 }
 
 .Calm {
-  background-image: url('assets/images/symb/Calm.svg');
+  background-image: url('../images/symb/Calm.svg');
 }
 
 .Cents {
-  background-image: url('assets/images/symb/Cents.svg');
+  background-image: url('../images/symb/Cents.svg');
 }
 
 .Connected {
-  background-image: url('assets/images/symb/Connected.svg');
+  background-image: url('../images/symb/Connected.svg');
 }
 
 .Connective {
-  background-image: url('assets/images/symb/Connective.svg');
+  background-image: url('../images/symb/Connective.svg');
 }
 
 .Continuous {
-  background-image: url('assets/images/symb/Continuous Growth.svg');
+  background-image: url('../images/symb/Continuous Growth.svg');
 }
 
 .Direction {
-  background-image: url('assets/images/symb/Direction.svg');
+  background-image: url('../images/symb/Direction.svg');
 }
 
 .Emerging {
-  background-image: url('assets/images/symb/Emerging.svg');
+  background-image: url('../images/symb/Emerging.svg');
 }
 
 .Energized {
-  background-image: url('assets/images/symb/Energized.svg');
+  background-image: url('../images/symb/Energized.svg');
 }
 
 .Enhanced {
-  background-image: url('assets/images/symb/Enhanced.svg');
+  background-image: url('../images/symb/Enhanced.svg');
 }
 
 .Expanding {
-  background-image: url('assets/images/symb/Expanding 2.svg');
+  background-image: url('../images/symb/Expanding 2.svg');
 }
 
 .For {
-  background-image: url('assets/images/symb/For People.svg');
+  background-image: url('../images/symb/For People.svg');
 }
 
 .Forward {
-  background-image: url('assets/images/symb/Forward 2.svg');
-  background-image: url('assets/images/symb/Forward.svg');
+  background-image: url('../images/symb/Forward 2.svg');
+  background-image: url('../images/symb/Forward.svg');
 }
 
 .Goals {
-  background-image: url('assets/images/symb/Goals.svg');
+  background-image: url('../images/symb/Goals.svg');
 }
 
 .Haven {
-  background-image: url('assets/images/symb/Haven 2.svg');
-  background-image: url('assets/images/symb/Haven.svg');
+  background-image: url('../images/symb/Haven 2.svg');
+  background-image: url('../images/symb/Haven.svg');
 }
 
 .Inclusive {
-  background-image: url('assets/images/symb/Inclusive.svg');
+  background-image: url('../images/symb/Inclusive.svg');
 }
 
 .Intersectional {
-  background-image: url('assets/images/symb/Intersectional.svg');
+  background-image: url('../images/symb/Intersectional.svg');
 }
 
 .Invest {
-  background-image: url('assets/images/symb/Invest 2.svg');
-  background-image: url('assets/images/symb/Invest.svg');
+  background-image: url('../images/symb/Invest 2.svg');
+  background-image: url('../images/symb/Invest.svg');
 }
 
 .Moving {
-  background-image: url('assets/images/symb/Moving Together.svg');
+  background-image: url('../images/symb/Moving Together.svg');
 }
 
 .Multiplication {
-  background-image: url('assets/images/symb/Multiplication.svg');
+  background-image: url('../images/symb/Multiplication.svg');
 }
 
 .Navigating {
-  background-image: url('assets/images/symb/Navigating.svg');
+  background-image: url('../images/symb/Navigating.svg');
 }
 
 .No {
-  background-image: url('assets/images/symb/No Boundaries.svg');
+  background-image: url('../images/symb/No Boundaries.svg');
 }
 
 .Open {
-  background-image: url('assets/images/symb/Open.svg');
+  background-image: url('../images/symb/Open.svg');
 }
 
 .Powerful {
-  background-image: url('assets/images/symb/Powerful.svg');
+  background-image: url('../images/symb/Powerful.svg');
 }
 
 .Reference {
-  background-image: url('assets/images/symb/Reference.svg');
+  background-image: url('../images/symb/Reference.svg');
 }
 
 .Security {
-  background-image: url('assets/images/symb/Security.svg');
+  background-image: url('../images/symb/Security.svg');
 }
 
 .Stability {
-  background-image: url('assets/images/symb/Stability.svg');
+  background-image: url('../images/symb/Stability.svg');
 }
 
 .Symbols {
-  background-image: url('assets/images/symb/Symbols.svg');
-  background-image: url('assets/images/symb/Symbols-1.svg');
+  background-image: url('../images/symb/Symbols.svg');
+  background-image: url('../images/symb/Symbols-1.svg');
 }
 
 .Team {
-  background-image: url('assets/images/symb/Team.svg');
+  background-image: url('../images/symb/Team.svg');
 }
 
 .Transparent {
-  background-image: url('assets/images/symb/Transparent 2.svg');
+  background-image: url('../images/symb/Transparent 2.svg');
 }
 
 .Uplift {
-  background-image: url('assets/images/symb/Uplift.svg');
+  background-image: url('../images/symb/Uplift.svg');
 }
 
 .Value {
-  background-image: url('assets/images/symb/Value.svg');
+  background-image: url('../images/symb/Value.svg');
 }
 
 .Visibility {
-  background-image: url('assets/images/symb/Visibility.svg');
+  background-image: url('../images/symb/Visibility.svg');
 }
 
 @media (min-width: 768px) {
