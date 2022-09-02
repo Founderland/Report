@@ -147,7 +147,7 @@ figure {
     @apply my-12;
     @apply px-6;
     @apply border-l-8;
-    @apply border-gray;
+    @apply border-gray-light;
 }
 
 blockquote,
