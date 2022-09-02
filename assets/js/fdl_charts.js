@@ -39,7 +39,7 @@ const pieChart = new Chart(pie1, {
         labels: ['Everyone else', 'Women of color founders'],
         datasets: [{
             data: [99.5, 0.5,],
-            label: '# of Votes',
+            //label: '# of Votes',
             backgroundColor: colors,
             borderColor: colors,
             borderWidth: 0

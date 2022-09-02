@@ -929,6 +929,7 @@ blockquote p {
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: bold;
+  margin-bottom: 16px;
 }
 
 @media (min-width: 1024px) {
