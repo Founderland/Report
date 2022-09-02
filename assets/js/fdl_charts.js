@@ -10,8 +10,8 @@ var colors =  [
 // Chart.defaults.global.animationSteps = 160;
 
 
-const ctx = document.getElementById('barChart').getContext('2d');
-const barChart = new Chart(ctx, {
+const bar1 = document.getElementById('barChart').getContext('2d');
+const barChart = new Chart(bar1, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
@@ -32,27 +32,27 @@ const barChart = new Chart(ctx, {
     }
 });
 
-// const ctx = document.getElementById('pieChart').getContext('2d');
-// const pieChart = new Chart(ctx, {
-//     type: 'pie',
-//     data: {
-//         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-//         datasets: [{
-//             data: [12, 19, 3, 5, 2, 3],
-//             label: '# of Votes',
-//             backgroundColor: colors,
-//             borderColor: colors,
-//             borderWidth: 0
-//         }]
-//     },
-//     options: {
-//         scales: {
-//             y: {
-//                 beginAtZero: true
-//             }
-//         }
-//     }
-// });
+const pie1 = document.getElementById('pieChart').getContext('2d');
+const pieChart = new Chart(pie1, {
+    type: 'pie',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            data: [12, 19, 3, 5, 2, 3],
+            label: '# of Votes',
+            backgroundColor: colors,
+            borderColor: colors,
+            borderWidth: 0
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
 
 
 
