@@ -46,6 +46,9 @@ const pieChart = new Chart(pie1, {
         }]
     },
     options: {
+        gridLines: {
+            display: false
+        },
         scales: {
             y: {
                 beginAtZero: true
@@ -54,5 +57,21 @@ const pieChart = new Chart(pie1, {
     }
 });
 
+
+// options: {
+//     responsive: true,
+//     scales: {
+//       xAxes: [{
+//         gridLines: {
+//           show: true
+//         }
+//       }],
+//       yAxes: [{
+//         gridLines: {
+//           show: false
+//         }
+//       }]
+//     }
+// }
 
 
