@@ -67,6 +67,10 @@ h3 {
 .lead {
     @apply text-lg;
 }
+a {
+    text-decoration: underline; 
+    font-weight: bold;
+}
 
 @screen lg {
     html, 
