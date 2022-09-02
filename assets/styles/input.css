@@ -159,6 +159,7 @@ blockquote p {
     blockquote,
     blockquote p  {
         @apply text-3xl;
+        @apply leading-loose;
     }
 }
 
@@ -180,12 +181,12 @@ figcaption {
 
 .symbol {
     display: inline-block;
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
-    //background-color: black;
+    background-color: black;
 }
 
 .Warmth {
