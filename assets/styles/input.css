@@ -346,6 +346,70 @@ figcaption {
 }
 
 /* #Nav */
+
+/* Sticky nav */
 nav.sticky {
     height: calc(100vh - 300px);/* fixes height of element and allows sticky to work */
 }
+
+/* Burger */
+.burger {
+    display: inline-block;
+}
+.burger:after {
+    position: relative;
+    content: "\2261";
+}
+
+/* Off canvas (mobile nav) */
+nav ul {
+    position: absolute;
+    top: 0;
+    width: 90vw;
+    left: -90vw;
+    z-index: 1000;
+    padding: 48px;
+}
+.close:after {
+    position: absolute;
+    top: 48px; 
+    right: 48px;
+    display: inline-block;
+    content: "+";
+    transform: rotate(45deg);
+}
+nav.active ul {
+    left: 0;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,255,255,0);
+    z-index: 500;
+}
+nav.active .overlay {
+    display: block;
+    background: rgba(255,255,255,0.9);
+}
+
+/* 
+
+desktop:
+[] adjust styling of li / links 
+- gray 
+- smaller text
+- tight spacing
+
+[] get scrollspy working
+    [] insert smaller symbols (placeholders)
+
+mobile: 
+[] off canvas
+[] scroll spy
+
+https://css-tricks.com/the-checkbox-hack/
+*/

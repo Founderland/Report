@@ -1,3 +1,17 @@
+// Off Canvas Navigation
+$(".burger").click(function() {
+    $("nav").toggleClass("active");
+    $("main").toggleClass("verify");
+});
+$(".close").click(function() {
+    $("nav ").toggleClass("active");
+});
+$(".overlay").click(function() {
+    $("nav").toggleClass("active");
+});
+
+
+// FDL Charts
 var colors =  [
     '#0063E2', // blue
     '#F6331C', // red

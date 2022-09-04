@@ -551,11 +551,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-}
-
 .top-8 {
   top: 2rem;
 }
@@ -749,6 +744,28 @@ video {
 .text-gray-100 {
   --tw-text-opacity: 1;
   color: rgb(243 244 246 / var(--tw-text-opacity));
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 /* INDEX 
@@ -1164,10 +1181,81 @@ figcaption {
 
 /* #Nav */
 
+/* Sticky nav */
+
 nav.sticky {
   height: calc(100vh - 300px);
   /* fixes height of element and allows sticky to work */
 }
+
+/* Burger */
+
+.burger {
+  display: inline-block;
+}
+
+.burger:after {
+  position: relative;
+  content: "\2261";
+}
+
+/* Off canvas (mobile nav) */
+
+nav ul {
+  position: absolute;
+  top: 0;
+  width: 90vw;
+  left: -90vw;
+  z-index: 1000;
+  padding: 48px;
+}
+
+.close:after {
+  position: absolute;
+  top: 48px;
+  right: 48px;
+  display: inline-block;
+  content: "+";
+  transform: rotate(45deg);
+}
+
+nav.active ul {
+  left: 0;
+}
+
+/* Overlay */
+
+.overlay {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255,255,255,0);
+  z-index: 500;
+}
+
+nav.active .overlay {
+  display: block;
+  background: rgba(255,255,255,0.9);
+}
+
+/* 
+
+desktop:
+[] adjust styling of li / links 
+- gray 
+- smaller text
+- tight spacing
+
+[] get scrollspy working
+    [] insert smaller symbols (placeholders)
+
+mobile: 
+[] off canvas
+[] scroll spy
+
+https://css-tricks.com/the-checkbox-hack/
+*/
 
 .selection\:bg-lime *::-moz-selection {
   --tw-bg-opacity: 1;
@@ -1224,12 +1312,21 @@ nav.sticky {
     }
   }
 
+  .md\:sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+
   .md\:block {
     display: block;
   }
 
   .md\:grid {
     display: grid;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:p-16 {
