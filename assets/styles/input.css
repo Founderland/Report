@@ -355,6 +355,12 @@ nav.sticky {
 /* Burger */
 .burger {
     display: inline-block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 250;
+    @apply text-xl;
+    @apply p-4;
 }
 .burger:after {
     position: relative;
@@ -395,6 +401,8 @@ nav.active .overlay {
     display: block;
     background: rgba(255,255,255,0.9);
 }
+
+
 
 /* 
 

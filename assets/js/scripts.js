@@ -1,7 +1,6 @@
 // Off Canvas Navigation
 $(".burger").click(function() {
     $("nav").toggleClass("active");
-    $("main").toggleClass("verify");
 });
 $(".close").click(function() {
     $("nav ").toggleClass("active");

@@ -1192,6 +1192,13 @@ nav.sticky {
 
 .burger {
   display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 250;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 1rem;
 }
 
 .burger:after {

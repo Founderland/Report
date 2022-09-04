@@ -4,13 +4,26 @@
   {% include head.html %}
 
   <body>
-    
+    <!-- mobile nav (off-canvas ui) -->
+    <div class="burger md:hidden"></div>
+    <nav class="md:sticky hidden md:block top-8">
+      <ul class="transition-all duration-200">
+          <li class="close"></li>
+          {% include nav.html %}
+      </ul>
+      <div class="overlay transition-colors duration-300"></div>
+    </nav>
+
     <header class="p-12 md:p-16">
       <h1>Rise & Thrive Report</h1>
       <h2>Qualitative research report on Women of Color Founders in Berlin</h2>
     </header>
     <div class="fdl-wrapper p-6 md:p-12 md:grid grid-cols-4 gap-8 my-8 md:container mx-auto">
-        {% include nav.html %}
+      <nav class="md:sticky hidden md:block top-8">
+        <ul>
+            {% include nav.html %}
+        </ul>
+      </nav>
       <main class="fdl-content col-span-3">
         {{ content }}
       </main>
