@@ -2,7 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Typefaces  */
+/* INDEX 
+
+1. Base 
+
+#Typefaces
+#Typography
+#Spacing
+
+
+2. Components
+
+#Blockquotes
+#Captions 
+#Cards
+#Symbols 
+#Nav
+
+*/
+
+/* 1. Base
+  ____                 
+ | __ )  __ _ ___  ___ 
+ |  _ \ / _` / __|/ _ \
+ | |_) | (_| \__ \  __/
+ |____/ \__,_|___/\___|                                                                            
+*/
+
+/* #Typefaces  */
 @font-face {
     font-family: Hanson;
     src: url(../typefaces/hanson-bold.woff2);
@@ -28,7 +55,7 @@ blockquote,
     font-family: 'Space Mono', monospace;
 }
 
-/* Typography */
+/* #Typography */
 h1, 
 h2,
 h3,
@@ -102,7 +129,7 @@ a {
     }
 }
 
-/* Spacing */
+/* #Spacing */
 
 h1, 
 h2,
@@ -142,10 +169,17 @@ section {
     }
 }
 
-/* Components */
+/* 2. Components 
+   ____                                             _       
+  / ___|___  _ __ ___  _ __   ___  _ __   ___ _ __ | |_ ___ 
+ | |   / _ \| '_ ` _ \| '_ \ / _ \| '_ \ / _ \ '_ \| __/ __|
+ | |__| (_) | | | | | | |_) | (_) | | | |  __/ | | | |_\__ \
+  \____\___/|_| |_| |_| .__/ \___/|_| |_|\___|_| |_|\__|___/
+                      |_|                                   
+*/
 
 
-/* Blockquotes */
+/* #Blockquotes */
 
 figure {
     @apply my-12;
@@ -169,12 +203,12 @@ blockquote p {
     }
 }
 
-/* Captions */
+/* #Captions */
 figcaption {
     @apply text-gray-dark;
 }
 
-/* Cards */
+/* #Cards */
 .stat-card {
     @apply bg-blue;
     @apply text-white;
@@ -183,7 +217,7 @@ figcaption {
     text-align: center;
 }
 
-/* Symbols */
+/* #Symbols */
 
 .symbol {
     display: inline-block;
@@ -311,4 +345,7 @@ figcaption {
     background-image: url('../images/symb/Visibility.svg');
 }
 
-/* Nav */
+/* #Nav */
+nav.sticky {
+    height: calc(100vh - 300px);/* fixes height of element and allows sticky to work */
+}
