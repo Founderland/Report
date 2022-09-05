@@ -1240,16 +1240,18 @@ nav.mobile.active ul {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  left: -100vw;
   background: rgba(255,255,255,0);
   z-index: 500;
 }
 
 nav.active .overlay {
   display: block;
+  left: 0;
   background: rgba(255,255,255,0.92);
 }
 
-/* 
+/* NAV
 all: 
 [] get links and IDs working 
 
@@ -1264,9 +1266,16 @@ Desktop:
 
 mobile: 
 [x] off canvas
+    [] fix / style close button
+    [] style hamburger
 [] scroll spy
 
 https://css-tricks.com/the-checkbox-hack/
+
+
+MISC
+[] fix header (making mobile viewport too wide)  
+
 */
 
 .selection\:bg-lime *::-moz-selection {
