@@ -363,10 +363,20 @@ figcaption {
 
 /* DESKTOP */
 
-/* Sticky nav */
-nav.sticky {
-    height: calc(100vh - 300px);/* fixes height of element and allows sticky to work */
+/* Sticky */
+nav.desktop {
+    height: 300px;/* fixes height of element and allows sticky to work */
 }
+nav.desktop li {
+    margin: 8px;
+}
+nav.desktop a {
+    font-weight: normal;
+}
+
+/* Scrollspy */
+
+
 
 /* MOBILE */
 
