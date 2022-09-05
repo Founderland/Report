@@ -912,14 +912,15 @@ a {
     ol, 
     table,
     figcaption {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    /* it's 20px in the design system */
+    line-height: 24px;
   }
 
   h1 {
     font-size: 3rem;
     line-height: 1;
-    /* 6xl is from the design system  */
+    /* it's 6xl in the design system  */
   }
 
   h2,
@@ -1227,6 +1228,7 @@ nav.desktop li {
 
 nav.desktop a {
   font-weight: normal;
+  text-decoration: none;
 }
 
 /* Scrollspy */
@@ -1397,9 +1399,5 @@ MISC
 
   .md\:p-16 {
     padding: 4rem;
-  }
-
-  .md\:p-12 {
-    padding: 3rem;
   }
 }

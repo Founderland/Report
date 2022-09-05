@@ -110,11 +110,11 @@ a {
     ol, 
     table,
     figcaption {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 16px; /* it's 20px in the design system */
+        line-height: 24px;
     }
     h1 {
-        @apply text-5xl; /* 6xl is from the design system  */
+        @apply text-5xl; /* it's 6xl in the design system  */
     }
     h2,
     button,
@@ -373,6 +373,7 @@ nav.desktop li {
 }
 nav.desktop a {
     font-weight: normal;
+    text-decoration: none;
 }
 
 /* Scrollspy */
