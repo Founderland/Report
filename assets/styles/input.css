@@ -378,6 +378,10 @@ figcaption {
 /* #Nav */
 
 /* DESKTOP */
+nav.desktop ul,
+nav.desktop li {
+    padding: 0;
+}
 nav.desktop li {
     margin: 8px 0;
     list-style: none;
