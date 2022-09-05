@@ -1181,12 +1181,16 @@ figcaption {
 
 /* #Nav */
 
+/* DESKTOP */
+
 /* Sticky nav */
 
 nav.sticky {
   height: calc(100vh - 300px);
   /* fixes height of element and allows sticky to work */
 }
+
+/* MOBILE */
 
 /* Burger */
 
@@ -1208,17 +1212,17 @@ nav.sticky {
 
 /* Off canvas (mobile nav) */
 
-nav ul {
-  position: absolute;
+nav.mobile ul {
+  position: fixed;
   top: 0;
-  width: 90vw;
-  left: -90vw;
+  width: 100vw;
+  left: -100vw;
   z-index: 1000;
   padding: 48px;
 }
 
 .close:after {
-  position: absolute;
+  position: relative;
   top: 48px;
   right: 48px;
   display: inline-block;
@@ -1226,15 +1230,14 @@ nav ul {
   transform: rotate(45deg);
 }
 
-nav.active ul {
+nav.mobile.active ul {
   left: 0;
 }
 
 /* Overlay */
 
 .overlay {
-  position: absolute;
-  display: block;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background: rgba(255,255,255,0);
@@ -1243,7 +1246,7 @@ nav.active ul {
 
 nav.active .overlay {
   display: block;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.92);
 }
 
 /* 
@@ -1258,7 +1261,7 @@ desktop:
     [] insert smaller symbols (placeholders)
 
 mobile: 
-[] off canvas
+[x] off canvas
 [] scroll spy
 
 https://css-tricks.com/the-checkbox-hack/
