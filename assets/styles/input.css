@@ -408,8 +408,10 @@ nav.active .overlay {
 
 
 /* 
+all: 
+[] get links and IDs working 
 
-desktop:
+Desktop:
 [] adjust styling of li / links 
 - gray 
 - smaller text
