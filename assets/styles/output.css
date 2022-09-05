@@ -946,8 +946,8 @@ a {
   }
 
   h3 {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lead {
@@ -1006,7 +1006,7 @@ section {
 /* #Lists */
 
 ul li {
-  list-style: square outside;
+  list-style: square inside;
 }
 
 /* 2. Components 
@@ -1419,16 +1419,8 @@ MISC
     gap: 2rem;
   }
 
-  .md\:p-6 {
-    padding: 1.5rem;
-  }
-
   .md\:p-16 {
     padding: 4rem;
-  }
-
-  .md\:p-8 {
-    padding: 2rem;
   }
 
   .md\:px-8 {
