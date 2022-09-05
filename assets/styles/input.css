@@ -178,7 +178,7 @@ section {
 
 /* #Lists */
 ul li {
-    list-style: circle inside;
+    list-style: square outside;
 }
 
 
