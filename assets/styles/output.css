@@ -1064,8 +1064,8 @@ figcaption {
 
 @media (min-width: 1024px) {
   .symbol {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
     margin-bottom: -4px;
   }
 }
