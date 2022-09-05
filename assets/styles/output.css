@@ -622,6 +622,10 @@ video {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -775,6 +779,7 @@ video {
 #Typefaces
 #Typography
 #Spacing
+#Lists
 
 
 2. Components
@@ -965,6 +970,12 @@ section {
     margin-top: 6rem;
     margin-bottom: 6rem;
   }
+}
+
+/* #Lists */
+
+ul li {
+  list-style: bullet;
 }
 
 /* 2. Components 

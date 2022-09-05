@@ -9,6 +9,7 @@
 #Typefaces
 #Typography
 #Spacing
+#Lists
 
 
 2. Components
@@ -168,6 +169,12 @@ section {
         @apply my-24;
     }
 }
+
+/* #Lists */
+ul li {
+    list-style: bullet;
+}
+
 
 /* 2. Components 
    ____                                             _       
