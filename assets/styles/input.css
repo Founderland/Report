@@ -401,7 +401,10 @@ nav.desktop {
 
 
 /* Scrollspy */
-
+nav.desktop a.active {
+    font-weight: bold;
+    color: red;
+}
 
 
 /* MOBILE */
