@@ -1221,7 +1221,8 @@ nav.desktop {
 }
 
 nav.desktop li {
-  margin: 8px;
+  margin: 8px 0;
+  list-style: none;
 }
 
 nav.desktop a {

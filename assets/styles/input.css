@@ -368,7 +368,8 @@ nav.desktop {
     height: 300px;/* fixes height of element and allows sticky to work */
 }
 nav.desktop li {
-    margin: 8px;
+    margin: 8px 0;
+    list-style: none;
 }
 nav.desktop a {
     font-weight: normal;
