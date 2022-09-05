@@ -177,8 +177,11 @@ section {
 }
 
 /* #Lists */
+ul {
+    @apply pl-4;
+}
 ul li {
-    list-style: square inside;
+    list-style: square outside;
 }
 
 

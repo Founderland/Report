@@ -1005,8 +1005,12 @@ section {
 
 /* #Lists */
 
+ul {
+  padding-left: 1rem;
+}
+
 ul li {
-  list-style: square inside;
+  list-style: square outside;
 }
 
 /* 2. Components 
