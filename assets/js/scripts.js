@@ -91,4 +91,4 @@ const pieChart = new Chart(pie1, {
 });
 
 
-}; // end of document ready
+}); // end of document ready
