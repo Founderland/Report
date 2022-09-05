@@ -969,6 +969,10 @@ button,
   margin-bottom: 1rem;
 }
 
+h2 {
+  margin-top: 1.5rem;
+}
+
 @media (min-width: 1024px) {
   h1,  
     h2, 
@@ -981,6 +985,10 @@ button,
     button, 
     .cta {
     margin-bottom: 2rem;
+  }
+
+  h1 {
+    margin-bottom: 2.5rem;
   }
 }
 

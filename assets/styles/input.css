@@ -150,6 +150,9 @@ button,
 .cta {
     @apply mb-4;
 }
+h2 {
+    @apply mt-6;
+}
 
 @screen lg {
     h1, 
@@ -164,10 +167,13 @@ button,
     .cta {
         @apply mb-8;
     }
+    h1 {
+        @apply mb-10;
+    }
 }
 
 section {
-    @apply mb-16
+    @apply mb-16;
 }
 
 @screen lg {
