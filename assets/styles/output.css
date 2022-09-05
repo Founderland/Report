@@ -794,14 +794,14 @@ video {
 
 #Typefaces
 #Typography
+#Justify
 #Spacing
 #Lists
 
 
 2. Components
 
-#Blockquotes
-#Captions 
+#Blockquotes 
 #Cards
 #Symbols 
 #Nav
@@ -916,9 +916,7 @@ a {
     ol, 
     table,
     figcaption {
-    font-size: 16px;
     /* it's 20px in the design system */
-    line-height: 24px;
   }
 
   h1 {
@@ -940,9 +938,14 @@ a {
   }
 
   .lead {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    /* @apply text-2xl; */
   }
+}
+
+/* #Justify */
+
+p {
+  text-align: Justify;
 }
 
 /* #Spacing */
@@ -1014,7 +1017,6 @@ figure {
   border-left-width: 8px;
   --tw-border-opacity: 1;
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
-  text-align: right;
 }
 
 blockquote, 
@@ -1035,11 +1037,10 @@ blockquote p {
   }
 }
 
-/* #Captions */
-
 figcaption {
   --tw-text-opacity: 1;
   color: rgb(112 112 112 / var(--tw-text-opacity));
+  text-align: right;
 }
 
 /* #Cards */
@@ -1407,11 +1408,11 @@ MISC
     gap: 2rem;
   }
 
-  .md\:p-16 {
-    padding: 4rem;
-  }
-
   .md\:p-6 {
     padding: 1.5rem;
+  }
+
+  .md\:p-16 {
+    padding: 4rem;
   }
 }

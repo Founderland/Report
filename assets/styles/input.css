@@ -8,14 +8,14 @@
 
 #Typefaces
 #Typography
+#Justify
 #Spacing
 #Lists
 
 
 2. Components
 
-#Blockquotes
-#Captions 
+#Blockquotes 
 #Cards
 #Symbols 
 #Nav
@@ -110,8 +110,7 @@ a {
     ol, 
     table,
     figcaption {
-        font-size: 16px; /* it's 20px in the design system */
-        line-height: 24px;
+        /* it's 20px in the design system */
     }
     h1 {
         @apply text-5xl; /* it's 6xl in the design system  */
@@ -126,8 +125,14 @@ a {
         @apply text-3xl;
     }
     .lead {
-        @apply text-2xl;
+        /* @apply text-2xl; */
     }
+}
+
+/* #Justify */
+
+p {
+    text-align: Justify;
 }
 
 /* #Spacing */
@@ -193,7 +198,6 @@ figure {
     @apply px-6;
     @apply border-l-8;
     @apply border-gray-light;
-    text-align: right;
 }
 
 blockquote,
@@ -211,10 +215,9 @@ blockquote p {
         /* @apply leading-relaxed; */
     }
 }
-
-/* #Captions */
 figcaption {
     @apply text-gray-dark;
+    text-align: right;
 }
 
 /* #Cards */
