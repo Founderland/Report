@@ -1010,6 +1010,7 @@ ul {
 
 ul li {
   list-style: square outside;
+  padding-left: 1rem;
 }
 
 /* 2. Components 

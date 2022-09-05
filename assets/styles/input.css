@@ -188,6 +188,7 @@ ul {
 }
 ul li {
     list-style: square outside;
+    @apply pl-4;
 }
 
 
