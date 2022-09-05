@@ -602,6 +602,10 @@ video {
   margin-right: -6rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -671,12 +675,12 @@ video {
   gap: 1rem;
 }
 
-.gap-8 {
-  gap: 2rem;
-}
-
 .gap-6 {
   gap: 1.5rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .scroll-smooth {
@@ -955,6 +959,8 @@ a {
 
 p {
   text-align: Justify;
+  -webkit-hyphens: auto;
+          hyphens: auto;
 }
 
 /* #Spacing */
@@ -969,7 +975,6 @@ ul,
 li, 
 button, 
 .cta {
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -984,19 +989,16 @@ button,
     li, 
     button, 
     .cta {
-    margin-top: 2rem;
     margin-bottom: 2rem;
   }
 }
 
 section {
-  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 
 @media (min-width: 1024px) {
   section {
-    margin-top: 6rem;
     margin-bottom: 6rem;
   }
 }
@@ -1004,7 +1006,7 @@ section {
 /* #Lists */
 
 ul li {
-  list-style: bullet;
+  list-style: circle inside;
 }
 
 /* 2. Components 
