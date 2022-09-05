@@ -387,6 +387,8 @@ nav.desktop a {
 nav.desktop .symbol {
     width: 16px;
     height: 16px;
+    @apply bg-black;
+    @apply ml-2;
 }
 
 /* Scrollspy */
