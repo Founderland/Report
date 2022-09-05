@@ -193,6 +193,7 @@ figure {
     @apply px-6;
     @apply border-l-8;
     @apply border-gray-light;
+    text-align: right;
 }
 
 blockquote,
@@ -200,6 +201,7 @@ blockquote p {
     @apply text-2xl;
     font-weight: bold;
     margin-bottom: 16px;
+    text-align: left;
 }
 
 @screen lg {

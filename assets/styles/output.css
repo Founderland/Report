@@ -1014,6 +1014,7 @@ figure {
   border-left-width: 8px;
   --tw-border-opacity: 1;
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
+  text-align: right;
 }
 
 blockquote, 
@@ -1022,6 +1023,7 @@ blockquote p {
   line-height: 2rem;
   font-weight: bold;
   margin-bottom: 16px;
+  text-align: left;
 }
 
 @media (min-width: 1024px) {
@@ -1407,5 +1409,9 @@ MISC
 
   .md\:p-16 {
     padding: 4rem;
+  }
+
+  .md\:p-6 {
+    padding: 1.5rem;
   }
 }
