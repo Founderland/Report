@@ -289,7 +289,7 @@ figcaption {
 .For {
     background-image: url('../images/symb/For People.svg');
 }
-.Forward {
+.Forward_2 {
     background-image: url('../images/symb/Forward 2.svg');
 }
 .Forward {
@@ -380,6 +380,10 @@ nav.desktop li {
 nav.desktop a {
     font-weight: normal;
     text-decoration: none;
+}
+nav.desktop .symbol {
+    width: 16px;
+    height: 16px;
 }
 
 /* Scrollspy */
