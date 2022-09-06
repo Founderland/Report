@@ -1294,6 +1294,15 @@ nav.desktop a.active {
   color: red;
 }
 
+/*
+.nav-parent ul {
+    display: hidden;
+} 
+.active.nav-parent ul {
+    display: block;
+}  
+*/
+
 /* MOBILE */
 
 /* Burger */
