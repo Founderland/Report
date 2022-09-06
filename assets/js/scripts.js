@@ -27,7 +27,7 @@ $(document).scroll(function(){
 
         if(scrollPosition < containerBottom - 20 && scrollPosition >= containerOffset - 20){
             $(this).addClass('active');
-        } else{
+        } else {
             $(this).removeClass('active');
         };
 
