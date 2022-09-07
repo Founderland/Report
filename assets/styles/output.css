@@ -1257,8 +1257,13 @@ nav a.active {
   color: rgb(246 51 28 / var(--tw-text-opacity));
 }
 
+.nav a.active .nav-child {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .nav-parent + ul {
-  display: hidden;
+  display: none;
   border-left: 4px solid;
   --tw-border-opacity: 1;
   border-color: rgb(241 241 241 / var(--tw-border-opacity));

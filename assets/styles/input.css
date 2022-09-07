@@ -383,8 +383,11 @@ nav a.active {
     font-weight: bold;
     @apply text-red;
 }
+.nav a.active .nav-child {
+    @apply text-black;
+}
 .nav-parent + ul {
-    display: hidden;
+    display: none;
     border-left: 4px solid; 
     @apply border-gray-light;
     @apply pl-4;
@@ -392,7 +395,8 @@ nav a.active {
 } 
 .active.nav-parent + ul {
     display: block;
-} 
+}
+
 
 /* MOBILE */
 
