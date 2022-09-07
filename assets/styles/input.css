@@ -380,14 +380,18 @@ figcaption {
 /* #Nav */
 
 /* Scrollspy */
-nav.desktop a.active {
+nav a.active {
     font-weight: bold;
-    color: red;
+    @apply text-red;
 }
-.nav-parent ul {
+.nav-parent + ul {
     display: hidden;
+    border-left: 4px solid; 
+    @apply border-gray;
+    @apply pl-4;
+    @apply ml-6;
 } 
-.active.nav-parent ul {
+.active.nav-parent + ul {
     display: block;
 } 
 

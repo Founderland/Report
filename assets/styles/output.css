@@ -1252,16 +1252,22 @@ figcaption {
 
 /* Scrollspy */
 
-nav.desktop a.active {
+nav a.active {
   font-weight: bold;
-  color: red;
+  --tw-text-opacity: 1;
+  color: rgb(246 51 28 / var(--tw-text-opacity));
 }
 
-.nav-parent ul {
+.nav-parent + ul {
   display: hidden;
+  border-left: 4px solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(164 164 164 / var(--tw-border-opacity));
+  padding-left: 1rem;
+  margin-left: 1.5rem;
 }
 
-.active.nav-parent ul {
+.active.nav-parent + ul {
   display: block;
 }
 
