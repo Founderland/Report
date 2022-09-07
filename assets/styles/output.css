@@ -1373,7 +1373,7 @@ nav.active .overlay {
 
   /* Sticky */
 
-  nav.desktop {
+  nav {
     height: 300px;
     /* fixes height of element and allows sticky to work */
   }
