@@ -1061,7 +1061,6 @@ blockquote p {
     blockquote p {
     font-size: 1.875rem;
     line-height: 2.25rem;
-    /* @apply leading-relaxed; */
   }
 }
 
@@ -1262,7 +1261,7 @@ nav a.active {
   display: hidden;
   border-left: 4px solid;
   --tw-border-opacity: 1;
-  border-color: rgb(164 164 164 / var(--tw-border-opacity));
+  border-color: rgb(241 241 241 / var(--tw-border-opacity));
   padding-left: 1rem;
   margin-left: 1.5rem;
 }

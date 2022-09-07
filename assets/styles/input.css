@@ -223,7 +223,6 @@ blockquote p {
     blockquote,
     blockquote p  {
         @apply text-3xl;
-        /* @apply leading-relaxed; */
     }
 }
 figcaption {
@@ -387,7 +386,7 @@ nav a.active {
 .nav-parent + ul {
     display: hidden;
     border-left: 4px solid; 
-    @apply border-gray;
+    @apply border-gray-light;
     @apply pl-4;
     @apply ml-6;
 } 
