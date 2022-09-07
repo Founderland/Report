@@ -626,10 +626,6 @@ video {
   display: grid;
 }
 
-.hidden {
-  display: none;
-}
-
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -1254,39 +1250,6 @@ figcaption {
 
 /* #Nav */
 
-/* DESKTOP */
-
-nav.desktop ul,
-nav.desktop li {
-  padding: 0;
-}
-
-nav.desktop li {
-  margin: 8px 0;
-  list-style: none;
-}
-
-nav.desktop a {
-  font-weight: normal;
-  text-decoration: none;
-}
-
-nav.desktop .symbol {
-  width: 16px;
-  height: 16px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  margin-right: 0.5rem;
-  margin-top: -1px;
-}
-
-/* Sticky */
-
-nav.desktop {
-  height: 300px;
-  /* fixes height of element and allows sticky to work */
-}
-
 /* Scrollspy */
 
 nav.desktop a.active {
@@ -1294,14 +1257,13 @@ nav.desktop a.active {
   color: red;
 }
 
-/*
 .nav-parent ul {
-    display: hidden;
-} 
+  display: hidden;
+}
+
 .active.nav-parent ul {
-    display: block;
-}  
-*/
+  display: block;
+}
 
 /* MOBILE */
 
@@ -1323,9 +1285,9 @@ nav.desktop a.active {
   content: "\2261";
 }
 
-/* Off canvas (mobile nav) */
+/* Off canvas */
 
-nav.mobile ul {
+nav ul {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -1343,7 +1305,7 @@ nav.mobile ul {
   transform: rotate(45deg);
 }
 
-nav.mobile.active ul {
+nav.active ul {
   left: 0;
 }
 
@@ -1362,6 +1324,49 @@ nav.active .overlay {
   display: block;
   left: 0;
   background: rgba(255,255,255,0.92);
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px) {
+  nav ul {
+    /* reset off-canvas */
+    position: relative;
+    padding: 0;
+    left: 0;
+    width: auto;
+  }
+
+  nav ul,
+    nav li {
+    padding: 0;
+  }
+
+  nav li {
+    margin: 8px 0;
+    list-style: none;
+  }
+
+  nav a {
+    font-weight: normal;
+    text-decoration: none;
+  }
+
+  nav .symbol {
+    width: 16px;
+    height: 16px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+    margin-right: 0.5rem;
+    margin-top: -1px;
+  }
+
+  /* Sticky */
+
+  nav.desktop {
+    height: 300px;
+    /* fixes height of element and allows sticky to work */
+  }
 }
 
 /* NAV

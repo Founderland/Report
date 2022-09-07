@@ -375,50 +375,21 @@ figcaption {
     background-image: url('../images/symb/Visibility.svg');
 }
 
+
+
 /* #Nav */
-
-/* DESKTOP */
-nav.desktop ul,
-nav.desktop li {
-    padding: 0;
-}
-nav.desktop li {
-    margin: 8px 0;
-    list-style: none;
-}
-nav.desktop a {
-    font-weight: normal;
-    text-decoration: none;
-}
-nav.desktop .symbol {
-    width: 16px;
-    height: 16px;
-    @apply bg-black;
-    @apply mr-2;
-    margin-top: -1px;
-}
-
-/* Sticky */
-nav.desktop {
-    height: 300px;/* fixes height of element and allows sticky to work */
-}
-
 
 /* Scrollspy */
 nav.desktop a.active {
     font-weight: bold;
     color: red;
 }
-/*
 .nav-parent ul {
     display: hidden;
 } 
 .active.nav-parent ul {
     display: block;
-}  
-*/
-
-
+} 
 
 /* MOBILE */
 
@@ -437,8 +408,8 @@ nav.desktop a.active {
     content: "\2261";
 }
 
-/* Off canvas (mobile nav) */
-nav.mobile ul {
+/* Off canvas */
+nav ul {
     position: fixed;
     top: 0;
     width: 100vw;
@@ -454,7 +425,7 @@ nav.mobile ul {
     content: "+";
     transform: rotate(45deg);
 }
-nav.mobile.active ul {
+nav.active ul {
     left: 0;
 }
 
@@ -472,6 +443,47 @@ nav.active .overlay {
     left: 0;
     background: rgba(255,255,255,0.92);
 }
+
+
+/* DESKTOP */
+
+@screen md {
+    nav ul {
+        /* reset off-canvas */
+        position: relative;
+        padding: 0;
+        left: 0;
+        width: auto;
+    }
+    nav ul,
+    nav li {
+        padding: 0;
+    }
+    nav li {
+        margin: 8px 0;
+        list-style: none;
+    }
+    nav a {
+        font-weight: normal;
+        text-decoration: none;
+    }
+    nav .symbol {
+        width: 16px;
+        height: 16px;
+        @apply bg-black;
+        @apply mr-2;
+        margin-top: -1px;
+    }
+
+    /* Sticky */
+    nav.desktop {
+        height: 300px;/* fixes height of element and allows sticky to work */
+    }
+}
+
+
+
+
 
 
 
