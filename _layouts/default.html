@@ -10,28 +10,18 @@
       <h2>Qualitative research report on Women of Color Founders in Berlin</h2>
     </header>
 
-
-
     <div class="fdl-wrapper p-6 md:grid grid-cols-4 gap-8 my-8 md:container mx-auto">
-
       <!-- navigation -->
-      <div class="burger md:hidden"></div>
-      <nav class="md:sticky md:block top-8 transition-all duration-200">
-        <ul>
-            <li class="close md:hidden"></li>
-            {% include nav.html %}
-        </ul>
-        <div class="overlay transition-colors duration-300"></div>
-      </nav>
+      {% include nav.html %}
+      <!-- main content -->
       <main class="fdl-content col-span-3">
         {{ content }}
       </main>
     </div>
 
+    <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/scripts.js"></script>
-
   </body>
-
 </html>

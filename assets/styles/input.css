@@ -494,29 +494,3 @@ nav.active .overlay {
 
 
 
-/* NAV
-all: 
-[] get links and IDs working 
-
-Desktop:
-[] adjust styling of li / links 
-- gray 
-- smaller text
-- tight spacing
-
-[] get scrollspy working
-    [] insert smaller symbols (placeholders)
-
-mobile: 
-[x] off canvas
-    [] fix / style close button
-    [] style hamburger
-[] scroll spy
-
-https://css-tricks.com/the-checkbox-hack/
-
-
-MISC
-[] fix header (making mobile viewport too wide)  
-
-*/

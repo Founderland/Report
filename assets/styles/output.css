@@ -778,9 +778,9 @@ video {
   color: rgb(243 244 246 / var(--tw-text-opacity));
 }
 
-.text-gray {
+.text-gray-dark {
   --tw-text-opacity: 1;
-  color: rgb(164 164 164 / var(--tw-text-opacity));
+  color: rgb(112 112 112 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -1379,33 +1379,6 @@ nav.active .overlay {
   }
 }
 
-/* NAV
-all: 
-[] get links and IDs working 
-
-Desktop:
-[] adjust styling of li / links 
-- gray 
-- smaller text
-- tight spacing
-
-[] get scrollspy working
-    [] insert smaller symbols (placeholders)
-
-mobile: 
-[x] off canvas
-    [] fix / style close button
-    [] style hamburger
-[] scroll spy
-
-https://css-tricks.com/the-checkbox-hack/
-
-
-MISC
-[] fix header (making mobile viewport too wide)  
-
-*/
-
 .selection\:bg-lime *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
@@ -1516,3 +1489,10 @@ MISC
     padding-bottom: 2rem;
   }
 }
+
+
+
+
+
+
+
