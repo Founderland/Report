@@ -19,6 +19,7 @@
 #Cards
 #Symbols 
 #Nav
+#Text-columns 
 
 */
 
@@ -501,7 +502,16 @@ nav.active .overlay {
 
 
 
+/* #Text-Columns */
 
+@screen md {
+    .text-col {
+        @apply columns-2;
+        @apply gap-12; 
+        @apply pb-8;
+        column-rule: 4px solid #F1F1F1; /* gray light */
+    }
+}
 
 
 

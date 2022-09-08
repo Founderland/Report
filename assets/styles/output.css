@@ -654,6 +654,10 @@ video {
   flex-direction: row;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .place-content-center {
   place-content: center;
 }
@@ -822,6 +826,7 @@ video {
 #Cards
 #Symbols 
 #Nav
+#Text-columns 
 
 */
 
@@ -1394,6 +1399,20 @@ nav.active .overlay {
   }
 }
 
+/* #Text-Columns */
+
+@media (min-width: 768px) {
+  .text-col {
+    -moz-columns: 2;
+         columns: 2;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    -moz-column-rule: 4px solid #F1F1F1;
+         column-rule: 4px solid #F1F1F1;
+    /* gray light */
+  }
+}
+
 .selection\:bg-lime *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
@@ -1499,10 +1518,6 @@ nav.active .overlay {
     padding-bottom: 2rem;
   }
 }
-
-
-
-
 
 
 
