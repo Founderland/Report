@@ -508,8 +508,11 @@ nav.active .overlay {
     .text-col {
         @apply columns-2;
         @apply gap-12; 
-        @apply pb-8;
+        @apply mb-8;
         column-rule: 4px solid #F1F1F1; /* gray light */
+    }
+    .text-col p:last-of-type {
+        margin-bottom: 0;
     }
 }
 

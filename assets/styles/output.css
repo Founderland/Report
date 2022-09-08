@@ -610,6 +610,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -1406,10 +1410,14 @@ nav.active .overlay {
     -moz-columns: 2;
          columns: 2;
     gap: 3rem;
-    padding-bottom: 2rem;
+    margin-bottom: 2rem;
     -moz-column-rule: 4px solid #F1F1F1;
          column-rule: 4px solid #F1F1F1;
     /* gray light */
+  }
+
+  .text-col p:last-of-type {
+    margin-bottom: 0;
   }
 }
 
@@ -1502,12 +1510,12 @@ nav.active .overlay {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:gap-6 {
+    gap: 1.5rem;
   }
 
   .md\:p-16 {
