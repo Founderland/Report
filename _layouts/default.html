@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: page.lang | default: 'en' }}" class="scroll-smooth selection:bg-lime">
-
-  {% include head.html %}
-
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+  
+    <!-- typefaces -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">   
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="{{ "/assets/styles/output.css" | relative_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  </head>
   <body>
-    <header class="p-12 md:p-16">
-      <img src="assets/images/Rise&Thrive_Logo.svg" alt="Founderland Logo">
-      <h1>Rise & Thrive Report</h1>
-      <h2>Qualitative research report on Women of Color Founders in Berlin</h2>
-    </header>
 
-    <div class="fdl-wrapper p-6 md:grid grid-cols-4 gap-8 my-8 md:container mx-auto">
-      <!-- navigation -->
-      {% include nav.html %}
-      <!-- main content -->
-      <main class="fdl-content col-span-3">
-        {{ content }}
-      </main>
-    </div>
+    <!-- see index.html -->
+    {{ content }}
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
