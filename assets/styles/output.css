@@ -791,6 +791,11 @@ video {
   color: rgb(112 112 112 / var(--tw-text-opacity));
 }
 
+.text-blue {
+  --tw-text-opacity: 1;
+  color: rgb(0 99 226 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -830,7 +835,8 @@ video {
 #Cards
 #Symbols 
 #Nav
-#Text-columns 
+#Text Columns
+#Unit Counter 
 
 */
 
@@ -1403,7 +1409,7 @@ nav.active .overlay {
   }
 }
 
-/* #Text-Columns */
+/* #Text Columns */
 
 @media (min-width: 768px) {
   .text-col {
@@ -1419,6 +1425,35 @@ nav.active .overlay {
   .text-col p:last-of-type {
     margin-bottom: 0;
   }
+}
+
+/* #Unit Counter */
+
+:root {
+  --u-side: 20px;
+  /* dimension of unit square */
+  --u-margin: 4px;
+  /* number of units per row */
+  --u-row: 10;
+  /* number of units per row */
+}
+
+.unit-container {
+  width: calc(
+      var(--u-side) * var(--u-row) /* width */
+      + 
+      var(--u-margin) * 2 * var(--u-row) /* margins */
+      );
+  overflow: auto;
+  /* clearing floats */
+}
+
+.unit {
+  float: left;
+  width: var(--u-side);
+  height: var(--u-side);
+  margin: var(--u-margin);
+  /* background: black; */
 }
 
 .selection\:bg-lime *::-moz-selection {
@@ -1526,6 +1561,3 @@ nav.active .overlay {
     padding-bottom: 2rem;
   }
 }
-
-
-
