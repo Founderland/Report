@@ -1299,6 +1299,7 @@ nav a.active {
   border-color: rgb(241 241 241 / var(--tw-border-opacity));
   padding-left: 1rem;
   margin-left: 1.5rem;
+  margin-bottom: 0;
 }
 
 .active.nav-parent + ul {

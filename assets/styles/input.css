@@ -405,6 +405,7 @@ nav a.active {
     @apply border-gray-light;
     @apply pl-4;
     @apply ml-6;
+    margin-bottom: 0;
 } 
 .active.nav-parent + ul {
     display: block;
