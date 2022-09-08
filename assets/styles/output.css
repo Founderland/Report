@@ -634,8 +634,8 @@ video {
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
+.w-1\/2 {
+  width: 50%;
 }
 
 .grow {
@@ -969,6 +969,8 @@ p {
 
 /* #Spacing */
 
+/* text spacing */
+
 h1,  
 h2, 
 h3, 
@@ -982,7 +984,8 @@ button,
   margin-bottom: 1rem;
 }
 
-h2 {
+h2, 
+h3 {
   margin-top: 1.5rem;
 }
 
@@ -1003,7 +1006,19 @@ h2 {
   h1 {
     margin-bottom: 2.5rem;
   }
+
+  h1,  
+    h2 {
+    padding-top: 3rem;
+    /* padding to give some breathing room when using nav anchor links */
+  }
+
+  h3 {
+    margin-top: 3rem;
+  }
 }
+
+/* section spacing */
 
 section {
   margin-bottom: 4rem;
@@ -1478,11 +1493,6 @@ nav.active .overlay {
 
   .md\:p-16 {
     padding: 4rem;
-  }
-
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
   }
 
   .md\:pb-8 {

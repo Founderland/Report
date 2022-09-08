@@ -138,6 +138,7 @@ p {
 
 /* #Spacing */
 
+/* text spacing */
 h1, 
 h2,
 h3,
@@ -150,7 +151,9 @@ button,
 .cta {
     @apply mb-4;
 }
-h2 {
+
+h2,
+h3 {
     @apply mt-6;
 }
 
@@ -170,8 +173,16 @@ h2 {
     h1 {
         @apply mb-10;
     }
+    h1, 
+    h2 {
+        @apply pt-12; /* padding to give some breathing room when using nav anchor links */
+    }
+    h3 {
+        @apply mt-12;
+    }
 }
 
+/* section spacing */
 section {
     @apply mb-16;
 }
