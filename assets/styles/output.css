@@ -1457,6 +1457,23 @@ nav.active .overlay {
   /* background: black; */
 }
 
+/* #Section Head */
+
+.section-head {
+  /* positioning */
+  box-sizing: border-box;
+  width: 100vw;
+  margin-left: calc(-33.333% - 5px);
+  padding-left: calc(33.333% + 8px);
+  /* styling */
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .selection\:bg-lime *::-moz-selection {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
