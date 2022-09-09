@@ -1534,6 +1534,18 @@ nav.active .overlay {
     position: sticky;
   }
 
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-1 {
+    grid-column: span 1 / span 1;
+  }
+
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .md\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -1561,6 +1573,10 @@ nav.active .overlay {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:gap-8 {
