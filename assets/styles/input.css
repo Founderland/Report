@@ -551,18 +551,22 @@ nav.active .overlay {
 }
 
 /* #Section Head */
-.section-head img, 
-.section-head .title-card {
-    @apply w-2/3;
+.section-head {
+    padding-top: 350px;
 }
 .section-head img {
-    @apply -mr-16;
+    @apply w-2/3;
+    float: right;
+    margin-top: -350px;
 }
 .section-head .title-card {
     @apply text-white;
     @apply bg-black;
     @apply p-16;
     @apply -ml-16;
+    @apply -mt-16;
+    position: relative;
+    display: inline-block;
 }
 .section-head .symbol {
     width: 64px;
