@@ -626,6 +626,10 @@ video {
   display: grid;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .w-2\/3 {
   width: 66.666667%;
 }
@@ -636,6 +640,10 @@ video {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .grow {
@@ -701,6 +709,11 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-lime {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
 }
 
 .p-12 {
@@ -1111,6 +1124,13 @@ figcaption {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.symbol.black {
+  filter: brightness(0%);
+}
+
+blockquote .symbol {
   margin-bottom: -1px;
 }
 
@@ -1118,6 +1138,9 @@ figcaption {
   .symbol {
     width: 32px;
     height: 32px;
+  }
+
+  blockquote .symbol {
     margin-bottom: -4px;
   }
 }
@@ -1447,15 +1470,22 @@ nav.active .overlay {
 
 /* #Section Head */
 
-.section-head {
-  /* positioning */
-  /* styling */
+.section-head img,  
+.section-head .title-card {
+  width: 66.666667%;
+}
+
+.section-head img {
+  margin-right: -4rem;
+}
+
+.section-head .title-card {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem;
+  margin-left: -4rem;
 }
 
 .section-head .symbol {

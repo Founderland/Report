@@ -261,6 +261,11 @@ figcaption {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+}
+.symbol.black {
+    filter: brightness(0%); 
+}
+blockquote .symbol {
     margin-bottom: -1px;
 }
 
@@ -268,8 +273,10 @@ figcaption {
     .symbol {
         width: 32px;
         height: 32px;
+    }
+    blockquote .symbol {
         margin-bottom: -4px;
-    }    
+    }
 }
 
 .Warmth {
@@ -544,14 +551,18 @@ nav.active .overlay {
 }
 
 /* #Section Head */
-.section-head {
-    /* positioning */
-    
-
-    /* styling */
+.section-head img, 
+.section-head .title-card {
+    @apply w-2/3;
+}
+.section-head img {
+    @apply -mr-16;
+}
+.section-head .title-card {
     @apply text-white;
     @apply bg-black;
-    @apply py-16;
+    @apply p-16;
+    @apply -ml-16;
 }
 .section-head .symbol {
     width: 64px;
