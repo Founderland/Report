@@ -555,10 +555,6 @@ video {
   top: 2rem;
 }
 
-.col-span-3 {
-  grid-column: span 3 / span 3;
-}
-
 .col-span-2 {
   grid-column: span 2 / span 2;
 }
@@ -571,14 +567,14 @@ video {
   float: right;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my-4 {
@@ -646,10 +642,6 @@ video {
   flex-grow: 1;
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -680,10 +672,6 @@ video {
 
 .justify-center {
   justify-content: center;
-}
-
-.gap-8 {
-  gap: 2rem;
 }
 
 .gap-4 {
@@ -1461,10 +1449,6 @@ nav.active .overlay {
 
 .section-head {
   /* positioning */
-  box-sizing: border-box;
-  width: 100vw;
-  margin-left: calc(-33.333% - 5px);
-  padding-left: calc(33.333% + 8px);
   /* styling */
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1472,6 +1456,11 @@ nav.active .overlay {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.section-head .symbol {
+  width: 64px;
+  height: 64px;
 }
 
 .selection\:bg-lime *::-moz-selection {
@@ -1571,12 +1560,12 @@ nav.active .overlay {
          columns: 2;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .md\:gap-8 {

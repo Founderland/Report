@@ -546,13 +546,14 @@ nav.active .overlay {
 /* #Section Head */
 .section-head {
     /* positioning */
-    box-sizing: border-box;
-    width: 100vw; 
-    margin-left: calc(-33.333% - 5px);
-    padding-left: calc(33.333% + 8px);
+    
 
     /* styling */
     @apply text-white;
     @apply bg-black;
     @apply py-16;
+}
+.section-head .symbol {
+    width: 64px;
+    height: 64px;
 }
