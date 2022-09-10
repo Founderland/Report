@@ -842,6 +842,7 @@ video {
 #Nav
 #Text Columns
 #Unit Counter 
+#Section Head
 
 */
 
@@ -1476,27 +1477,29 @@ nav.active .overlay {
 
 .section-head {
   position: relative;
-  height: calc(300px + 400 + 48 - 96);
+  height: calc(300px + 400px + 48px - 96px);
   /* img + title + padding - overlap*/
 }
 
-.section-head img {
-  width: 66%;
+.section-head img,
+.section-head .title-card {
   position: absolute;
+  width: 66.66%;
+}
+
+.section-head img {
+  top: 48px;
   right: 0;
-  top: 0;
-  margin-top: calc(-48px * 5);
 }
 
 .section-head .title-card {
+  bottom: 0;
+  left: -48px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding: 4rem;
-  width: 66%;
-  position: absolute;
-  bottom: 0;
 }
 
 .section-head .symbol {
