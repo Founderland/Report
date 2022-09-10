@@ -1475,7 +1475,7 @@ nav.active .overlay {
 /* #Section Head */
 
 .section-head {
-  padding-top: 350px;
+  padding-top: 3rem;
 }
 
 .section-head img {
@@ -1491,9 +1491,9 @@ nav.active .overlay {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding: 4rem;
   margin-left: -4rem;
-  margin-top: -4rem;
+  margin-top: -8rem;
+  width: 66.666667%;
   position: relative;
-  display: inline-block;
 }
 
 .section-head .symbol {

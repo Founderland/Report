@@ -552,7 +552,7 @@ nav.active .overlay {
 
 /* #Section Head */
 .section-head {
-    padding-top: 350px;
+    @apply pt-12;    
 }
 .section-head img {
     @apply w-2/3;
@@ -564,9 +564,9 @@ nav.active .overlay {
     @apply bg-black;
     @apply p-16;
     @apply -ml-16;
-    @apply -mt-16;
+    @apply -mt-32;
+    @apply w-2/3;
     position: relative;
-    display: inline-block;
 }
 .section-head .symbol {
     width: 64px;
