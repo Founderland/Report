@@ -552,12 +552,14 @@ nav.active .overlay {
 
 /* #Section Head */
 .section-head {
-    @apply pt-12;    
+    position: relative; 
+    margin-top: calc(48px * 6);  
 }
 .section-head img {
-    @apply w-2/3;
-    float: right;
-    margin-top: -350px;
+    width: 66%;
+    position: absolute;
+    right: 0;
+    margin-top: calc(-48px * 5);
 }
 .section-head .title-card {
     @apply text-white;
@@ -565,7 +567,7 @@ nav.active .overlay {
     @apply p-16;
     @apply -ml-16;
     @apply -mt-32;
-    @apply w-2/3;
+    width: 66%;
     position: relative;
 }
 .section-head .symbol {
