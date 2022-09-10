@@ -1476,13 +1476,15 @@ nav.active .overlay {
 
 .section-head {
   position: relative;
-  margin-top: calc(48px * 6);
+  height: calc(300px + 400 + 48 - 96);
+  /* img + title + padding - overlap*/
 }
 
 .section-head img {
   width: 66%;
   position: absolute;
   right: 0;
+  top: 0;
   margin-top: calc(-48px * 5);
 }
 
@@ -1492,10 +1494,9 @@ nav.active .overlay {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding: 4rem;
-  margin-left: -4rem;
-  margin-top: -8rem;
   width: 66%;
-  position: relative;
+  position: absolute;
+  bottom: 0;
 }
 
 .section-head .symbol {
