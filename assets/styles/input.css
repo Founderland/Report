@@ -438,6 +438,10 @@ nav a.active {
     position: relative;
     content: "\2261";
 }
+.burger.active:after {
+    content: "+";
+    transform: rotate(45deg);
+}
 
 /* Off canvas */
 nav {
@@ -448,14 +452,14 @@ nav {
     z-index: 1000;
     padding: 48px;
 }
-.close:after {
+/* .close:after {
     position: relative;
     top: 48px; 
     right: 48px;
     display: inline-block;
     content: "+";
     transform: rotate(45deg);
-}
+} */
 nav.active {
     left: 0;
 }

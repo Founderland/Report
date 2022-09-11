@@ -1,19 +1,18 @@
 $(document).ready(function(){
 
 // Off Canvas Navigation
-$(".burger").click(function() {
-    $("nav").toggleClass("active");
-    $(".overlay").toggleClass("active");
+$(".burger, .overlay").click(function() {
+    $("nav, .overlay, .burger").toggleClass("active");
 });
-$(".close").click(function() {
-    $("nav ").toggleClass("active");
-    $(".overlay").toggleClass("active");
-});
-$(".overlay").click(function() {
-    $("nav").toggleClass("active");
-    $(".overlay").toggleClass("active");
-});
-
+// $(".overlay").click(function() {
+//     $("nav").toggleClass("active");
+//     $(".overlay").toggleClass("active");
+// });
+//$(".close").click(function() {
+//     $("nav ").toggleClass("active");
+//     $(".overlay").toggleClass("active");
+// });
+    
 
 // Scrollspy 
 // source: https://codepen.io/acarlie/pen/LKmORw?editors=1010

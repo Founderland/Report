@@ -1347,6 +1347,11 @@ nav a.active {
   content: "\2261";
 }
 
+.burger.active:after {
+  content: "+";
+  transform: rotate(45deg);
+}
+
 /* Off canvas */
 
 nav {
@@ -1358,14 +1363,14 @@ nav {
   padding: 48px;
 }
 
-.close:after {
-  position: relative;
-  top: 48px;
-  right: 48px;
-  display: inline-block;
-  content: "+";
-  transform: rotate(45deg);
-}
+/* .close:after {
+    position: relative;
+    top: 48px; 
+    right: 48px;
+    display: inline-block;
+    content: "+";
+    transform: rotate(45deg);
+} */
 
 nav.active {
   left: 0;
