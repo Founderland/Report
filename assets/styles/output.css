@@ -1496,24 +1496,15 @@ nav .symbol {
 
 .section-head {
   position: relative;
-  height: calc(300px + 400px + 48px - 96px);
-  /* img + title + padding - overlap*/
 }
 
 .section-head img,
 .section-head .title-card {
-  position: absolute;
-  width: 66.66%;
-}
-
-.section-head img {
-  top: 48px;
-  right: 0;
+  width: 100vw;
+  margin-left: -1.5rem;
 }
 
 .section-head .title-card {
-  bottom: 0;
-  left: -48px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-bg-opacity: 1;
@@ -1521,9 +1512,33 @@ nav .symbol {
   padding: 4rem;
 }
 
-.section-head .symbol {
-  width: 64px;
-  height: 64px;
+@media (min-width: 768px) {
+  .section-head {
+    position: relative;
+    height: calc(300px + 400px + 48px - 96px);
+    /* img + title + padding - overlap*/
+  }
+
+  .section-head img,
+    .section-head .title-card {
+    position: absolute;
+    width: 66.66%;
+  }
+
+  .section-head img {
+    top: 48px;
+    right: 0;
+  }
+
+  .section-head .title-card {
+    bottom: 0;
+    left: -48px;
+  }
+
+  .section-head .symbol {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .selection\:bg-lime *::-moz-selection {
