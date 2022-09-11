@@ -1336,9 +1336,10 @@ nav a.active {
   top: 0;
   right: 0;
   z-index: 250;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  padding: 1rem;
+  background: black;
+  color: white;
+  font-size: 22px;
+  padding: 0.7rem 1rem;
 }
 
 .burger:after {
@@ -1372,19 +1373,33 @@ nav.active ul {
 
 /* Overlay */
 
-.overlay {
+/* .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: -100vw;
+    background: rgba(255,255,255,0);
+    z-index: 500;
+}
+nav.active .overlay {
+    display: block;
+    left: 0;
+    background: rgba(255,255,255,0.92);
+} */
+
+.overlay  {
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: -100vw;
-  background: rgba(255,255,255,0);
-  z-index: 500;
+  top: 0;
+  right: 100vw;
+  bottom: 0;
+  left:0;
+  background: rgba(255,255,255,0.92);
+  transition: all 1s;
 }
 
 nav.active .overlay {
-  display: block;
-  left: 0;
-  background: rgba(255,255,255,0.92);
+  right: 0;
+  transition: all 1s;
 }
 
 /* DESKTOP */
