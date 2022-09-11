@@ -3,12 +3,15 @@ $(document).ready(function(){
 // Off Canvas Navigation
 $(".burger").click(function() {
     $("nav").toggleClass("active");
+    $(".overlay").toggleClass("active");
 });
 $(".close").click(function() {
     $("nav ").toggleClass("active");
+    $(".overlay").toggleClass("active");
 });
 $(".overlay").click(function() {
     $("nav").toggleClass("active");
+    $(".overlay").toggleClass("active");
 });
 
 

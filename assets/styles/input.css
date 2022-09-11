@@ -483,10 +483,10 @@ nav.active .overlay {
     left:0;
     background: rgba(255,255,255,0.92);
     transition: all 0.25s;
-  }
-  nav.active .overlay {
+}
+.overlay.active {
     right: 0;
-  }
+}
 
 
 /* DESKTOP */
