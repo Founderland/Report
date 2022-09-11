@@ -1394,49 +1394,48 @@ nav.active .overlay {
   bottom: 0;
   left:0;
   background: rgba(255,255,255,0.92);
-  transition: all 1s;
+  transition: all 0.25s;
 }
 
 nav.active .overlay {
   right: 0;
-  transition: all 1s;
 }
 
 /* DESKTOP */
 
+nav ul {
+  /* reset off-canvas */
+  position: relative;
+  padding: 0;
+  left: 0;
+  width: auto;
+}
+
+nav ul,
+nav li {
+  padding: 0;
+}
+
+nav li {
+  margin: 8px 0;
+  list-style: none;
+}
+
+nav a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+nav .symbol {
+  width: 16px;
+  height: 16px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  margin-right: 0.5rem;
+  margin-top: -1px;
+}
+
 @media (min-width: 768px) {
-  nav ul {
-    /* reset off-canvas */
-    position: relative;
-    padding: 0;
-    left: 0;
-    width: auto;
-  }
-
-  nav ul,
-    nav li {
-    padding: 0;
-  }
-
-  nav li {
-    margin: 8px 0;
-    list-style: none;
-  }
-
-  nav a {
-    font-weight: normal;
-    text-decoration: none;
-  }
-
-  nav .symbol {
-    width: 16px;
-    height: 16px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-    margin-right: 0.5rem;
-    margin-top: -1px;
-  }
-
   /* Sticky */
 
   nav {
