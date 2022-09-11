@@ -1349,7 +1349,7 @@ nav a.active {
 
 /* Off canvas */
 
-nav ul {
+nav {
   position: fixed;
   top: 0;
   width: 100vw;
@@ -1367,7 +1367,7 @@ nav ul {
   transform: rotate(45deg);
 }
 
-nav.active ul {
+nav.active {
   left: 0;
 }
 
@@ -1405,7 +1405,7 @@ nav.active .overlay {
 
 nav ul {
   /* reset off-canvas */
-  position: relative;
+  /* position: relative; */
   padding: 0;
   left: 0;
   width: auto;
@@ -1439,6 +1439,7 @@ nav .symbol {
   /* Sticky */
 
   nav {
+    position: relative;
     height: 300px;
     /* fixes height of element and allows sticky to work */
   }
