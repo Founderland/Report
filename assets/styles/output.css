@@ -885,10 +885,15 @@ blockquote,
   font-family: 'Space Grotesk', sans-serif;
 }
 
-.lead,
 .cta,
 .text-mono {
   font-family: 'Space Mono', monospace;
+}
+
+@media (min-width: 1024px) {
+  .lead {
+    font-family: 'Space Mono', monospace;
+  }
 }
 
 /* #Typography */
@@ -917,8 +922,8 @@ li,
 ol,  
 table, 
 figcaption {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 h1 {
@@ -949,15 +954,17 @@ a {
 }
 
 @media (min-width: 1024px) {
-  html, 
-    body,
-    p, 
-    a, 
-    ul, 
-    li, 
-    ol, 
-    table,
+  html,  
+    body, 
+    p,  
+    a,  
+    ul,  
+    li,  
+    ol,  
+    table, 
     figcaption {
+    font-size: 1rem;
+    line-height: 1.5rem;
     /* it's 20px in the design system */
   }
 
@@ -986,7 +993,8 @@ a {
 
 /* #Justify */
 
-p {
+p,
+.lead {
   text-align: Justify;
   -webkit-hyphens: auto;
           hyphens: auto;
@@ -1335,7 +1343,7 @@ nav a.active {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 250;
+  z-index: 1500;
   background: black;
   color: white;
   font-size: 22px;
@@ -1347,9 +1355,17 @@ nav a.active {
   content: "\2261";
 }
 
+.burger.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 99 226 / var(--tw-bg-opacity));
+  transition: background 0.25s;
+}
+
 .burger.active:after {
   content: "+";
   transform: rotate(45deg);
+  display: block;
+  margin-right: -1px;
 }
 
 /* Off canvas */
@@ -1363,34 +1379,11 @@ nav {
   padding: 48px;
 }
 
-/* .close:after {
-    position: relative;
-    top: 48px; 
-    right: 48px;
-    display: inline-block;
-    content: "+";
-    transform: rotate(45deg);
-} */
-
 nav.active {
   left: 0;
 }
 
 /* Overlay */
-
-/* .overlay {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    left: -100vw;
-    background: rgba(255,255,255,0);
-    z-index: 500;
-}
-nav.active .overlay {
-    display: block;
-    left: 0;
-    background: rgba(255,255,255,0.92);
-} */
 
 .overlay  {
   position: fixed;
@@ -1398,8 +1391,9 @@ nav.active .overlay {
   right: 100vw;
   bottom: 0;
   left:0;
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,0.96);
   transition: all 0.25s;
+  z-index: 500;
 }
 
 .overlay.active {

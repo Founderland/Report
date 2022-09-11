@@ -53,10 +53,14 @@ blockquote,
 .text-grotesk {
     font-family: 'Space Grotesk', sans-serif;
 }
-.lead,
 .cta,
 .text-mono {
     font-family: 'Space Mono', monospace;
+}
+@screen lg {
+    .lead {
+        font-family: 'Space Mono', monospace;
+    }
 }
 
 /* #Typography */
@@ -82,7 +86,7 @@ li,
 ol, 
 table,
 figcaption {
-    @apply text-base;
+    @apply text-sm;
 }
 h1 {
     @apply text-3xl;
@@ -113,7 +117,7 @@ a {
     ol, 
     table,
     figcaption {
-        /* it's 20px in the design system */
+        @apply text-base; /* it's 20px in the design system */
     }
     h1 {
         @apply text-5xl; /* it's 6xl in the design system  */
@@ -134,7 +138,8 @@ a {
 
 /* #Justify */
 
-p {
+p,
+.lead {
     text-align: Justify;
     hyphens: auto;
 }
@@ -428,7 +433,7 @@ nav a.active {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 250;
+    z-index: 1500;
     background: black;
     color: white;
     font-size: 22px;
@@ -438,9 +443,15 @@ nav a.active {
     position: relative;
     content: "\2261";
 }
+.burger.active {
+    @apply bg-blue;
+    transition: background 0.25s;
+}
 .burger.active:after {
     content: "+";
     transform: rotate(45deg);
+    display: block; 
+    margin-right: -1px;
 }
 
 /* Off canvas */
@@ -452,41 +463,20 @@ nav {
     z-index: 1000;
     padding: 48px;
 }
-/* .close:after {
-    position: relative;
-    top: 48px; 
-    right: 48px;
-    display: inline-block;
-    content: "+";
-    transform: rotate(45deg);
-} */
 nav.active {
     left: 0;
 }
 
 /* Overlay */
-/* .overlay {
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    left: -100vw;
-    background: rgba(255,255,255,0);
-    z-index: 500;
-}
-nav.active .overlay {
-    display: block;
-    left: 0;
-    background: rgba(255,255,255,0.92);
-} */
-
 .overlay  {
     position: fixed; 
     top: 0; 
     right: 100vw;
     bottom: 0;
     left:0;
-    background: rgba(255,255,255,0.92);
+    background: rgba(255,255,255,0.96);
     transition: all 0.25s;
+    z-index: 500;
 }
 .overlay.active {
     right: 0;
