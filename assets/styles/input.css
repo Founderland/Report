@@ -119,17 +119,17 @@ a {
     figcaption {
         /* it's 20px in the design system */
     }
-    h1 {
+    h1,
+    h2 {
         @apply text-5xl; /* it's 6xl in the design system  */
     }
-    h2,
+    h3 {
+        @apply text-2xl;
+    }
     button,
     .cta {
         font-size: 32px;
         line-height: 40px;
-    }
-    h3 {
-        @apply text-2xl;
     }
     .lead {
         /* @apply text-2xl; */
