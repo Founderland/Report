@@ -1482,8 +1482,8 @@ nav.active {
 
   .mixed-col {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 4rem;
   }
 
   .mixed-col > * {
@@ -1653,6 +1653,18 @@ nav.active {
     grid-column: span 2 / span 2;
   }
 
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .md\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
+  .md\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
   .md\:col-start-2 {
     grid-column-start: 2;
   }
@@ -1683,10 +1695,6 @@ nav.active {
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:gap-8 {

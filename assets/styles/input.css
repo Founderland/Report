@@ -551,8 +551,8 @@ nav.active {
 
     .mixed-col {
         display: grid; 
-        @apply grid-cols-3;
-        @apply gap-12;
+        @apply grid-cols-12;
+        @apply gap-16;
     }
     .mixed-col > * {
         margin-top: 0;
