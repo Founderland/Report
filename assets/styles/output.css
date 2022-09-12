@@ -1306,7 +1306,6 @@ blockquote .symbol {
 /* #Nav */
 
 nav ul {
-  /* reset off-canvas */
   padding: 0;
   left: 0;
   width: auto;
@@ -1420,7 +1419,7 @@ nav.active {
 
 @media (min-width: 768px) {
   nav {
-    /* display: inline-block; */
+    /* reset */
     width: 100%;
     left: 0;
     padding: 0;

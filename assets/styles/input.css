@@ -404,7 +404,6 @@ blockquote .symbol {
 
 /* #Nav */ 
 nav ul {
-    /* reset off-canvas */
     padding: 0;
     left: 0;
     width: auto;
@@ -497,7 +496,7 @@ nav.active {
 }
 @screen md {
     nav {
-        /* display: inline-block; */
+        /* reset */
         width: 100%; 
         left: 0;
         padding: 0;
@@ -532,7 +531,6 @@ nav.active {
 
 
 /* #Text Columns */
-
 @screen md {
     .text-col {
         @apply columns-2;
