@@ -1396,6 +1396,7 @@ nav a.active {
 .burger:after {
   position: relative;
   content: "\2261";
+  display: inline-block;
 }
 
 .burger.active {
