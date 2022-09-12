@@ -1307,7 +1307,6 @@ blockquote .symbol {
 
 nav ul {
   /* reset off-canvas */
-  /* position: relative; */
   padding: 0;
   left: 0;
   width: auto;
@@ -1382,19 +1381,15 @@ nav a.active {
 /* Burger */
 
 .burger {
+  display: inline-block;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 1500;
-  background: black;
-  color: white;
-  font-size: 22px;
-  padding: 0.7rem 1rem 1rem;
-  position: relative;
-  display: inline-block;
   width: 48px;
   height: 48px;
-  background: url('../images/Nav-Hamburger.svg') no-repeat contain;
+  background: url('../images/Nav-Hamburger.svg') no-repeat center center;
+  background-size: contain;
 }
 
 .burger.active {
