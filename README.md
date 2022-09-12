@@ -17,3 +17,7 @@ npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --wat
 - editing content 
     - where to find everything ...
         - includes 
+
+
+# Assets for export 
+https://www.figma.com/file/DJnMJG3xuEQHfBw8H3RmKi/Report-Mockups?node-id=288%3A1659 
