@@ -922,6 +922,10 @@ figcaption {
   line-height: 1.5rem;
 }
 
+ol li {
+  list-style: numbered;
+}
+
 h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1011,6 +1015,11 @@ li,
 button, 
 .cta {
   margin-bottom: 1rem;
+}
+
+ol,  
+ol li {
+  padding-left: 1rem;
 }
 
 h1, 
@@ -1649,20 +1658,16 @@ nav.active {
     grid-column: span 1 / span 1;
   }
 
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
-  }
-
   .md\:col-span-5 {
     grid-column: span 5 / span 5;
   }
 
   .md\:col-span-7 {
     grid-column: span 7 / span 7;
+  }
+
+  .md\:col-span-6 {
+    grid-column: span 6 / span 6;
   }
 
   .md\:col-start-2 {

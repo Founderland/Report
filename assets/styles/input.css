@@ -88,6 +88,9 @@ table,
 figcaption {
     @apply text-base;
 }
+ol li {
+    list-style: numbered;
+}
 h1 {
     @apply text-3xl;
 }
@@ -160,6 +163,10 @@ li,
 button,
 .cta {
     @apply mb-4;
+}
+ol, 
+ol li {
+    @apply pl-4;
 }
 h1,
 h2 {
