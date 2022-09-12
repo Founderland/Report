@@ -159,8 +159,10 @@ button,
 .cta {
     @apply mb-4;
 }
-
-h2,
+h1,
+h2 {
+    @apply pt-6;/* for breathing room when unsing nav */
+}
 h3 {
     @apply mt-6;
 }

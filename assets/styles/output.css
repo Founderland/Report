@@ -642,10 +642,6 @@ video {
   width: 66.666667%;
 }
 
-.w-20 {
-  width: 5rem;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1015,7 +1011,12 @@ button,
   margin-bottom: 1rem;
 }
 
-h2, 
+h1, 
+h2 {
+  padding-top: 1.5rem;
+  /* for breathing room when unsing nav */
+}
+
 h3 {
   margin-top: 1.5rem;
 }
