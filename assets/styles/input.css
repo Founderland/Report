@@ -573,7 +573,8 @@ nav.active {
 
 /* #Section Head */
 .section-head {
-    position: relative; 
+    position: relative;
+    @apply mt-20;
 }
 .section-head img,
 .section-head .title-card {
