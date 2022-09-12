@@ -1319,13 +1319,15 @@ nav li {
 }
 
 nav li {
-  margin: 8px 0;
+  margin: 16px 0;
   list-style: none;
 }
 
 nav a {
   font-weight: normal;
   text-decoration: none;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 nav .symbol {
@@ -1335,6 +1337,17 @@ nav .symbol {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   margin-right: 0.5rem;
   margin-top: -1px;
+}
+
+@media (min-width: 768px) {
+  nav li {
+    margin: 8px 0;
+  }
+
+  nav a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 /* Scrollspy */
