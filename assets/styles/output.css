@@ -944,6 +944,10 @@ h3 {
   line-height: 1.75rem;
 }
 
+p .lead {
+  line-height: 1.5rem;
+}
+
 a {
   text-decoration: underline;
   font-weight: bold;
