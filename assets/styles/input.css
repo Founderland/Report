@@ -86,7 +86,7 @@ li,
 ol, 
 table,
 figcaption {
-    @apply text-sm;
+    @apply text-base;
 }
 h1 {
     @apply text-3xl;
@@ -117,7 +117,7 @@ a {
     ol, 
     table,
     figcaption {
-        @apply text-base; /* it's 20px in the design system */
+        /* it's 20px in the design system */
     }
     h1 {
         @apply text-5xl; /* it's 6xl in the design system  */
@@ -421,7 +421,6 @@ nav li {
 nav a {
     font-weight: normal;
     text-decoration: none;
-    @apply text-base;
 }
 nav .symbol {
     width: 16px;
