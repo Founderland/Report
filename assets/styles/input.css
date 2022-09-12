@@ -589,10 +589,10 @@ nav .symbol {
     .section-head img {
         top: 48px;
         right: 0;
+        margin-left: 0;
     }
     .section-head .title-card {
         bottom: 0;
-        left: -48px;
     }          
     .section-head .symbol {
         width: 64px;
