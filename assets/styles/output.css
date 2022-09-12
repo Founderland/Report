@@ -840,7 +840,7 @@ video {
 #Cards
 #Symbols 
 #Nav
-#Text Columns
+#Columns
 #Unit Counter 
 #Section Head
 
@@ -937,6 +937,8 @@ button,
 h3 {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  border-bottom: 2px solid black;
+  padding-bottom: 16px;
 }
 
 .lead {
@@ -1459,9 +1461,11 @@ nav.active {
   }
 }
 
-/* #Text Columns */
+/* #Columns */
 
 @media (min-width: 768px) {
+  /* text only columns */
+
   .text-col {
     -moz-columns: 2;
          columns: 2;
@@ -1474,6 +1478,16 @@ nav.active {
 
   .text-col p:last-of-type {
     margin-bottom: 0;
+  }
+
+  .mixed-col {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem;
+  }
+
+  .mixed-col > * {
+    margin-top: 0;
   }
 }
 
@@ -1633,6 +1647,10 @@ nav.active {
 
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
+  }
+
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .md\:col-start-2 {

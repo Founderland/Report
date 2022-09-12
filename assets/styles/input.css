@@ -19,7 +19,7 @@
 #Cards
 #Symbols 
 #Nav
-#Text Columns
+#Columns
 #Unit Counter 
 #Section Head
 
@@ -98,6 +98,8 @@ button,
 }
 h3 {
     @apply text-xl;
+    border-bottom: 2px solid black; 
+    padding-bottom: 16px;
 }
 .lead {
     @apply text-lg;
@@ -534,8 +536,9 @@ nav.active {
 
 
 
-/* #Text Columns */
+/* #Columns */
 @screen md {
+    /* text only columns */
     .text-col {
         @apply columns-2;
         @apply gap-12; 
@@ -545,6 +548,16 @@ nav.active {
     .text-col p:last-of-type {
         margin-bottom: 0;
     }
+
+    .mixed-col {
+        display: grid; 
+        @apply grid-cols-3;
+        @apply gap-12;
+    }
+    .mixed-col > * {
+        margin-top: 0;
+    }
+
 }
 
 
