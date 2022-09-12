@@ -227,11 +227,13 @@ ul li {
 
 figure {
     @apply my-12;
-    @apply px-6;
+    @apply pr-6;
+}
+blockquote {
     @apply border-l-8;
     @apply border-gray-light;
+    @apply pl-6;
 }
-
 blockquote,
 blockquote p {
     @apply text-2xl;
