@@ -1427,6 +1427,15 @@ nav.active {
   left: 0;
 }
 
+@media (min-width: 768px) {
+  nav {
+    /* display: inline-block; */
+    width: 100%;
+    left: 0;
+    padding: 0;
+  }
+}
+
 /* Overlay */
 
 .overlay  {
