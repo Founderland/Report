@@ -475,14 +475,15 @@ nav a.active {
     font-size: 22px;
     padding: 0.7rem 1rem 1rem;
 }
-.burger:after {
+.burger {
     position: relative;
-    content: "\2261";
     display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url('../images/Nav-Hamburger.svg') no-repeat contain;
 }
 .burger.active {
-    @apply bg-blue;
-    transition: background 0.25s;
+    background-image: url('../images/Nav-Close.svg');
 }
 .burger.active:after {
     content: "+";
