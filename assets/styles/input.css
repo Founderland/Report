@@ -403,6 +403,33 @@ blockquote .symbol {
 
 
 /* #Nav */ 
+nav ul {
+    /* reset off-canvas */
+    /* position: relative; */
+    padding: 0;
+    left: 0;
+    width: auto;
+}
+nav ul,
+nav li {
+    padding: 0;
+}
+nav li {
+    margin: 8px 0;
+    list-style: none;
+}
+nav a {
+    font-weight: normal;
+    text-decoration: none;
+    @apply text-base;
+}
+nav .symbol {
+    width: 16px;
+    height: 16px;
+    @apply bg-black;
+    @apply mr-2;
+    margin-top: -1px;
+}
 
 /* Scrollspy */
 nav a.active {
@@ -437,7 +464,7 @@ nav a.active {
     background: black;
     color: white;
     font-size: 22px;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1rem 1rem;
 }
 .burger:after {
     position: relative;
@@ -484,35 +511,7 @@ nav.active {
 
 
 /* DESKTOP */
-nav ul {
-    /* reset off-canvas */
-    /* position: relative; */
-    padding: 0;
-    left: 0;
-    width: auto;
-}
-nav ul,
-nav li {
-    padding: 0;
-}
-nav li {
-    margin: 8px 0;
-    list-style: none;
-}
-nav a {
-    font-weight: normal;
-    text-decoration: none;
-}
-nav .symbol {
-    width: 16px;
-    height: 16px;
-    @apply bg-black;
-    @apply mr-2;
-    margin-top: -1px;
-}
 @screen md {
-
-
     /* Sticky */
     nav {
         position: relative;
