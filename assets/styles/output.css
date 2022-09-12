@@ -1702,6 +1702,10 @@ nav.active {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:place-items-center {
+    place-items: center;
+  }
+
   .md\:gap-8 {
     gap: 2rem;
   }
