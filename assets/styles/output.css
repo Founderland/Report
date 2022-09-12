@@ -1032,7 +1032,7 @@ h3 {
     li, 
     button, 
     .cta {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 
   h1 {
@@ -1046,7 +1046,7 @@ h3 {
   }
 
   h3 {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 }
 
@@ -1659,11 +1659,6 @@ nav.active {
     display: none;
   }
 
-  .md\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -1680,15 +1675,7 @@ nav.active {
     gap: 2rem;
   }
 
-  .md\:gap-6 {
-    gap: 1.5rem;
-  }
-
   .md\:p-16 {
     padding: 4rem;
-  }
-
-  .md\:pb-8 {
-    padding-bottom: 2rem;
   }
 }

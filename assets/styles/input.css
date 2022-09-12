@@ -178,7 +178,7 @@ h3 {
     li,
     button,
     .cta {
-        @apply mb-8;
+        @apply mb-6;
     }
     h1 {
         @apply mb-10;
@@ -188,7 +188,7 @@ h3 {
         @apply pt-12; /* padding to give some breathing room when using nav anchor links */
     }
     h3 {
-        @apply mt-12;
+        @apply mt-16;
     }
 }
 
