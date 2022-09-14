@@ -284,13 +284,17 @@ figcaption {
     place-content: center;
     align-items: center;
 }
+.card .stat [class*="digit"] {
+    font-weight: bold;
+}
 .card .stat .digit-lg {
     @apply text-8xl;
-    font-weight: bold;
+}
+.card .stat .digit-md {
+    @apply text-6xl;
 }
 .card .stat .digit-sm {
     @apply text-3xl;
-    font-weight: bold;
 }
 .card .stat .label {
     @apply text-2xl;
