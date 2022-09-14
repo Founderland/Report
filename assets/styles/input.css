@@ -266,9 +266,17 @@ figcaption {
 .card {
     @apply px-4;
     @apply py-8;
+    @apply mb-8;
+}
+.card.text-white * {
+    color: white;
+}
+.card p {
     text-align: center;
 }
-
+.card .title {
+    @apply text-5xl;
+}
 .card .stat {
     @apply mb-4;
     display: flex;
@@ -276,15 +284,18 @@ figcaption {
     place-content: center;
     align-items: center;
 }
-.card .stat .digit {
+.card .stat .digit-lg {
     @apply text-8xl;
+    font-weight: bold;
+}
+.card .stat .digit-sm {
+    @apply text-3xl;
     font-weight: bold;
 }
 .card .stat .label {
     @apply text-2xl;
     @apply ml-2;
 }
-
 
 
 /* #Symbols */
@@ -661,7 +672,7 @@ nav.active {
 
 /* #EDITS 
 a helper class used to highlight the content edits I made, to discuss w Janine */
-.edit {
+body.edit-on .edit {
     @apply bg-lime;
     display: inline-block;
 }
