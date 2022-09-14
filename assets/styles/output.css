@@ -567,6 +567,10 @@ video {
   grid-column: span 1 / span 1;
 }
 
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
+
 .float-right {
   float: right;
 }
@@ -1133,16 +1137,32 @@ figcaption {
 
 /* #Cards */
 
-.stat-card {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 99 226 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.card {
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   text-align: center;
+}
+
+.card .stat {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  align-items: center;
+}
+
+.card .stat .digit {
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.card .stat .label {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-left: 0.5rem;
 }
 
 /* #Symbols */
@@ -1588,6 +1608,15 @@ nav.active {
     width: 64px;
     height: 64px;
   }
+}
+
+/* #EDITS 
+a helper class used to highlight the content edits I made, to discuss w Janine */
+
+.edit {
+  --tw-bg-opacity: 1;
+  background-color: rgb(215 251 3 / var(--tw-bg-opacity));
+  display: inline-block;
 }
 
 .selection\:bg-lime *::-moz-selection {

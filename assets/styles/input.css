@@ -263,13 +263,29 @@ figcaption {
 }
 
 /* #Cards */
-.stat-card {
-    @apply bg-blue;
-    @apply text-white;
+.card {
     @apply px-4;
     @apply py-8;
     text-align: center;
 }
+
+.card .stat {
+    @apply mb-4;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+}
+.card .stat .digit {
+    @apply text-8xl;
+    font-weight: bold;
+}
+.card .stat .label {
+    @apply text-2xl;
+    @apply ml-2;
+}
+
+
 
 /* #Symbols */
 
@@ -640,4 +656,12 @@ nav.active {
         width: 64px;
         height: 64px;
     }
+}
+
+
+/* #EDITS 
+a helper class used to highlight the content edits I made, to discuss w Janine */
+.edit {
+    @apply bg-lime;
+    display: inline-block;
 }
