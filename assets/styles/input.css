@@ -103,7 +103,7 @@ button,
 }
 h3 {
     @apply text-xl;
-    border-bottom: 2px solid black; 
+    border-bottom: 4px solid black; 
     padding-bottom: 16px;
 }
 .lead {
