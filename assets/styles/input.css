@@ -22,6 +22,8 @@
 #Columns
 #Unit Counter 
 #Section Head
+#Section Colors
+
 
 */
 
@@ -33,7 +35,7 @@
  |____/ \__,_|___/\___|                                                                            
 */
 
-/* #Typefaces  */
+/* #TYPEFACES  */
 @font-face {
     font-family: Hanson;
     src: url(../typefaces/hanson-bold.woff2);
@@ -63,7 +65,7 @@ blockquote,
     }
 }
 
-/* #Typography */
+/* #TYPOGRAPHY */
 h1, 
 h2,
 h3,
@@ -141,7 +143,7 @@ a {
     }
 }
 
-/* #Justify */
+/* #JUSTIFY */
 
 p,
 .lead {
@@ -149,7 +151,7 @@ p,
     hyphens: auto;
 }
 
-/* #Spacing */
+/* #SPACING */
 
 /* text spacing */
 h1, 
@@ -212,13 +214,23 @@ section {
     }
 }
 
-/* #Lists */
+/* #LISTS */
 ul {
     @apply pl-4;
 }
 ul li {
     list-style: square outside;
     @apply pl-4;
+}
+
+
+/* #EDITS 
+a helper class used to highlight the content edits I made, to discuss w Janine */
+html.edit-on .edit {
+    background-color: yellow;
+}
+html.edit-on span.edit {
+    display: inline-block;
 }
 
 
@@ -267,9 +279,6 @@ figcaption {
     @apply px-4;
     @apply py-8;
     @apply mb-8;
-}
-.card.text-white * {
-    color: white;
 }
 .card p {
     text-align: center;
@@ -599,7 +608,6 @@ nav.active {
 }
 
 
-
 /* #Unit Counter */
 
 :root {
@@ -624,7 +632,7 @@ nav.active {
 }
 
 
-/* #Section Head */
+/* #SECTION HEAD */
 .section-head {
     position: relative;
     @apply mt-20;
@@ -674,9 +682,39 @@ nav.active {
 }
 
 
-/* #EDITS 
-a helper class used to highlight the content edits I made, to discuss w Janine */
-body.edit-on .edit {
+
+
+
+/* #SECTION COLORS */
+
+/* headings */ 
+#section-1 h3 {
+    @apply border-b-lime;
+}
+#section-2 h3 {
+    @apply border-b-red;
+}
+#section-3 h3 {
+    @apply border-b-blue;
+}
+#section-4 h3 {
+    @apply border-b-pink;
+}
+
+/* Cards */
+#section-1 .card {
     @apply bg-lime;
-    display: inline-block;
+}
+#section-2 .card {
+    @apply bg-red;
+}
+#section-3 .card {
+    @apply bg-blue;
+}
+#section-4 .card {
+    @apply bg-pink;
+}
+#section-2 .card>*,
+#section-3 .card>* {
+    @apply text-white;
 }

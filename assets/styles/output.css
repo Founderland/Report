@@ -851,6 +851,8 @@ video {
 #Columns
 #Unit Counter 
 #Section Head
+#Section Colors
+
 
 */
 
@@ -862,7 +864,7 @@ video {
  |____/ \__,_|___/\___|                                                                            
 */
 
-/* #Typefaces  */
+/* #TYPEFACES  */
 
 @font-face {
   font-family: Hanson;
@@ -900,7 +902,7 @@ blockquote,
   }
 }
 
-/* #Typography */
+/* #TYPOGRAPHY */
 
 h1, 
 h2,
@@ -999,7 +1001,7 @@ a {
   }
 }
 
-/* #Justify */
+/* #JUSTIFY */
 
 p,
 .lead {
@@ -1008,7 +1010,7 @@ p,
           hyphens: auto;
 }
 
-/* #Spacing */
+/* #SPACING */
 
 /* text spacing */
 
@@ -1081,7 +1083,7 @@ section {
   }
 }
 
-/* #Lists */
+/* #LISTS */
 
 ul {
   padding-left: 1rem;
@@ -1090,6 +1092,17 @@ ul {
 ul li {
   list-style: square outside;
   padding-left: 1rem;
+}
+
+/* #EDITS 
+a helper class used to highlight the content edits I made, to discuss w Janine */
+
+html.edit-on .edit {
+  background-color: yellow;
+}
+
+html.edit-on span.edit {
+  display: inline-block;
 }
 
 /* 2. Components 
@@ -1147,10 +1160,6 @@ figcaption {
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin-bottom: 2rem;
-}
-
-.card.text-white * {
-  color: white;
 }
 
 .card p {
@@ -1579,7 +1588,7 @@ nav.active {
   /* background: black; */
 }
 
-/* #Section Head */
+/* #SECTION HEAD */
 
 .section-head {
   position: relative;
@@ -1595,13 +1604,6 @@ nav.active {
 .section-head .title-card {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.card.section-head .title-card * {
-  color: white;
-}
-
-.section-head .title-card {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   padding: 3rem;
@@ -1647,13 +1649,56 @@ nav.active {
   }
 }
 
-/* #EDITS 
-a helper class used to highlight the content edits I made, to discuss w Janine */
+/* #SECTION COLORS */
 
-body.edit-on .edit {
+/* headings */
+
+#section-1 h3 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(215 251 3 / var(--tw-border-opacity));
+}
+
+#section-2 h3 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(246 51 28 / var(--tw-border-opacity));
+}
+
+#section-3 h3 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 99 226 / var(--tw-border-opacity));
+}
+
+#section-4 h3 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(238 147 181 / var(--tw-border-opacity));
+}
+
+/* Cards */
+
+#section-1 .card {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
-  display: inline-block;
+}
+
+#section-2 .card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 51 28 / var(--tw-bg-opacity));
+}
+
+#section-3 .card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 99 226 / var(--tw-bg-opacity));
+}
+
+#section-4 .card {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 147 181 / var(--tw-bg-opacity));
+}
+
+#section-2 .card>*, 
+#section-3 .card>* {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .selection\:bg-lime *::-moz-selection {
