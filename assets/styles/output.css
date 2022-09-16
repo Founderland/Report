@@ -728,8 +728,8 @@ video {
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
 }
 
-.p-12 {
-  padding: 3rem;
+.p-16 {
+  padding: 4rem;
 }
 
 .p-6 {
@@ -738,10 +738,6 @@ video {
 
 .p-8 {
   padding: 2rem;
-}
-
-.p-16 {
-  padding: 4rem;
 }
 
 .px-8 {
@@ -1600,11 +1596,14 @@ nav.active {
 /* #TITLE PAGE */
 
 .title-page {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
   width: 100vw;
   height: 90vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 6fr;
   grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+  text-align: right;
 }
 
 .color_block-1 {
@@ -1641,6 +1640,28 @@ nav.active {
   background: url('assets/images/Rise&Thrive_Logo.svg') no-repeat center center;
   background-size: contain;
   margin-top: -10px;
+}
+
+/* titles */
+
+.title-page .color_block-3 {
+  display: flex;
+}
+
+.title-page h2,
+.title-page p {
+  align-self: bottom;
+}
+
+.title-page h2 {
+  padding-top: 0;
+  margin-bottom: 1rem;
+}
+
+.title-page p {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
 }
 
 /* #SECTION HEAD */
@@ -1874,9 +1895,5 @@ nav.active {
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:p-16 {
-    padding: 4rem;
   }
 }

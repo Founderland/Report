@@ -635,11 +635,13 @@ nav.active {
 
 /* #TITLE PAGE */
 .title-page {
+    @apply text-white;
     width: 100vw;
     height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 6fr;
     grid-template-rows: 1fr 1fr 1fr 3fr 2fr;
+    text-align: right;
 }
 .color_block-1 {
     @apply bg-lime;
@@ -668,7 +670,26 @@ nav.active {
     background-size: contain;
     margin-top: -10px;
 }
-  
+
+/* titles */
+.title-page .color_block-3 {
+    display: flex;
+}
+.title-page h2,
+.title-page p {
+    align-self: bottom;
+}
+.title-page h2 {
+    padding-top: 0; 
+    margin-bottom: 1rem;
+} 
+.title-page p {
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+
 
 
 /* #SECTION HEAD */
