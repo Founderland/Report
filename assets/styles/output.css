@@ -1646,6 +1646,8 @@ nav.active {
 
 .title-page .color_block-3 {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .title-page h2,
