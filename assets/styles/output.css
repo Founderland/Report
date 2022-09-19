@@ -1211,13 +1211,15 @@ figcaption {
 
 /* #Symbols */
 
+.symbol {
+  background-color: black;
+}
+
 .symbol,
 .symbol::after {
   display: inline-block;
   width: 20px;
   height: 20px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .symbol::after {
@@ -1225,15 +1227,6 @@ figcaption {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.symbol.black {
-  background-color: orange;
-}
-
-.symbol.black::after {
-  /* add this to coloring section */
-  filter: brightness(0%);
 }
 
 blockquote .symbol {
@@ -1423,8 +1416,6 @@ nav a {
 nav .symbol {
   width: 16px;
   height: 16px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   margin-right: 0.5rem;
   margin-top: -1px;
 }
@@ -1790,10 +1781,16 @@ nav.active {
   background-color: rgb(238 147 181 / var(--tw-bg-opacity));
 }
 
+/* internal coloring based on container background */
+
 #section-2 .card>*, 
 #section-3 .card>* {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+#section-1 .symbol::after {
+  filter: brightness(0%);
 }
 
 .selection\:bg-lime *::-moz-selection {
