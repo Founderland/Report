@@ -786,22 +786,22 @@ nav.active {
 /* Backgrounds - Cards & Symbols */
 #section-1 .card, 
 #section-1 .symbol,
-#section-1 .nav-parent.active .symbol {
+.nav-section-1.nav-parent.active .symbol {
     @apply bg-lime;
 }
 #section-2 .card,
 #section-2 .symbol,
-#section-2 .nav-parent.active .symbol {
+.nav-section-2.nav-parent.active .symbol {
     @apply bg-red;
 }
 #section-3 .card,
 #section-3 .symbol,
-#section-3 .nav-parent.active .symbol {
+.nav-section-3.nav-parent.active .symbol {
     @apply bg-blue;
 }
 #section-4 .card,
 #section-4 .symbol,
-#section-4 .nav-parent.active .symbol {
+.nav-section-4.nav-parent.active .symbol {
     @apply bg-pink;
 }
 
