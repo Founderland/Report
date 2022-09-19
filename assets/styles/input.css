@@ -724,6 +724,9 @@ nav.active {
     position: relative;
     @apply mt-20;
 }
+.section-head img {
+    z-index: 10;
+}
 .section-head img,
 .section-head .title-card {
     width: 100vw;
