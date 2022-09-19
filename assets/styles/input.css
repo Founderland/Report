@@ -684,6 +684,7 @@ nav.active {
 .title-page h2 {
     padding-top: 0; 
     margin-bottom: 1rem;
+    font-weight: normal;
 } 
 .title-page p {
     letter-spacing: 0.5px;
