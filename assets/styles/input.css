@@ -314,17 +314,23 @@ figcaption {
 
 /* #Symbols */
 
-.symbol
+.symbol,
 .symbol::after {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  @apply bg-black;
+}
+.symbol::after {
+    content: '';
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
 }
-.symbol.black,
-.symbol.test-black::after {
+.symbol.black {
+    background-color: orange;
+}
+.symbol.black::after {/* add this to coloring section */
     filter: brightness(0%); 
 }
 blockquote .symbol {
