@@ -1809,9 +1809,9 @@ nav.active {
 }
 
 #section-1 .symbol::after,
-.nav-section-1..nav-parent.active .symbol::after,
+.nav-section-1.nav-parent.active .symbol::after,
 #section-4 .symbol::after,
-.nav-section-4..nav-parent.active .symbol::after {
+.nav-section-4.nav-parent.active .symbol::after {
   filter: brightness(0%);
 }
 
