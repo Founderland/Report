@@ -342,118 +342,118 @@ blockquote .symbol {
     }
 }
 
-.Warmth {
+.Warmth::after {
     background-image: url('../images/symb/Warmth.svg');
 }
-.Blooming {
+.Blooming::after {
     background-image: url('../images/symb/Blooming.svg');
 }
-.Calm {
+.Calm::after {
     background-image: url('../images/symb/Calm.svg');
 }
-.Cents {
+.Cents::after {
     background-image: url('../images/symb/Cents.svg');
 }
-.Connected {
+.Connected::after {
     background-image: url('../images/symb/Connected.svg');
 }
-.Connective {
+.Connective::after {
     background-image: url('../images/symb/Connective.svg');
 }
-.Continuous {
+.Continuous::after {
     background-image: url('../images/symb/Continuous Growth.svg');
 }
-.Direction {
+.Direction::after {
     background-image: url('../images/symb/Direction.svg');
 }
-.Emerging {
+.Emerging::after {
     background-image: url('../images/symb/Emerging.svg');
 }
-.Energized {
+.Energized::after {
     background-image: url('../images/symb/Energized.svg');
 }
-.Enhanced {
+.Enhanced::after {
     background-image: url('../images/symb/Enhanced.svg');
 }
-.Expanding {
+.Expanding::after {
     background-image: url('../images/symb/Expanding 2.svg');
 }
-.For {
+.For::after {
     background-image: url('../images/symb/For People.svg');
 }
-.Forward_2 {
+.Forward_2::after {
     background-image: url('../images/symb/Forward 2.svg');
 }
-.Forward {
+.Forward::after {
     background-image: url('../images/symb/Forward.svg');
 }
-.Goals {
+.Goals::after {
     background-image: url('../images/symb/Goals.svg');
 }
-.Haven {
+.Haven::after {
     background-image: url('../images/symb/Haven 2.svg');
 }
-.Haven {
+.Haven::after {
     background-image: url('../images/symb/Haven.svg');
 }
-.Inclusive {
+.Inclusive::after {
     background-image: url('../images/symb/Inclusive.svg');
 }
-.Intersectional {
+.Intersectional::after {
     background-image: url('../images/symb/Intersectional.svg');
 }
-.Invest {
+.Invest::after {
     background-image: url('../images/symb/Invest 2.svg');
 }
-.Invest {
+.Invest::after {
     background-image: url('../images/symb/Invest.svg');
 }
-.Moving {
+.Moving::after {
     background-image: url('../images/symb/Moving Together.svg');
 }
-.Multiplication {
+.Multiplication::after {
     background-image: url('../images/symb/Multiplication.svg');
 }
-.Navigating {
+.Navigating::after {
     background-image: url('../images/symb/Navigating.svg');
 }
-.No {
+.No::after {
     background-image: url('../images/symb/No Boundaries.svg');
 }
-.Open {
+.Open::after {
     background-image: url('../images/symb/Open.svg');
 }
-.Powerful {
+.Powerful::after {
     background-image: url('../images/symb/Powerful.svg');
 }
-.Reference {
+.Reference::after {
     background-image: url('../images/symb/Reference.svg');
 }
-.Security {
+.Security::after {
     background-image: url('../images/symb/Security.svg');
 }
-.Stability {
+.Stability::after {
     background-image: url('../images/symb/Stability.svg');
 }
-.Symbols {
+.Symbols::after {
     background-image: url('../images/symb/Symbols.svg');
 }
-.Symbols {
+.Symbols::after {
     background-image: url('../images/symb/Symbols-1.svg');
 }
-.Team {
+.Team::after {
     background-image: url('../images/symb/Team.svg');
 }
-.Transparent {
+.Transparent::after {
     background-image: url('../images/symb/Transparent 2.svg');
 }
-.Uplift {
+.Uplift::after {
     background-image: url('../images/symb/Uplift.svg');
 }
-.Value {
+.Value::after {
     background-image: url('../images/symb/Value.svg');
 }
-.Visibility {
+.Visibility::after {
     background-image: url('../images/symb/Visibility.svg');
 }
 
