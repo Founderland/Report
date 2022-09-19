@@ -333,13 +333,18 @@ blockquote .symbol {
     top: 1px;
 }
 nav .symbol {
+    position: relative;
+    top: 4px;
     @apply mr-2;
-    margin-top: -1px;
 }
 nav .symbol,
 nav .symbol::after {
     width: 16px;
     height: 16px;
+}
+nav .symbol::after {
+    position: relative; 
+    top: -2px;
 }
 
 @screen lg {
@@ -349,7 +354,7 @@ nav .symbol::after {
         height: 32px;
     }
     blockquote .symbol {
-        top: 4px;
+        top: 5px;
     }
 }
 
@@ -501,10 +506,9 @@ nav a {
 /* Scrollspy */
 nav a.active {
     font-weight: bold;
-    @apply text-red;
 }
 .nav a.active .nav-child {
-    @apply text-black;
+    text-decoration: underline;
 }
 .nav-parent + ul {
     display: none;
@@ -772,19 +776,23 @@ nav.active {
 
 /* Backgrounds - Cards & Symbols */
 #section-1 .card, 
-#section-1 .symbol {
+#section-1 .symbol,
+#section-1 nav a.active .symbol {
     @apply bg-lime;
 }
 #section-2 .card,
-#section-2 .symbol {
+#section-2 .symbol,
+#section-2 nav a.active .symbol {
     @apply bg-red;
 }
 #section-3 .card,
-#section-3 .symbol {
+#section-3 .symbol,
+#section-3 nav a.active .symbol {
     @apply bg-blue;
 }
 #section-4 .card,
-#section-4 .symbol {
+#section-4 .symbol,
+#section-4 nav a.active .symbol {
     @apply bg-pink;
 }
 
@@ -793,6 +801,7 @@ nav.active {
 #section-3 .card>* {
     @apply text-white;
 }
-#section-1 .symbol::after {
+#section-1 .symbol::after,
+#section-1 nav a.active .symbol::after {
     filter: brightness(0%);
 }

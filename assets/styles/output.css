@@ -551,10 +551,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.visible {
-  visibility: visible;
-}
-
 .top-8 {
   top: 2rem;
 }
@@ -1235,14 +1231,20 @@ blockquote .symbol {
 }
 
 nav .symbol {
+  position: relative;
+  top: 4px;
   margin-right: 0.5rem;
-  margin-top: -1px;
 }
 
 nav .symbol,
 nav .symbol::after {
   width: 16px;
   height: 16px;
+}
+
+nav .symbol::after {
+  position: relative;
+  top: -2px;
 }
 
 @media (min-width: 1024px) {
@@ -1253,7 +1255,7 @@ nav .symbol::after {
   }
 
   blockquote .symbol {
-    top: 4px;
+    top: 5px;
   }
 }
 
@@ -1440,13 +1442,10 @@ nav a {
 
 nav a.active {
   font-weight: bold;
-  --tw-text-opacity: 1;
-  color: rgb(246 51 28 / var(--tw-text-opacity));
 }
 
 .nav a.active .nav-child {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  text-decoration: underline;
 }
 
 .nav-parent + ul {
@@ -1763,25 +1762,29 @@ nav.active {
 /* Backgrounds - Cards & Symbols */
 
 #section-1 .card,  
-#section-1 .symbol {
+#section-1 .symbol, 
+#section-1 nav a.active .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
 }
 
 #section-2 .card, 
-#section-2 .symbol {
+#section-2 .symbol, 
+#section-2 nav a.active .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(246 51 28 / var(--tw-bg-opacity));
 }
 
 #section-3 .card, 
-#section-3 .symbol {
+#section-3 .symbol, 
+#section-3 nav a.active .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(0 99 226 / var(--tw-bg-opacity));
 }
 
 #section-4 .card, 
-#section-4 .symbol {
+#section-4 .symbol, 
+#section-4 nav a.active .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(238 147 181 / var(--tw-bg-opacity));
 }
@@ -1794,7 +1797,8 @@ nav.active {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-#section-1 .symbol::after {
+#section-1 .symbol::after,
+#section-1 nav a.active .symbol::after {
   filter: brightness(0%);
 }
 
