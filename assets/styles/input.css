@@ -314,7 +314,8 @@ figcaption {
 
 /* #Symbols */
 
-.symbol {
+.symbol
+.symbol:after {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -322,7 +323,8 @@ figcaption {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.symbol.black {
+.symbol.black,
+.symbol.test-black:after {
     filter: brightness(0%); 
 }
 blockquote .symbol {
@@ -330,7 +332,8 @@ blockquote .symbol {
 }
 
 @screen lg {
-    .symbol {
+    .symbol,
+    .symbol:after {
         width: 32px;
         height: 32px;
     }
@@ -763,17 +766,21 @@ nav.active {
     @apply border-b-pink;
 }
 
-/* Cards */
-#section-1 .card {
+/* Backgrounds - Cards & Symbols */
+#section-1 .card, 
+#section-1 .symbol {
     @apply bg-lime;
 }
-#section-2 .card {
+#section-2 .card,
+#section-2 .symbol {
     @apply bg-red;
 }
-#section-3 .card {
+#section-3 .card,
+#section-3 .symbol {
     @apply bg-blue;
 }
-#section-4 .card {
+#section-4 .card,
+#section-4 .symbol {
     @apply bg-pink;
 }
 #section-2 .card>*,

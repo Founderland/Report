@@ -1211,7 +1211,8 @@ figcaption {
 
 /* #Symbols */
 
-.symbol {
+.symbol
+.symbol:after {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -1220,7 +1221,8 @@ figcaption {
   background-size: contain;
 }
 
-.symbol.black {
+.symbol.black,
+.symbol.test-black:after {
   filter: brightness(0%);
 }
 
@@ -1229,7 +1231,8 @@ blockquote .symbol {
 }
 
 @media (min-width: 1024px) {
-  .symbol {
+  .symbol,
+    .symbol:after {
     width: 32px;
     height: 32px;
   }
@@ -1751,24 +1754,28 @@ nav.active {
   border-bottom-color: rgb(238 147 181 / var(--tw-border-opacity));
 }
 
-/* Cards */
+/* Backgrounds - Cards & Symbols */
 
-#section-1 .card {
+#section-1 .card,  
+#section-1 .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
 }
 
-#section-2 .card {
+#section-2 .card, 
+#section-2 .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(246 51 28 / var(--tw-bg-opacity));
 }
 
-#section-3 .card {
+#section-3 .card, 
+#section-3 .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(0 99 226 / var(--tw-bg-opacity));
 }
 
-#section-4 .card {
+#section-4 .card, 
+#section-4 .symbol {
   --tw-bg-opacity: 1;
   background-color: rgb(238 147 181 / var(--tw-bg-opacity));
 }
