@@ -1230,7 +1230,19 @@ figcaption {
 }
 
 blockquote .symbol {
-  margin-bottom: -1px;
+  position: relative;
+  top: 1px;
+}
+
+nav .symbol {
+  margin-right: 0.5rem;
+  margin-top: -1px;
+}
+
+nav .symbol,
+nav .symbol::after {
+  width: 16px;
+  height: 16px;
 }
 
 @media (min-width: 1024px) {
@@ -1241,7 +1253,7 @@ blockquote .symbol {
   }
 
   blockquote .symbol {
-    margin-bottom: -4px;
+    top: 4px;
   }
 }
 
@@ -1411,13 +1423,6 @@ nav a {
   text-decoration: none;
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-nav .symbol {
-  width: 16px;
-  height: 16px;
-  margin-right: 0.5rem;
-  margin-top: -1px;
 }
 
 @media (min-width: 768px) {

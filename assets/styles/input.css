@@ -329,7 +329,17 @@ figcaption {
     background-size: contain;
 }
 blockquote .symbol {
-    margin-bottom: -1px;
+    position: relative;
+    top: 1px;
+}
+nav .symbol {
+    @apply mr-2;
+    margin-top: -1px;
+}
+nav .symbol,
+nav .symbol::after {
+    width: 16px;
+    height: 16px;
 }
 
 @screen lg {
@@ -339,7 +349,7 @@ blockquote .symbol {
         height: 32px;
     }
     blockquote .symbol {
-        margin-bottom: -4px;
+        top: 4px;
     }
 }
 
@@ -478,12 +488,6 @@ nav a {
     font-weight: normal;
     text-decoration: none;
     @apply text-lg;
-}
-nav .symbol {
-    width: 16px;
-    height: 16px;
-    @apply mr-2;
-    margin-top: -1px;
 }
 @screen md {
     nav li {
