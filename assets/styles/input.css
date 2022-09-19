@@ -328,6 +328,8 @@ figcaption {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+/* symbols inside components */
 blockquote .symbol {
     position: relative;
     top: 1px;
@@ -346,6 +348,11 @@ nav .symbol::after {
     position: relative; 
     top: -2px;
 }
+.section-head .symbol,
+.section-head .symbol:after {
+    width: 48px;
+    height: 48px;
+}    
 
 @screen lg {
     .symbol,
@@ -356,8 +363,14 @@ nav .symbol::after {
     blockquote .symbol {
         top: 5px;
     }
+    .section-head .symbol,
+    .section-head .symbol:after {
+        width: 64px;
+        height: 64px;
+    }
 }
 
+/* symbol image backgrounds */
 .Warmth::after {
     background-image: url('../images/symb/Warmth.svg');
 }
@@ -720,10 +733,6 @@ nav.active {
     @apply bg-black;
     @apply p-12;
 }
-.section-head .symbol-wrapper {
-    width: 48px;
-    height: 48px;
-}
 .section-head .symbol {
     width: 100%;
     height: 100%;
@@ -748,10 +757,6 @@ nav.active {
         bottom: 0;
         @apply p-16;
     }          
-    .section-head .symbol-wrapper {
-        width: 64px;
-        height: 64px;
-    }
 }
 
 

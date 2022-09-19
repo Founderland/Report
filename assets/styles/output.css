@@ -1225,6 +1225,8 @@ figcaption {
   background-size: contain;
 }
 
+/* symbols inside components */
+
 blockquote .symbol {
   position: relative;
   top: 1px;
@@ -1247,6 +1249,12 @@ nav .symbol::after {
   top: -2px;
 }
 
+.section-head .symbol,
+.section-head .symbol:after {
+  width: 48px;
+  height: 48px;
+}
+
 @media (min-width: 1024px) {
   .symbol,
     .symbol::after {
@@ -1257,7 +1265,15 @@ nav .symbol::after {
   blockquote .symbol {
     top: 5px;
   }
+
+  .section-head .symbol,
+    .section-head .symbol:after {
+    width: 64px;
+    height: 64px;
+  }
 }
+
+/* symbol image backgrounds */
 
 .Warmth::after {
   background-image: url('../images/symb/Warmth.svg');
@@ -1695,11 +1711,6 @@ nav.active {
   padding: 3rem;
 }
 
-.section-head .symbol-wrapper {
-  width: 48px;
-  height: 48px;
-}
-
 .section-head .symbol {
   width: 100%;
   height: 100%;
@@ -1727,11 +1738,6 @@ nav.active {
   .section-head .title-card {
     bottom: 0;
     padding: 4rem;
-  }
-
-  .section-head .symbol-wrapper {
-    width: 64px;
-    height: 64px;
   }
 }
 
