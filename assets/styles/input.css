@@ -520,8 +520,9 @@ nav a {
 nav a.active {
     font-weight: bold;
 }
-.nav a.active .nav-child {
+.nav-child.active {
     text-decoration: underline;
+    font-weight: normal;
 }
 .nav-parent + ul {
     display: none;
@@ -782,22 +783,22 @@ nav.active {
 /* Backgrounds - Cards & Symbols */
 #section-1 .card, 
 #section-1 .symbol,
-#section-1 nav a.active .symbol {
+#section-1 .nav-parent.active .symbol {
     @apply bg-lime;
 }
 #section-2 .card,
 #section-2 .symbol,
-#section-2 nav a.active .symbol {
+#section-2 .nav-parent.active .symbol {
     @apply bg-red;
 }
 #section-3 .card,
 #section-3 .symbol,
-#section-3 nav a.active .symbol {
+#section-3 .nav-parent.active .symbol {
     @apply bg-blue;
 }
 #section-4 .card,
 #section-4 .symbol,
-#section-4 nav a.active .symbol {
+#section-4 .nav-parent.active .symbol {
     @apply bg-pink;
 }
 
@@ -807,6 +808,6 @@ nav.active {
     @apply text-white;
 }
 #section-1 .symbol::after,
-#section-1 nav a.active .symbol::after {
+#section-1 .nav-parent.active .symbol::after {
     filter: brightness(0%);
 }
