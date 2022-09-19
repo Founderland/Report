@@ -315,7 +315,7 @@ figcaption {
 /* #Symbols */
 
 .symbol
-.symbol:after {
+.symbol::after {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -324,7 +324,7 @@ figcaption {
     background-size: contain;
 }
 .symbol.black,
-.symbol.test-black:after {
+.symbol.test-black::after {
     filter: brightness(0%); 
 }
 blockquote .symbol {
@@ -333,7 +333,7 @@ blockquote .symbol {
 
 @screen lg {
     .symbol,
-    .symbol:after {
+    .symbol::after {
         width: 32px;
         height: 32px;
     }
