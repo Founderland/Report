@@ -690,7 +690,7 @@ nav.active {
 .logo {
     grid-column: 2/4;
     grid-row: 2/4;
-    background: url('assets/images/Rise&Thrive_Logo.svg') no-repeat center center; 
+    background: url('../images/Rise&Thrive_Logo.svg') no-repeat center center; 
     background-size: contain;
     margin-top: -10px;
 }
