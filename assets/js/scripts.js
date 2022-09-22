@@ -4,14 +4,6 @@ $(document).ready(function(){
 $(".burger, .overlay").click(function() {
     $("nav, .overlay, .burger").toggleClass("active");
 });
-// $(".overlay").click(function() {
-//     $("nav").toggleClass("active");
-//     $(".overlay").toggleClass("active");
-// });
-//$(".close").click(function() {
-//     $("nav ").toggleClass("active");
-//     $(".overlay").toggleClass("active");
-// });
     
 
 // Scrollspy 
@@ -37,9 +29,31 @@ $(document).scroll(function(){
 });
 
 
+// SWIPER SLIDER
+// more info: https://swiperjs.com/
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    //direction: 'vertical',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+});
 
 
-// FDL Charts
+// Charts with charts.js -- Deprecated
 var colors =  [
     '#0063E2', // blue
     '#F6331C', // red

@@ -551,6 +551,44 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.static {
+  position: static;
+}
+
 .top-8 {
   top: 2rem;
 }
@@ -852,6 +890,7 @@ video {
 #Unit Counter
 #Title Page 
 #Section Head
+#Swiper Slider
 #Section Colors
 
 
@@ -1744,6 +1783,28 @@ nav.active {
     bottom: 0;
     padding: 4rem;
   }
+}
+
+/* #SWIPER SLIDER */
+
+.swiper {
+  width: 100%;
+}
+
+.swiper img {
+  max-width: 100%;
+}
+
+.one {
+  background: orange;
+}
+
+.two {
+  background: maroon;
+}
+
+.three {
+  background: blue;
 }
 
 /* #SECTION COLORS */

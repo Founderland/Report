@@ -23,6 +23,7 @@
 #Unit Counter
 #Title Page 
 #Section Head
+#Swiper Slider
 #Section Colors
 
 
@@ -764,6 +765,22 @@ nav.active {
 }
 
 
+/* #SWIPER SLIDER */
+.swiper {
+    width: 100%;
+  }
+  .swiper img {
+    max-width: 100%;
+  }
+  .one {
+    background: orange;  
+  }
+  .two {
+    background: maroon;
+  }
+  .three {
+    background: blue;
+  }
 
 
 
