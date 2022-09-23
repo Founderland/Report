@@ -771,6 +771,9 @@ nav.active {
 
 
 /* #SWIPER SLIDER */
+
+--swiper-theme-color: #000;
+
 .swiper {
     width: 100%;
   }
