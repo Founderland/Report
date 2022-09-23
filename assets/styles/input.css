@@ -716,7 +716,7 @@ nav.active {
     text-align: right; 
 }
 
-@screen md {
+@screen lg {
     .title-page p {
         font-size: 1.5rem;
     }

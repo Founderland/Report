@@ -1732,7 +1732,7 @@ nav.active {
   text-align: right;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .title-page p {
     font-size: 1.5rem;
   }
