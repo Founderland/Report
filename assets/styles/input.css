@@ -809,6 +809,24 @@ nav.active {
 
 /* #SECTION COLORS */
 
+/* selection colors */
+
+#section-1 {
+    @apply selection:bg-lime;
+}
+#section-2 {
+    @apply selection:bg-red;
+    @apply selection:text-white;
+}
+#section-3 {
+    @apply selection:bg-blue;
+    @apply selection:text-white;
+}
+#section-4 {
+    @apply selection:bg-pink;
+}
+
+
 /* headings */ 
 #section-1 h3 {
     @apply border-b-lime;
