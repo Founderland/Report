@@ -1795,8 +1795,6 @@ nav.active {
 
 /* #SWIPER SLIDER */
 
---swiper-theme-color: #000;
-
 .swiper {
   width: 100%;
 }
@@ -1824,7 +1822,7 @@ nav.active {
 
 @media (min-width: 768px) {
   .swiper {
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
   }
 
@@ -1834,7 +1832,7 @@ nav.active {
   }
 
   .swiper img {
-    padding: 0 2rem;
+    padding: 0 2.5rem 2rem;
   }
 }
 
