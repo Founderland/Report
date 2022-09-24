@@ -779,6 +779,7 @@ nav.active {
 }
 .swiper h3 {
     border-bottom: none;
+    text-align: center;
 }
 .swiper img {
     max-width: 100%;
@@ -792,6 +793,10 @@ nav.active {
     @apply bg-black;
 }
 @screen md {
+    .swiper {
+        width: 60%; 
+        margin: 0 auto;
+    }
     .swiper h3 {
         @apply text-4xl;
     }

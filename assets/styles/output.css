@@ -1803,6 +1803,7 @@ nav.active {
 
 .swiper h3 {
   border-bottom: none;
+  text-align: center;
 }
 
 .swiper img {
@@ -1822,6 +1823,11 @@ nav.active {
 }
 
 @media (min-width: 768px) {
+  .swiper {
+    width: 60%;
+    margin: 0 auto;
+  }
+
   .swiper h3 {
     font-size: 2.25rem;
     line-height: 2.5rem;
