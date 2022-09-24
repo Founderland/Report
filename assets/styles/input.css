@@ -794,8 +794,8 @@ nav.active {
         width: 75%; 
         margin: 0 auto;
     }
-    .swiper h3 {
-        @apply text-4xl;
+    .swiper h3 br {
+        display: none;
     }
     .swiper img {
         padding: 0 2.5rem 2rem;

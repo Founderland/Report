@@ -1826,9 +1826,8 @@ nav.active {
     margin: 0 auto;
   }
 
-  .swiper h3 {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .swiper h3 br {
+    display: none;
   }
 
   .swiper img {
