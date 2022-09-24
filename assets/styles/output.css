@@ -1771,7 +1771,7 @@ nav.active {
 @media (min-width: 768px) {
   .section-head {
     position: relative;
-    height: calc(300px + 400px + 48px - 166px);
+    height: calc(300px + 400px + 48px - 96px);
     /* img + title + padding - overlap*/
   }
 
