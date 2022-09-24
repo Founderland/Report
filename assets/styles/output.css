@@ -1807,6 +1807,29 @@ nav.active {
 
 .swiper img {
   max-width: 100%;
+  width: 100%;
+}
+
+.swiper-button-next,  
+.swiper-button-prev {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.swiper-pagination-bullet-active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px) {
+  .swiper h3 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .swiper img {
+    padding: 0 2rem;
+  }
 }
 
 /* #SECTION COLORS */
