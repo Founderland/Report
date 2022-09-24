@@ -776,19 +776,13 @@ nav.active {
 
 .swiper {
     width: 100%;
-  }
-  .swiper img {
+}
+.swiper h3 {
+    border-bottom: none;
+}
+.swiper img {
     max-width: 100%;
-  }
-  .one {
-    background: orange;  
-  }
-  .two {
-    background: maroon;
-  }
-  .three {
-    background: blue;
-  }
+}
 
 
 
