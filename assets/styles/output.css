@@ -861,7 +861,7 @@ video {
 
 .text-blue-400 {
   --tw-text-opacity: 1;
-  color: rgb(217 232 251 / var(--tw-text-opacity));
+  color: rgb(56 133 232 / var(--tw-text-opacity));
 }
 
 .transition-all {

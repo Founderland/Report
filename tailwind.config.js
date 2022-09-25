@@ -16,10 +16,10 @@ module.exports = {
         // brand
         'blue': {
           DEFAULT: '#0063E2',
-          100: '#3885E8',
-          200: '#80B1F1',
-          300: '#B3D0F6',
-          400: '#D9E8FB'
+          400: '#3885E8',
+          300: '#80B1F1',
+          200: '#B3D0F6',
+          100: '#D9E8FB'
         }, 
         'red': {DEFAULT: '#F6331C'}, 
         'pink': {DEFAULT: '#EE93B5'}, 
