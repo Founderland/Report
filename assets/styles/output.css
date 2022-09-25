@@ -664,6 +664,10 @@ video {
   margin-top: 0px;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -862,6 +866,11 @@ video {
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(56 133 232 / var(--tw-text-opacity));
+}
+
+.text-gray {
+  --tw-text-opacity: 1;
+  color: rgb(164 164 164 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -2136,8 +2145,8 @@ nav.active {
     grid-column: span 7 / span 7;
   }
 
-  .md\:col-span-6 {
-    grid-column: span 6 / span 6;
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
   }
 
   .md\:col-span-8 {
@@ -2146,10 +2155,6 @@ nav.active {
 
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
-  }
-
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
   }
 
   .md\:col-start-2 {
