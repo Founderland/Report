@@ -14,7 +14,13 @@ module.exports = {
       // colors: https://tailwindcss.com/docs/customizing-colors
       colors: {
         // brand
-        'blue': {DEFAULT: '#0063E2'}, 
+        'blue': {
+          DEFAULT: '#0063E2',
+          100: '#3885E8',
+          200: '#80B1F1',
+          300: '#B3D0F6',
+          400: '#D9E8FB'
+        }, 
         'red': {DEFAULT: '#F6331C'}, 
         'pink': {DEFAULT: '#EE93B5'}, 
         'lime': {DEFAULT: '#D7FB03'}, 

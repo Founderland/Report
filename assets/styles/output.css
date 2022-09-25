@@ -746,6 +746,10 @@ video {
   white-space: nowrap;
 }
 
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
 .bg-red {
   --tw-bg-opacity: 1;
   background-color: rgb(246 51 28 / var(--tw-bg-opacity));
