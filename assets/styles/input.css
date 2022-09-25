@@ -785,6 +785,7 @@ nav.active {
 .swiper-button-next, 
 .swiper-button-prev {
     @apply text-black;
+    top: 57%;
 }
 .swiper-pagination-bullet-active {
     @apply bg-black;

@@ -796,16 +796,8 @@ video {
   padding-left: 4rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
-}
-
 .pt-12 {
   padding-top: 3rem;
-}
-
-.\!text-left {
-  text-align: left !important;
 }
 
 .text-center {
@@ -1821,6 +1813,7 @@ nav.active {
 .swiper-button-prev {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  top: 57%;
 }
 
 .swiper-pagination-bullet-active {
