@@ -1617,6 +1617,10 @@ nav.active {
 
 /* #Columns */
 
+.mixed-col img {
+  max-width: 100%;
+}
+
 @media (min-width: 768px) {
   /* text only columns */
 
@@ -2178,14 +2182,6 @@ nav.active {
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-span-7 {
-    grid-column: span 7 / span 7;
-  }
-
-  .lg\:col-span-5 {
-    grid-column: span 5 / span 5;
-  }
-
   .lg\:block {
     display: block;
   }

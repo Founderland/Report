@@ -611,6 +611,9 @@ nav.active {
 
 
 /* #Columns */
+.mixed-col img {
+    max-width: 100%;
+}
 @screen md {
     /* text only columns */
     .text-col {
@@ -631,7 +634,6 @@ nav.active {
     .mixed-col > * {
         margin-top: 0;
     }
-
 }
 
 
