@@ -668,6 +668,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .inline-block {
   display: inline-block;
 }
