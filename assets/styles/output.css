@@ -660,6 +660,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-0 {
+  margin-top: 0px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -853,6 +857,11 @@ video {
 .text-blue {
   --tw-text-opacity: 1;
   color: rgb(0 99 226 / var(--tw-text-opacity));
+}
+
+.text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(217 232 251 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -2169,6 +2178,14 @@ nav.active {
 }
 
 @media (min-width: 1024px) {
+  .lg\:col-span-7 {
+    grid-column: span 7 / span 7;
+  }
+
+  .lg\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .lg\:block {
     display: block;
   }
