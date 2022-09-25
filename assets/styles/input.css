@@ -785,7 +785,12 @@ nav.active {
 .swiper-button-next, 
 .swiper-button-prev {
     @apply text-black;
-    top: 57%;
+    top: auto;
+    bottom: 0;
+}
+.swiper-button-next::after, 
+.swiper-button-prev::after {
+    font-size: 24px;
 }
 .swiper-pagination-bullet-active {
     @apply bg-black;
@@ -800,6 +805,14 @@ nav.active {
     }
     .swiper img {
         padding: 0 2.5rem 2rem;
+    }
+    .swiper-button-next, 
+    .swiper-button-prev {
+        top: 57%;        
+    }
+    .swiper-button-next::after, 
+    .swiper-button-prev::after {
+        font-size: 44px;
     }
 }
 
