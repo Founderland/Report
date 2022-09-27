@@ -20,7 +20,7 @@ npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --wat
         - margins: none
         - format: original 
         - print headers and footers: unchecked
-        - print backgrounds: checked (tho the css should force this regardless)
+        - print backgrounds: checked
 
 
 

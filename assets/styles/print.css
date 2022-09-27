@@ -1,14 +1,29 @@
-@media print {
+@media print {    
 
-    // TODO
-    // define variables for a page width and height so we can fine tune it with victor's computer
     
 * {
     -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;  
+    print-color-adjust: exact;  
 }
+
+/* page breaks */
 section {
     page-break-before: always;
 }
+.section-head,
+.title-page {
+    page-break-after: always;
+}
+
+/* title page */
+.title-page {
+    height: 100vh;
+}
+
+
+/* hide nav (eventually consider bringing content back for its own intro page...) */
+/* make main content span full width of grid  */
+
+
 
 }
