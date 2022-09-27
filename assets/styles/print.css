@@ -59,7 +59,7 @@ body .section-head img,
 body .section-head .title-card {
     margin: 0;
 }
-body .title-card {
+body .section-head .title-card {
     background: transparent; 
     padding: 0;
     width: auto;
