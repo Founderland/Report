@@ -6,9 +6,29 @@
     print-color-adjust: exact;  
 }
 
-/* page breaks */
+/* 
+#PAGE STRUCTURE */
+
+/* hide nav (eventually consider bringing content back for its own intro page...) */
+nav,
+.burger, 
+.overlay {
+    display: none;
+}
+
+/* make main content span full width of grid  */
+main {
+    grid-column-start: 1;
+    grid-column: span 4 / span 4;
+}
+
+
+/* 
+#FULL PAGE DESIGNS */ 
+
+/* Page breaks */
 section {
-    page-break-before: always;
+    margin-bottom: 0;
 }
 .section-head,
 .title-page {
@@ -19,10 +39,6 @@ section {
 .title-page {
     height: 100vh;
 }
-
-
-/* hide nav (eventually consider bringing content back for its own intro page...) */
-/* make main content span full width of grid  */
 
 
 
