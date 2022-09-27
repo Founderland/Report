@@ -11,7 +11,8 @@ Local:
 > npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --watch
 
 Remote: 
-- Github builds the jekyll website remotely using its "Actions" workflows (typically takes around a minute)
+- Github builds the jekyll website remotely using its Actions workflows (typically takes around a minute)
+    - 'pages-build-deployment' is the relevant action
 - you can watch build process here: https://github.com/Founderland/Report/actions
 
 ## Exporting PDFs
