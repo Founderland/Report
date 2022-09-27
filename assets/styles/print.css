@@ -13,7 +13,7 @@
 body nav,
 body .burger, 
 body .overlay {
-    display: none;
+    display: none !important;
 }
 
 /* make main content span full width of grid  */
