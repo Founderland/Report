@@ -32,7 +32,7 @@ section {
 }
 .section-head,
 .title-page {
-    page-break-after: always;
+    break-after: page;
 }
 
 /* title page */
