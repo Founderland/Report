@@ -12,9 +12,19 @@ npx tailwindcss -i ./assets/styles/input.css -o ./assets/styles/output.css --wat
 
 ## Exporting PDFs
 
-- export: print to pdf via MacOS Safari
-    - which page (won't be index)
-- editing content 
+- export: print to pdf
+    - via MacOS Firefox (tho Firefox export should also work on windows)
+    - settings
+        - paper size: A4
+        - scale: fit to page width 
+        - margins: none
+        - format: original 
+        - print headers and footers: unchecked
+        - print backgrounds: checked (tho the css should force this regardless)
+
+
+
+## editing content 
     - where to find everything ...
         - includes 
 
