@@ -1,4 +1,7 @@
 @media print {
+
+    // TODO
+    // define variables for a page width and height so we can fine tune it with victor's computer
     
 * {
     -webkit-print-color-adjust: exact;
