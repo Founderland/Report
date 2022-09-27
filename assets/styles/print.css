@@ -26,20 +26,47 @@ main {
 /* 
 #FULL PAGE DESIGNS */ 
 
-/* Page breaks */
+/* Reset */
 section {
     margin-bottom: 0 !important;
 }
-.section-head,
+/* .section-head,
 .title-page {
     break-after: page;
-}
+} */
 
-/* title page */
+/* Title Page */
 .title-page {
     height: 100vh !important;
 }
 
+/* Section headers */
+.section-head {
+    position: relative; 
+    width: auto; 
+    height: 97vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+}
+.section-head img, 
+.section-head .title-card {
+    margin: 0;
+}
+.title-card {
+    background: transparent; 
+    padding: 0;
+    width: auto;
+}
+.section-head h1 {
+    color: black;
+    padding-top: 0;
+    text-align: center; 
+    /* font-size: 3rem; */
+}
 
 
 }
