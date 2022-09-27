@@ -1,5 +1,9 @@
 @media print {    
 
+@page {
+    margin-top: 5cm;
+    margin-bottom: 5cm;
+}
     
 * {
     -webkit-print-color-adjust: exact;
@@ -40,7 +44,7 @@ body .title-page {
     height: 100vh;
 }
 body .title-page h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 /* Section headers */
@@ -58,6 +62,11 @@ body .section-head {
 body .section-head img, 
 body .section-head .title-card {
     margin: 0;
+}
+body .section-head img {
+    position: relative;
+    top: auto; 
+    right: auto;
 }
 body .section-head .title-card {
     background: transparent; 
