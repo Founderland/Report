@@ -39,9 +39,12 @@ section {
 .title-page {
     height: 100vh !important;
 }
+.title-page {
+    font-size: 4rem;
+}
 
 /* Section headers */
-.section-head {
+body .section-head {
     position: relative; 
     width: auto; 
     height: 97vh;
@@ -52,16 +55,16 @@ section {
     align-items: center;
     row-gap: 3rem;
 }
-.section-head img, 
-.section-head .title-card {
+body .section-head img, 
+body .section-head .title-card {
     margin: 0;
 }
-.title-card {
+body .title-card {
     background: transparent; 
     padding: 0;
     width: auto;
 }
-.section-head h1 {
+body .section-head h1 {
     color: black;
     padding-top: 0;
     text-align: center; 
