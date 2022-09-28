@@ -24,7 +24,7 @@ Remote:
     - settings
         - paper size: A4
         - scale: 100 
-        - margins: none
+        - margins: default
         - format: original 
         - print headers and footers: unchecked
         - print backgrounds: checked

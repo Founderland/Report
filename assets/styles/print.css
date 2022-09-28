@@ -1,7 +1,10 @@
 @page {
-    margin-top: 5cm;
-    margin-bottom: 5cm;
+    margin: 5cm;
 }
+@page :first {
+    margin-top: 0;
+}
+
 
 @media print {
 
