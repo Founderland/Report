@@ -1,8 +1,11 @@
 @page {
-    margin: 1cm 2cm;
+    margin: 1cm;
+}
+@page:first {
+    margin: 0 !important;
 }
 @page :first {
-    margin: 0;
+    margin: 0 !important;
 }
 
 
