@@ -1291,7 +1291,7 @@ figcaption {
 
 .symbol,
 .symbol::after {
-  display: inline-block;
+  display: inline-flex;
   width: 20px;
   height: 20px;
 }
@@ -1324,7 +1324,6 @@ nav .symbol::after {
 
 nav .symbol::after {
   position: relative;
-  top: -2px;
 }
 
 .section-head .symbol,
