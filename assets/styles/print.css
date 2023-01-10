@@ -49,7 +49,7 @@
     /* avoid page breaks */
     .print-break-avoid,
     img,
-    .card {s
+    .card {
         break-inside: avoid;
     }
 

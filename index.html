@@ -3,23 +3,26 @@ layout: default
 ---
 
 <header id="title-page" class="title-page">
-    <div class="color_block-1"></div>
-    <div class="color_block-2"></div>
-    <div class="color_block-3 p-16">
-      <h2>An Intersectional Exploration <br class="hidden lg:block">of the Experiences of <br class="hidden lg:block">Women of Color Founders</h2>
-      <p>Featuring Insights from Berlin-Based Founders</p>
-    </div>
-    <div class="color_block-4"></div>
+  <div class="color_block-1">
     <div class="logo"></div>
+  </div>
+  <div class="color_block-2 symbol Calm"></div>
+  <div class="color_block-3 symbol Forward"></div>
+  <div class="color_block-4 flex flex-col justify-center items-center">
+    <h1 class="w-1/2 text-left">An Intersectional Exploration of the Experiences of <br class="hidden lg:block">Women of
+      Color Founders</h1>
+    <p class="w-1/2">Featuring Insights from Berlin-Based Founders</p>
+  </div>
 </header>
+<!-- navigation -->
+{% include nav.html %}
 
-<div class="fdl-wrapper p-6 mx-auto my-8 md:grid md:grid-cols-4 md:gap-8 md:container">
-  
-  <!-- navigation -->
-  {% include nav.html %}
-
+<div class="fdl-wrapper mx-auto my-8 md:grid md:grid-cols-4 md:gap-8 md:container">
   <!-- main content -->
-  <main class="fdl-content md:col-start-2 md:col-span-3">
+  <main class="w-full md:col-span-4">
+    <section id="section-0">
+      {% include foreword.html %}
+    </section>
     <section id="section-1">
       {% include section-1.html %}
     </section>
@@ -39,4 +42,15 @@ layout: default
       {% include section-6.html %}
     </section>
   </main>
+</div>
+
+<div
+  class="w-52 absolute bottom-0 left-0 scrollarrow cursor-pointer hover:bg-blue hover:text-white transition-all ease-in-out duration-200">
+  <p class="m-0">Download the PDF</p>
+</div>
+<div class="w-24 absolute bottom-0 right-0 scrollarrow">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+    class="w-6 h-6 text-black">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+  </svg>
 </div>
