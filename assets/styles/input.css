@@ -898,3 +898,10 @@ nav .logo {
 .nav-section-4.nav-parent.active .symbol::after {
   filter: brightness(0%);
 }
+
+.citations {
+  @apply bg-lime px-8 py-4;
+}
+.citations h3 {
+  @apply border-0;
+}
