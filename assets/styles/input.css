@@ -208,12 +208,18 @@ h3 {
 
 /* section spacing */
 section {
-  @apply mb-16;
+  @apply px-8;
+}
+
+@screen md {
+  section {
+    @apply px-12;
+  }
 }
 
 @screen lg {
   section {
-    @apply mb-24;
+    @apply px-20;
   }
 }
 
@@ -318,13 +324,14 @@ figcaption {
 /*
 #Symbols */
 .symbol {
-  @apply text-white;
+  @apply bg-black;
 }
 .symbol,
 .symbol::after {
   display: inline-flex;
   width: 20px;
   height: 20px;
+  @apply ob;
 }
 .symbol::after {
   content: '';
@@ -738,15 +745,16 @@ nav .logo {
 .section-head {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   @apply mt-20 bg-black;
 }
 .section-head .img {
   grid-column: 4/6;
   grid-row: 2/4;
-  @apply bg-blue max-h-64;
+  max-width: 512px;
 }
+
 .section-head .title-card {
   display: flex;
   justify-items: center;
@@ -867,21 +875,25 @@ nav .logo {
 
 /* Backgrounds - Cards & Symbols */
 #section-1 .card,
+#section-1 .citations,
 #section-1 .section-head .symbol,
 .nav-section-1.nav-parent.active .symbol {
   @apply bg-pink;
 }
 #section-2 .card,
+#section-2 .citations,
 #section-2 .section-head .symbol,
 .nav-section-2.nav-parent.active .symbol {
   @apply bg-red;
 }
 #section-3 .card,
+#section-3 .citations,
 #section-3 .section-head .symbol,
 .nav-section-3.nav-parent.active .symbol {
   @apply bg-blue;
 }
 #section-4 .card,
+#section-4 .citations,
 #section-4 .section-head .symbol,
 .nav-section-4.nav-parent.active .symbol {
   @apply bg-lime;
@@ -892,15 +904,13 @@ nav .logo {
 #section-3 .card > * {
   @apply text-white;
 }
-#section-1 .symbol::after,
-.nav-section-1.nav-parent.active .symbol::after,
 #section-4 .symbol::after,
 .nav-section-4.nav-parent.active .symbol::after {
   filter: brightness(0%);
 }
 
 .citations {
-  @apply bg-lime px-8 py-4;
+  @apply px-8 py-4;
 }
 .citations h3 {
   @apply border-0;
