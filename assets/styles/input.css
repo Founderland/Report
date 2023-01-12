@@ -326,20 +326,13 @@ figcaption {
 .symbol {
   @apply bg-black;
 }
-.symbol,
 .symbol::after {
   display: inline-flex;
-  width: 20px;
-  height: 20px;
-  @apply ob;
-}
-.symbol::after {
   content: '';
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 /* symbols inside components */
 blockquote .symbol {
   position: relative;
@@ -660,22 +653,20 @@ nav.active {
   height: 100vh;
   @apply flex flex-col;
 }
+.title-page .symbol,
+.title-page .symbol:after {
+  @apply h-20 w-20;
+}
 .color_block-1 {
-  @apply bg-blue flex-grow max-h-36 flex justify-start p-4;
+  @apply bg-blue w-full p-4;
 }
 .color_block-2 {
-  @apply bg-blue;
-  grid-column: 1/5;
-  grid-row: 2/2;
+  @apply bg-blue flex w-full h-20;
 }
 .color_block-3 {
-  @apply bg-pink;
-  grid-column: 1/5;
-  grid-row: 3/3;
+  @apply bg-pink flex w-full h-20;
 }
 .color_block-4 {
-  grid-column: 1/5;
-  grid-row: 5/6;
   padding: 0px 0px 20px 0px;
 }
 .logo {
@@ -702,15 +693,6 @@ nav .logo {
 
 /* titles */
 .title-page .color_block-1 {
-  height: 130px;
-  @apply w-full;
-}
-.title-page .color_block-2 {
-  display: flex;
-  @apply w-full;
-}
-.title-page .color_block-3 {
-  display: flex;
   @apply w-full;
 }
 .title-page h2 {
@@ -733,19 +715,12 @@ nav .logo {
   }
 }
 
-#title-page .symbol .symbol::after {
-  content: '';
-  background-position: center center;
-  background-repeat: repeat;
-  background-size: auto;
-}
-
 /*
 #SECTION HEAD */
 .section-head {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   @apply mt-20 bg-black;
 }
@@ -877,6 +852,7 @@ nav .logo {
 #section-1 .card,
 #section-1 .citations,
 #section-1 .section-head .symbol,
+.color_block-3 .symbol,
 .nav-section-1.nav-parent.active .symbol {
   @apply bg-pink;
 }
@@ -889,6 +865,7 @@ nav .logo {
 #section-3 .card,
 #section-3 .citations,
 #section-3 .section-head .symbol,
+.color_block-2 .symbol,
 .nav-section-3.nav-parent.active .symbol {
   @apply bg-blue;
 }
@@ -914,4 +891,30 @@ nav .logo {
 }
 .citations h3 {
   @apply border-0;
+}
+
+@screen md {
+  .color_block-2 {
+    @apply h-36;
+  }
+  .color_block-3 {
+    @apply h-36;
+  }
+  .title-page .symbol,
+  .title-page .symbol:after {
+    @apply h-36 w-36;
+  }
+}
+
+@screen lg {
+  .color_block-2 {
+    @apply h-44;
+  }
+  .color_block-3 {
+    @apply h-44;
+  }
+  .title-page .symbol,
+  .title-page .symbol:after {
+    @apply h-44 w-44;
+  }
 }
