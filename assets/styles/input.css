@@ -37,6 +37,10 @@
  |____/ \__,_|___/\___|                                                                            
 */
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*
 #TYPEFACES  */
 @font-face {
@@ -104,8 +108,8 @@ button,
 }
 h3 {
   @apply text-xl;
-  border-bottom: 4px solid black;
-  padding-bottom: 8px;
+  border-left: 4px solid black;
+  padding-left: 8px;
 }
 .lead {
   @apply text-lg;
@@ -545,10 +549,9 @@ nav a.active {
   top: 0;
   right: 0;
   z-index: 1500;
-  width: 48px;
-  height: 48px;
   background: url('../images/Nav-Hamburger.svg') no-repeat center center;
   background-size: contain;
+  @apply transition-all duration-500;
 }
 .burger.active {
   background-image: url('../images/Nav-Close.svg');
@@ -658,24 +661,25 @@ nav.active {
   @apply h-20 w-20;
 }
 .color_block-1 {
-  @apply bg-blue w-full p-4;
+  @apply bg-blue fixed z-50 w-full transition-all duration-500;
 }
 .color_block-2 {
-  @apply bg-blue flex w-full h-20;
+  @apply bg-blue mt-32 flex w-full h-20;
 }
 .color_block-3 {
   @apply bg-pink flex w-full h-20;
 }
 .color_block-4 {
+  @apply bg-white flex-grow;
   padding: 0px 0px 20px 0px;
 }
 .logo {
-  @apply w-28 h-28;
+  @apply origin-top w-24 h-24 m-3 transition-all duration-500;
   background: url('../images/Rise&Thrive_Logo.svg') no-repeat center center;
   background-size: contain;
 }
 nav .logo {
-  @apply w-24 h-24;
+  @apply w-20 h-20 m-0;
 }
 
 .scrollarrow {
@@ -836,16 +840,16 @@ nav .logo {
 
 /* headings */
 #section-1 h3 {
-  @apply border-b-pink;
+  @apply border-l-pink;
 }
 #section-2 h3 {
-  @apply border-b-red;
+  @apply border-l-red;
 }
 #section-3 h3 {
-  @apply border-b-blue;
+  @apply border-l-blue;
 }
 #section-4 h3 {
-  @apply border-b-lime;
+  @apply border-l-lime;
 }
 
 /* Backgrounds - Cards & Symbols */
@@ -895,26 +899,26 @@ nav .logo {
 
 @screen md {
   .color_block-2 {
-    @apply h-36;
+    @apply h-28;
   }
   .color_block-3 {
-    @apply h-36;
+    @apply h-28;
   }
   .title-page .symbol,
   .title-page .symbol:after {
-    @apply h-36 w-36;
+    @apply h-28 w-28;
   }
 }
 
 @screen lg {
   .color_block-2 {
-    @apply h-44;
+    @apply h-32;
   }
   .color_block-3 {
-    @apply h-44;
+    @apply h-32;
   }
   .title-page .symbol,
   .title-page .symbol:after {
-    @apply h-44 w-44;
+    @apply h-32 w-32;
   }
 }

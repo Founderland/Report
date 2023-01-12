@@ -2,9 +2,10 @@
 layout: default
 ---
 
-<header id="title-page" class="title-page">
-  <div class="color_block-1">
-    <div class="logo"></div>
+<header id="title-page" class="title-page bg-blue">
+  <div class="color_block-1" :class="{'h-32': !scrolledFromTop, 'h-24': scrolledFromTop}">
+    <div class="logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+    </div>
   </div>
   <div class="color_block-2">
     <div class="symbol Calm"></div>
@@ -19,8 +20,20 @@ layout: default
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
   </div>
   <div class="color_block-3">
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>

@@ -671,6 +671,10 @@ video {
   margin-top: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .mt-0 {
   margin-top: 0px;
 }
@@ -703,8 +707,20 @@ video {
   display: none;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
 .h-6 {
   height: 1.5rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .h-16 {
@@ -735,12 +751,28 @@ video {
   width: 66.666667%;
 }
 
+.w-12 {
+  width: 3rem;
+}
+
 .w-16 {
   width: 4rem;
 }
 
 .grow {
   flex-grow: 1;
+}
+
+.scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-75 {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -801,14 +833,14 @@ video {
   border-bottom-width: 0px;
 }
 
-.bg-red {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 51 28 / var(--tw-bg-opacity));
-}
-
 .bg-blue {
   --tw-bg-opacity: 1;
   background-color: rgb(0 99 226 / var(--tw-bg-opacity));
+}
+
+.bg-red {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 51 28 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -931,9 +963,9 @@ video {
   color: rgb(246 51 28 / var(--tw-text-opacity));
 }
 
-.text-blue-400 {
+.text-red-400 {
   --tw-text-opacity: 1;
-  color: rgb(56 133 232 / var(--tw-text-opacity));
+  color: rgb(248 113 113 / var(--tw-text-opacity));
 }
 
 .text-gray-50 {
@@ -1005,6 +1037,10 @@ video {
  | |_) | (_| \__ \  __/
  |____/ \__,_|___/\___|                                                                            
 */
+
+html {
+  scroll-behavior: smooth;
+}
 
 /*
 #TYPEFACES  */
@@ -1092,8 +1128,8 @@ button,
 h3 {
   font-size: 1.25rem;
   line-height: 1.75rem;
-  border-bottom: 4px solid black;
-  padding-bottom: 8px;
+  border-left: 4px solid black;
+  padding-left: 8px;
 }
 
 .lead {
@@ -1653,10 +1689,11 @@ nav a.active {
   top: 0;
   right: 0;
   z-index: 1500;
-  width: 48px;
-  height: 48px;
   background: url('../images/Nav-Hamburger.svg') no-repeat center center;
   background-size: contain;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 .burger.active {
@@ -1793,13 +1830,18 @@ nav.active {
 }
 
 .color_block-1 {
+  position: fixed;
+  z-index: 50;
   width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(0 99 226 / var(--tw-bg-opacity));
-  padding: 1rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
 }
 
 .color_block-2 {
+  margin-top: 8rem;
   display: flex;
   height: 5rem;
   width: 100%;
@@ -1816,19 +1858,28 @@ nav.active {
 }
 
 .color_block-4 {
+  flex-grow: 1;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 0px 0px 20px 0px;
 }
 
 .logo {
-  height: 7rem;
-  width: 7rem;
+  margin: 0.75rem;
+  height: 6rem;
+  width: 6rem;
+  transform-origin: top;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
   background: url('../images/Rise&Thrive_Logo.svg') no-repeat center center;
   background-size: contain;
 }
 
 nav .logo {
-  height: 6rem;
-  width: 6rem;
+  margin: 0px;
+  height: 5rem;
+  width: 5rem;
 }
 
 .scrollarrow {
@@ -2136,22 +2187,22 @@ nav .logo {
 
 #section-1 h3 {
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(238 147 181 / var(--tw-border-opacity));
+  border-left-color: rgb(238 147 181 / var(--tw-border-opacity));
 }
 
 #section-2 h3 {
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(246 51 28 / var(--tw-border-opacity));
+  border-left-color: rgb(246 51 28 / var(--tw-border-opacity));
 }
 
 #section-3 h3 {
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(0 99 226 / var(--tw-border-opacity));
+  border-left-color: rgb(0 99 226 / var(--tw-border-opacity));
 }
 
 #section-4 h3 {
   --tw-border-opacity: 1;
-  border-bottom-color: rgb(215 251 3 / var(--tw-border-opacity));
+  border-left-color: rgb(215 251 3 / var(--tw-border-opacity));
 }
 
 /* Backgrounds - Cards & Symbols */
@@ -2216,33 +2267,33 @@ nav .logo {
 
 @media (min-width: 768px) {
   .color_block-2 {
-    height: 9rem;
+    height: 7rem;
   }
 
   .color_block-3 {
-    height: 9rem;
+    height: 7rem;
   }
 
   .title-page .symbol, 
   .title-page .symbol:after {
-    height: 9rem;
-    width: 9rem;
+    height: 7rem;
+    width: 7rem;
   }
 }
 
 @media (min-width: 1024px) {
   .color_block-2 {
-    height: 11rem;
+    height: 8rem;
   }
 
   .color_block-3 {
-    height: 11rem;
+    height: 8rem;
   }
 
   .title-page .symbol, 
   .title-page .symbol:after {
-    height: 11rem;
-    width: 11rem;
+    height: 8rem;
+    width: 8rem;
   }
 }
 
@@ -2299,6 +2350,14 @@ nav .logo {
 
   .md\:col-span-8 {
     grid-column: span 8 / span 8;
+  }
+
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .md\:col-span-9 {
+    grid-column: span 9 / span 9;
   }
 
   .md\:mb-8 {
