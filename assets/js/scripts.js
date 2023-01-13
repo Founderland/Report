@@ -9,7 +9,7 @@ $(document).ready(function () {
   //    children are available)
   //    ex. "nav a.nav-section-4"
   $(
-    '.burger, .overlay, nav li li a, nav a.nav-section-4, nav a.nav-section-5'
+    '.burger, .overlay, nav li li a, nav a.nav-section-1, nav a.nav-section-2, nav a.nav-section-3, nav a.nav-section-4, nav a.nav-section-5'
   ).click(function () {
     $('nav, .overlay, .burger').toggleClass('active')
   })
