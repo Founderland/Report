@@ -211,18 +211,18 @@ h3 {
 }
 
 /* section spacing */
-section {
+.section-content {
   @apply px-8;
 }
 
 @screen md {
-  section {
+  .section-content {
     @apply px-12;
   }
 }
 
 @screen lg {
-  section {
+  .section-content {
     @apply px-20;
   }
 }
@@ -260,8 +260,7 @@ html.edit-on span.edit {
 #Blockquotes */
 
 figure {
-  @apply my-12;
-  @apply pr-6;
+  @apply my-12 pb-4 pr-6;
 }
 blockquote {
   @apply pl-12 pt-16;
@@ -484,6 +483,9 @@ nav .symbol::after {
 }
 .Visibility::after {
   background-image: url('../images/symb/Visibility.svg');
+}
+.FDL::after {
+  background-image: url('../images/logos/small_logo.svg');
 }
 
 /*
@@ -928,7 +930,7 @@ nav .logo {
     @apply h-20;
   }
   .title-page .symbol,
-  .title-page .symbol:after {
+  .title-page .symbol::after {
     @apply h-20 w-20;
   }
 }
@@ -941,7 +943,31 @@ nav .logo {
     @apply h-28;
   }
   .title-page .symbol,
-  .title-page .symbol:after {
+  .title-page .symbol::after {
     @apply h-28 w-28;
   }
+}
+
+.headshots .symbol,
+.headshots .symbol::after {
+  @apply h-20 w-20;
+}
+
+.symred,
+.symred::after {
+  @apply bg-red;
+}
+.symblue,
+.symblue::after {
+  @apply bg-blue;
+}
+.symlime {
+  @apply bg-lime;
+}
+.symlime::after {
+  @apply brightness-0;
+}
+.sympink,
+.sympink::after {
+  @apply bg-pink;
 }
