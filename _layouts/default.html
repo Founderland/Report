@@ -10,7 +10,7 @@
   <meta name="description"
     content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
-
+  <!-- Alpine Plugins -->
   <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
   <!--Alpine Js framework-->
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -28,9 +28,10 @@
   <link rel="stylesheet" href="assets/styles/print.css" media="print">
 </head>
 
-<body x-data="{navOpen: false, scrolledFromTop: false}"
+<body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true}"
   x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
-  @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false">
+  @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+  x-on:resize.window="fullScreen = (window.innerHeight < 800) ? false : true">
 
   <!-- see index.html -->
   {{ content }}

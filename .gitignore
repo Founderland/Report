@@ -1,5 +1,5 @@
 node_modules
 .jekyll-cache
-_site/*
+_site
 .vscode
-assets/.DS_Store
+*.DS_Store

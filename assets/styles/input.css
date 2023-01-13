@@ -655,7 +655,7 @@ nav.active {
   @apply h-16 w-16;
 }
 .color_block-1 {
-  @apply bg-blue fixed z-50 w-full transition-all duration-500;
+  @apply fixed z-50 w-full transition-all duration-500;
 }
 .color_block-2 {
   @apply bg-blue mt-32 flex w-full h-16;
@@ -816,7 +816,9 @@ nav .logo {
 #SECTION COLORS */
 
 /* selection colors */
-
+#section-0 {
+  @apply selection:bg-red selection:text-white;
+}
 #section-1 {
   @apply selection:bg-pink selection:text-white;
 }
@@ -830,6 +832,10 @@ nav .logo {
 }
 #section-4 {
   @apply selection:bg-lime;
+}
+#section-5,
+#section-6 {
+  @apply selection:bg-black selection:text-white;
 }
 
 /* headings */
