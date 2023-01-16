@@ -15,6 +15,7 @@ exclude:
   - tailwind.config.js
   - styleguide.html
   - assets/images/unused
+  - assets/styles/input.css
 # Plugin settings
 #plugins:
 #  - jekyll-feed
