@@ -4,35 +4,43 @@
 -->
 
 <div class="section-head">
-    <div class="symbol1 symbol Forward"></div>
-    <div class="symbol2 symbol Calm"></div>
-    <div class="symbol3 symbol Value"></div>
-    <div class="symbol4 symbol No"></div>
-    <div class="symbol5 symbol Moving"></div>
-    <div class="flex justify-center items-center img">
-        <img class="object-fill" src="assets/images/section1.webp"
-            alt="Women of Color working on a laptop looking at the camera smiling">
+    <div class="hidden md:block">
+        <div class="symbol1 symbol Forward"></div>
+        <div class="symbol2 symbol Calm"></div>
+        <div class="symbol3 symbol Value"></div>
     </div>
-    <div class="title-card">
+
+    <div class="title-card" x-intersect:enter="content= '01. Our Lens'">
         <h1 class="w-full mb-0 uppercase">01.<br>Our<br>Lens</h1>
     </div>
+    <div class="flex flex-col justify-center items-center img">
+        <div class="flex">
+            <div class="symbol4 symbol No "></div>
+            <div class="symbol5 symbol Moving"></div>
+        </div>
+        <div class="flex flex-grow">
+            <img class="w-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover" src="assets/images/section1.webp"
+                alt="Women of Color working on a laptop looking at the camera smiling">
+        </div>
+    </div>
 </div>
-<div class="section-content">
-    <div id="1-1" x-intersect="topColor='pink'">
-        <figure class="relative bg-pink text-white m-0">
-            <span class="quote text-white">"</span>
-            <blockquote cite="">
-                <p>If you don't have a lens that's been trained to look <span class="symbol Visibility bg-blue"></span>
-                    at
-                    how
-                    various forms of discrimination come together, you're unlikely to develop a set of policies that
-                    will be as inclusive <span class="symbol Inclusive bg-blue text-white"></span> as they need to be.
-                </p>
-            </blockquote>
-            <figcaption class="text-black">— Prof. Kimberlé Crenshaw,<br>American Civil Rights Advocate and a Leading
-                Scholar of Critical
-                Race Theory</figcaption>
-        </figure>
+
+<div id="1-1" x-intersect="topColor='pink'">
+    <figure class="relative bg-pink text-white m-0 px-16">
+        <span class="quote left-16 text-white">"</span>
+        <blockquote cite="">
+            <p>If you don't have a lens that's been trained to look <span class="symbol Visibility bg-blue"></span>
+                at
+                how
+                various forms of discrimination come together, you're unlikely to develop a set of policies that
+                will be as inclusive <span class="symbol Inclusive bg-blue text-white"></span> as they need to be.
+            </p>
+        </blockquote>
+        <figcaption class="text-black">— Prof. Kimberlé Crenshaw,<br>American Civil Rights Advocate and a Leading
+            Scholar of Critical
+            Race Theory</figcaption>
+    </figure>
+    <div class="section-content">
         <h2>Introduction</h2>
         <p>Over the last two decades, there has been a global rise in entrepreneurial activity, but women
             aren’t getting their fair

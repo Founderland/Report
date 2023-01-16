@@ -62,6 +62,9 @@ blockquote,
 .text-grotesk {
   font-family: 'Space Grotesk', sans-serif;
 }
+.text-hanson {
+  font-family: 'Hanson', sans-serif;
+}
 .cta,
 .text-mono {
   font-family: 'Space Mono', monospace;
@@ -211,19 +214,22 @@ h3 {
 }
 
 /* section spacing */
+section {
+  @apply mb-20;
+}
 .section-content {
-  @apply px-8;
+  @apply px-8 pb-8;
 }
 
 @screen md {
   .section-content {
-    @apply px-12;
+    @apply px-12  pb-12;
   }
 }
 
 @screen lg {
   .section-content {
-    @apply px-20;
+    @apply px-20 pb-20;
   }
 }
 
@@ -273,7 +279,7 @@ blockquote p {
   text-align: left;
 }
 .quote {
-  @apply absolute top-0 left-4 text-grotesk text-9xl;
+  @apply absolute top-0 text-grotesk text-9xl;
 }
 
 @screen lg {
@@ -351,7 +357,14 @@ nav .symbol::after {
 
 .section-head .symbol,
 .section-head .symbol:after {
-  @apply w-32 h-32;
+  @apply w-24 h-24;
+}
+
+@screen md {
+  .section-head .symbol,
+  .section-head .symbol:after {
+    @apply w-32 h-32;
+  }
 }
 
 @screen lg {
@@ -365,7 +378,7 @@ nav .symbol::after {
   }
   .section-head .symbol,
   .section-head .symbol:after {
-    @apply w-64 h-64;
+    @apply w-40 h-40;
   }
 }
 
@@ -721,54 +734,12 @@ nav .logo {
 #SECTION HEAD */
 .section-head {
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  @apply mt-20 bg-black;
-}
-.section-head .img {
-  grid-column: 4/6;
-  grid-row: 2/4;
-  max-width: 512px;
-}
-
-.section-head .title-card {
   display: flex;
-  justify-items: center;
-  align-items: center;
-  padding: 0px 20px 0px 60px;
-  width: 100%;
-  height: 100%;
+  @apply bg-black;
 }
-.section-head .title-card {
-  @apply text-white bg-black;
-  grid-column: 2/4;
-  grid-row: 1/4;
+.title-card {
+  @apply flex w-full h-80 text-white justify-start items-center px-8;
 }
-.section-head .symbol .symbol:after {
-  @apply bg-blue w-32 h-32;
-}
-.section-head .symbol1 {
-  grid-column: 1/2;
-  grid-row: 1/2;
-}
-.section-head .symbol2 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-.section-head .symbol3 {
-  grid-column: 1/2;
-  grid-row: 3/4;
-}
-.section-head .symbol4 {
-  grid-column: 4/5;
-  grid-row: 1/2;
-}
-.section-head .symbol5 {
-  grid-column: 5/6;
-  grid-row: 1/2;
-}
-
 /*
 #SWIPER SLIDER */
 .swiper {
@@ -908,6 +879,9 @@ nav .logo {
 /* internal coloring based on container background */
 #section-2 .card > *,
 #section-3 .card > * {
+  @apply text-white;
+}
+.header-title {
   @apply text-white;
 }
 #section-4 .symbol::after,

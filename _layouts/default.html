@@ -29,14 +29,21 @@
   <link rel="stylesheet" href="assets/styles/print.css" media="print">
 </head>
 
-<body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true}"
+<body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true, content: 'testing'}"
   x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
   @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
   x-on:resize.window="fullScreen = (window.innerHeight < 800) ? false : true">
   <div class="color_block-1"
     :class="{'h-32': !scrolledFromTop, 'h-24': scrolledFromTop, 'bg-black': topColor === 'black', 'bg-blue': topColor === 'blue', 'bg-red': topColor === 'red', 'bg-pink': topColor === 'pink', 'bg-lime': topColor === 'lime'}">
-    <div class="logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+    <div class="flex">
+      <div class="logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+      </div>
+      <div class="w-full flex items-center">
+        <p class="header-title transition-all duration-300 ease-in-out text-2xl uppercase text-hanson" x-html="content">
+        </p>
+      </div>
     </div>
+
   </div>
   <!-- see index.html -->
   {{ content }}

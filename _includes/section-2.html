@@ -4,18 +4,24 @@
 -->
 
 <div class="section-head">
-    <div class="symbol1 symbol Forward"></div>
-    <div class="symbol2 symbol Calm"></div>
-    <div class="symbol3 symbol Value"></div>
-    <div class="symbol4 symbol No"></div>
-    <div class="symbol5 symbol Moving"></div>
-    <div class="img">
-        <img class="object-contain" src="assets/images/section2.webp"
-            alt="Women of Color working on a laptop looking at the camera smiling">
+    <div class="hidden md:block">
+        <div class="symbol1 symbol Forward"></div>
+        <div class="symbol2 symbol Calm"></div>
+        <div class="symbol3 symbol Value"></div>
     </div>
-    <div class="title-card">
-        <h1 class="mb-0">02.<br>Our<br>Findings
+    <div class="title-card" x-intersect:enter="content= '02. Our Findings'">
+        <h1 class="mb-0 uppercase">02.<br>Our<br>Findings
         </h1>
+    </div>
+    <div class="flex flex-col justify-center items-center img">
+        <div class="flex">
+            <div class="symbol4 symbol No "></div>
+            <div class="symbol5 symbol Moving"></div>
+        </div>
+        <div class="flex flex-grow">
+            <img class="w-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-cover" src="assets/images/section2.webp"
+                alt="Women of Color working on a laptop looking at the camera smiling">
+        </div>
     </div>
 </div>
 <div class="section-content">
