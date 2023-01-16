@@ -699,18 +699,6 @@ video {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-32 {
-  height: 8rem;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -719,8 +707,16 @@ video {
   height: 1.5rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-56 {
   height: 14rem;
+}
+
+.h-32 {
+  height: 8rem;
 }
 
 .w-1\/2 {
@@ -854,14 +850,19 @@ video {
   background-color: rgb(0 99 226 / var(--tw-bg-opacity));
 }
 
-.bg-black {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-red {
   --tw-bg-opacity: 1;
   background-color: rgb(246 51 28 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-pink {
@@ -872,11 +873,6 @@ video {
 .bg-lime {
   --tw-bg-opacity: 1;
   background-color: rgb(215 251 3 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .object-contain {
@@ -1750,7 +1746,8 @@ nav a.active {
   top: 0;
   right: 0;
   z-index: 1500;
-  background: url('../images/Nav-Hamburger.svg') no-repeat center center;
+  background: url('../images/elements/Nav-Hamburger.svg') no-repeat center
+    center;
   background-size: contain;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1758,7 +1755,7 @@ nav a.active {
 }
 
 .burger.active {
-  background-image: url('../images/Nav-Close.svg');
+  background-image: url('../images/elements/Nav-Close.svg');
 }
 
 .burger.active:after {
@@ -1930,7 +1927,8 @@ nav.active {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
-  background: url('../images/Rise&Thrive_Logo.svg') no-repeat center center;
+  background: url('../images/logos/Rise&Thrive_Logo.svg') no-repeat center
+    center;
   background-size: contain;
 }
 
@@ -2482,6 +2480,86 @@ nav .logo {
 .sympink::after {
   --tw-bg-opacity: 1;
   background-color: rgb(238 147 181 / var(--tw-bg-opacity));
+}
+
+#section-1 h2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 30;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-2 h2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 30;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-2 h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
+  z-index: 20;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-2 h4 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 14rem;
+  z-index: 10;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-3 h2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 30;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-3 h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
+  z-index: 20;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-4 h2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 6rem;
+  z-index: 30;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+#section-4 h3 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 12rem;
+  z-index: 20;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .selection\:bg-lime *::-moz-selection {

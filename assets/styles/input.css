@@ -546,12 +546,13 @@ nav a.active {
   top: 0;
   right: 0;
   z-index: 1500;
-  background: url('../images/Nav-Hamburger.svg') no-repeat center center;
+  background: url('../images/elements/Nav-Hamburger.svg') no-repeat center
+    center;
   background-size: contain;
   @apply transition-all duration-500;
 }
 .burger.active {
-  background-image: url('../images/Nav-Close.svg');
+  background-image: url('../images/elements/Nav-Close.svg');
 }
 .burger.active:after {
   content: '+';
@@ -671,7 +672,8 @@ nav.active {
 }
 .logo {
   @apply origin-top w-24 h-24 m-3 transition-all duration-500;
-  background: url('../images/Rise&Thrive_Logo.svg') no-repeat center center;
+  background: url('../images/logos/Rise&Thrive_Logo.svg') no-repeat center
+    center;
   background-size: contain;
 }
 nav .logo {
@@ -970,4 +972,29 @@ nav .logo {
 .sympink,
 .sympink::after {
   @apply bg-pink;
+}
+
+#section-1 h2 {
+  @apply sticky top-24 z-30 bg-white w-full;
+}
+#section-2 h2 {
+  @apply sticky top-24 z-30 bg-white w-full;
+}
+#section-2 h3 {
+  @apply sticky top-48 z-20 bg-white w-full;
+}
+#section-2 h4 {
+  @apply sticky top-56 z-10 bg-white w-full;
+}
+#section-3 h2 {
+  @apply sticky top-24 z-30 bg-white w-full;
+}
+#section-3 h3 {
+  @apply sticky top-48 z-20 bg-white w-full;
+}
+#section-4 h2 {
+  @apply sticky top-24 z-30 bg-white w-full;
+}
+#section-4 h3 {
+  @apply sticky top-48 z-20 bg-white w-full;
 }
