@@ -998,3 +998,8 @@ nav .logo {
 #section-4 h3 {
   @apply sticky top-48 z-20 bg-white w-full;
 }
+
+#section-0 .symbol,
+#section-0 .symbol::after {
+  @apply h-20 w-20;
+}
