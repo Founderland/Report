@@ -1,5 +1,5 @@
 @page {
-    margin: 1.25cm 1.25cm 0.75cm;
+  margin: 1.25cm 1.25cm 0.75cm;
 }
 /* @page:first {
     margin: 0 !important;
@@ -8,100 +8,92 @@
     margin: 0 !important;
 } */
 
-
 @media print {
-
-
-    /* 
+  /* 
     #PRINT OVERRIDES */
-    * {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;  
-    }
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 
-    /* disable top level grid */
-    .fdl-wrapper {
-        display: block !important;
-        width: 100% !important;
-    }
+  /* disable top level grid */
+  .fdl-wrapper {
+    display: block !important;
+    width: 100% !important;
+  }
 
-    /* Margins */
-    body section {
-        margin-bottom: 0;
-    }
+  /* Margins */
+  body section {
+    margin-bottom: 0;
+  }
 
-    /* hide nav (eventually consider bringing content back for its own intro page...) */
-    body nav,
-    body .burger, 
-    body .overlay {
-        display: none !important;
-    }
+  /* hide nav (eventually consider bringing content back for its own intro page...) */
+  body nav,
+  body .burger,
+  body .overlay {
+    display: none !important;
+  }
 
-    /*
+  /*
     #UTILITIES */
-    
-    /* force page breaks */
-    .print-break-after,
-    section {
-        break-after: page;
-    } 
 
-    /* avoid page breaks */
-    .print-break-avoid,
-    img,
-    .card {s
-        break-inside: avoid;
-    }
+  /* force page breaks */
+  .print-break-after,
+  section {
+    break-after: page;
+  }
 
+  /* avoid page breaks */
+  .print-break-avoid,
+  img,
+  .card {
+    break-inside: avoid;
+  }
 
-    /* 
-    #FULL-PAGE DESIGNS */ 
+  /* 
+    #FULL-PAGE DESIGNS */
 
-    /* Title Page */
-    body .title-page {
-        height: 100vh;
-    }
-    body .title-page h2 {
-        font-size: 3rem;
-    }
+  /* Title Page */
+  body .title-page {
+    height: 100vh;
+  }
+  body .title-page h2 {
+    font-size: 3rem;
+  }
 
-    /* Section headers */
-    body .section-head {
-        position: relative; 
-        width: auto; 
-        height: 97vh;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 3rem;
-    }
-    body .section-head img, 
-    body .section-head .title-card {
-        margin: 0;
-    }
-    body .section-head img {
-        position: relative;
-        top: auto; 
-        right: auto;
-    }
-    body .section-head .title-card {
-        background: transparent; 
-        padding: 0;
-        width: auto;
-    }
-    body .section-head h1 {
-        color: black;
-        padding-top: 0;
-        text-align: center; 
-        /* font-size: 3rem; */
-    }
-    body .section-head h1 br {
-        display: none;
-    }
-
-
-
-
+  /* Section headers */
+  body .section-head {
+    position: relative;
+    width: auto;
+    height: 97vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 3rem;
+  }
+  body .section-head img,
+  body .section-head .title-card {
+    margin: 0;
+  }
+  body .section-head img {
+    position: relative;
+    top: auto;
+    right: auto;
+  }
+  body .section-head .title-card {
+    background: transparent;
+    padding: 0;
+    width: auto;
+  }
+  body .section-head h1 {
+    color: black;
+    padding-top: 0;
+    text-align: center;
+    /* font-size: 3rem; */
+  }
+  body .section-head h1 br {
+    display: none;
+  }
 }
