@@ -207,6 +207,7 @@ h2 {
 /* section spacing */
 section {
   @apply mb-20;
+  scroll-margin-top: 96px;
 }
 .section-content {
   @apply px-8 pb-8;

@@ -109,6 +109,7 @@ $(document).ready(function () {
   // });
 }) // end of document ready
 
+// progress bar for scroll
 const scrollProgress = () => {
   return {
     init() {
@@ -120,7 +121,6 @@ const scrollProgress = () => {
           document.documentElement.clientHeight
         this.percent = Math.round((winScroll / height) * 100)
       })
-      console.log(this.percent)
     },
     circumference: 30 * 2 * Math.PI,
     percent: 0,

@@ -29,13 +29,17 @@
   <link rel="stylesheet" href="assets/styles/print.css" media="print">
 </head>
 
-<body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true, content: ''}"
+<body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true, content: '', bottom: false}"
   x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
-  @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
+  @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false; if (window.pageYOffset <= 50) { topColor = 'blue', content='' }"
   x-on:resize.window="fullScreen = (window.innerHeight < 800) ? false : true">
   <!-- see index.html -->
   {{ content }}
-
+  <div x-data="scrollProgress()" x-init="init()" x-cloak class="fixed inset-x-0 bottom-0 z-50">
+    <div class="w-full bg-black">
+      <div class="h-2 bg-lime" :style="`width: ${percent}%`"></div>
+    </div>
+  </div>
   <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
