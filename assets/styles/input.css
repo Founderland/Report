@@ -171,7 +171,7 @@ ul,
 li,
 button,
 .cta {
-  @apply mb-4;
+  @apply mb-2;
 }
 ol,
 ol li {
@@ -193,7 +193,7 @@ h2 {
   li,
   button,
   .cta {
-    @apply mb-6;
+    @apply mb-4;
   }
   h1 {
     @apply mb-10;
@@ -210,18 +210,18 @@ section {
   scroll-margin-top: 96px;
 }
 .section-content {
-  @apply px-8 pb-8;
+  @apply px-10 pb-4;
 }
 
 @screen md {
   .section-content {
-    @apply px-12  pb-12;
+    @apply px-20  pb-6;
   }
 }
 
 @screen lg {
   .section-content {
-    @apply px-20 pb-20;
+    @apply px-40 pb-8;
   }
 }
 
@@ -729,8 +729,11 @@ nav .logo {
   display: flex;
   @apply bg-black;
 }
+.img {
+  @apply hidden md:block;
+}
 .title-card {
-  @apply flex w-full h-80 text-white justify-start items-center px-8;
+  @apply flex w-full h-72 md:h-96 text-white justify-start items-center px-8;
 }
 /*
 #SWIPER SLIDER */
@@ -945,7 +948,7 @@ nav .logo {
   @apply sticky top-44 z-20 p-1 bg-white w-full;
 }
 .header-3 {
-  @apply sticky top-36 z-10 p-1 bg-white w-full;
+  @apply sticky top-56 z-10 p-1 bg-white w-full;
 }
 
 #section-0 .symbol,

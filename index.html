@@ -69,14 +69,11 @@ layout: default
       x-bind:class="{'opacity-0': scrolledFromTop}">
       <p class="m-0 text-xs md:text-base lg:text-lg text-center">Download the PDF</p>
     </div>
-    <div class="scrollarrow right-0" x-bind:class="{'opacity-0': scrolledFromTop}">
-
-    </div>
     <div x-data="scrollProgress()" x-init="init()" x-cloak
-      class="fixed z-50 inline-flex items-center justify-center overflow-hidden rounded-full bottom-5 right-5"
+      class="fixed z-50 inline-flex items-center justify-center overflow-hidden rounded-full bottom-2 right-2"
       :class="{'cursor-pointer': bottom}" x-on:click="if (bottom) {window.scrollTo(0, 0)}">
       <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
-      <svg class="w-20 h-20 transform -rotate-90">
+      <svg class="w-20 h-20 transform -rotate-90 scale-75">
         <circle class="text-black" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40" />
         <circle class="text-lime" stroke-width="5" :stroke-dasharray="circumference"
           :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round"
