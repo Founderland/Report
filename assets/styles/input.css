@@ -206,7 +206,7 @@ h2 {
 
 /* section spacing */
 section {
-  @apply mb-20;
+  margin-bottom: 80px;
   scroll-margin-top: 96px;
 }
 .section-content {
@@ -942,16 +942,16 @@ nav .logo {
 }
 
 .header-1 {
-  @apply sticky top-16 z-30 p-1 bg-white w-full;
+  @apply sticky top-20 md:top-16 z-30 p-1 pl-10 bg-white w-full;
 }
 .header-2 {
-  @apply sticky top-44 z-20 p-1 bg-white w-full;
+  @apply sticky top-36 md:top-44 z-20 p-1 bg-white w-full;
 }
 .header-3 {
-  @apply sticky top-56 z-10 p-1 bg-white w-full;
+  @apply sticky top-[180px] md:top-56 z-10 p-1 bg-white w-full;
 }
 
 #section-0 .symbol,
 #section-0 .symbol::after {
-  @apply h-20 w-20;
+  @apply h-32 w-32;
 }

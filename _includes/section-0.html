@@ -1,11 +1,23 @@
-<div class="title-head w-full flex items-center space-x-4 pl-8 my-8" x-intersect:enter="topColor='blue',content= ''">
+<div class="title-head w-full flex items-center space-x-4 pl-8 py-8 mt-16 bg-black"
+    x-intersect:enter="topColor='blue',content= ''">
     <div class="symbol Blooming symred"></div>
-    <h1 class="m-0 p-0 uppercase">Foreword</h1>
+    <h1 class="m-0 p-0 uppercase text-white">Foreword</h1>
 </div>
-<div class="relative section-content">
-    <div id="0-1">
-        <h2 x-intersect:enter="topColor='red', content= 'Foreword'">Foreword by Rowan Barnett</h2>
-        <img class="float-left w-96 p-8" src="assets/images/headshots/blank_Headshot.webp" alt="Portrait of Rowan">
+<div id="0-1" class="bg-black text-white">
+    <div class="pl-4 md:pl-10 w-full mb-4">
+        <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2 ">
+            Foreword by
+            Rowan Barnett</h2>
+    </div>
+    <div class="md:float-left px-4 mb-8 md:ml-8 md:mr-8">
+        <img class="w-96" src="assets/images/headshots/blank_Headshot.webp" alt="Portrait of Rowan">
+        <div class="flex w-full">
+            <div class="symbol Calm symred"></div>
+            <div class="symbol Calm symblue"></div>
+            <div class="symbol Calm symlime"></div>
+        </div>
+    </div>
+    <div class="section-content pt-8 md:pt-0">
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
             nemo,
             tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
@@ -30,14 +42,23 @@
             tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
             perspiciatis eius deleniti?</p>
         <figcaption>Rowan Barnett</figcaption>
-
     </div>
-    <div id="0-2" class="" x-intersect="topColor= 'red',content= 'Foreword'">
-        <h2>Foreword by Prof. Pisitta Vongswasdi, PhD</h2>
-        <img class=" float-left w-96 p-8" src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
+</div>
+<div id="0-2" class="bg-black text-white" x-intersect="topColor= 'red',content= 'Foreword'">
+    <div class="pl-4 md:pl-10 w-full mb-4">
+        <h2 class="pl-4 pt-0 border-l-red border-l-2 ">Foreword by Prof. Pisitta Vongswasdi, PhD</h2>
+    </div>
+    <div class="md:float-left px-4 mb-8 md:ml-8 md:mr-8">
+        <img class="w-96 " src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
             alt="Portrait of Prof. Pisitta Vongswasdi, PhD">
+        <div class="flex w-full">
+            <div class="symbol Calm sympink"></div>
+            <div class="symbol Connective symred"></div>
+            <div class="symbol Energized symlime"></div>
+        </div>
+    </div>
+    <div class="section-content pt-8 md:pt-0">
         <p>
-
             The modern stereotypical startup founder is typically characterized as a middle-to-upper-class,
             young,
             highly-educated,
