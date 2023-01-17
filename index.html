@@ -3,7 +3,20 @@ layout: default
 ---
 
 <header id="title-page" class="title-page bg-blue">
-  <div class="color_block-2">
+  <div class="color_block-1 text-white"
+    :class="{'h-32': !scrolledFromTop, 'h-24': scrolledFromTop, 'bg-black': topColor === 'black', 'bg-blue': topColor === 'blue', 'bg-red': topColor === 'red', 'bg-pink': topColor === 'pink', 'bg-lime': topColor === 'lime'}">
+    <div class="flex">
+      <div class="logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+      </div>
+      <div class="w-full flex items-center">
+        <p class="w-52 break-words md:w-full transition-all duration-300 ease-in-out text-base md:text-xl uppercase text-hanson"
+          :class="{'text-black': topColor === 'lime'}" x-html="content">
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <div class="color_block-2 overflow-hidden">
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
@@ -23,7 +36,7 @@ layout: default
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
   </div>
-  <div class="color_block-3">
+  <div class="color_block-3 overflow-hidden">
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
@@ -43,10 +56,12 @@ layout: default
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
   </div>
-  <div class="color_block-4 flex flex-col justify-center items-center" x-intersect="topColor= 'blue'">
-    <h1 class="w-1/2 text-left">An Intersectional Exploration of the Experiences of <br class="hidden lg:block">Women of
+  <div class="color_block-4 flex flex-col justify-center items-center" x-intersect="topColor= 'blue', content=''">
+    <h1 class="w-full md:w-2/3 xl:w-1/2 text-left px-4">An Intersectional Exploration of the Experiences of <br
+        class="hidden lg:block">Women of
       Color Founders</h1>
-    <p class="w-1/2">Featuring Insights from Berlin-Based Founders</p>
+    <p class="w-full md:w-2/3 xl:w-1/2 px-4">Featuring Insights from Berlin-Based
+      Founders</p>
   </div>
   <div class="bg-white flex justify-between">
     <div

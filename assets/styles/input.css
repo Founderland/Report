@@ -49,23 +49,21 @@ html {
   /* src: url(/assets/typefaces/hanson-bold.woff2); didn't work */
   font-weight: bold;
 }
-h1 {
-  font-family: Hanson, 'Space Grotesk', sans-serif;
+h1,
+blockquote,
+.text-hanson {
+  font-family: 'Hanson', sans-serif;
 }
 html,
 h2,
 h3,
 h4,
-h5,
 p,
-blockquote,
 .text-grotesk {
   font-family: 'Space Grotesk', sans-serif;
 }
-.text-hanson {
-  font-family: 'Hanson', sans-serif;
-}
 .cta,
+h5,
 .text-mono {
   font-family: 'Space Mono', monospace;
 }
@@ -79,12 +77,11 @@ h1,
 h2,
 h3,
 h4,
-h5,
 button,
 .cta {
   font-weight: bold;
 }
-h3 {
+h5 {
   font-weight: normal;
 }
 html,
@@ -102,7 +99,7 @@ ol li {
   list-style: numbered;
 }
 h1 {
-  @apply text-3xl;
+  @apply text-xl;
 }
 h2,
 button,
@@ -110,9 +107,9 @@ button,
   @apply text-2xl;
 }
 h3 {
-  @apply text-xl;
+  @apply text-lg;
   border-left: 4px solid black;
-  padding-left: 8px;
+  padding-left: 12px;
 }
 .lead {
   @apply text-lg;
@@ -136,7 +133,7 @@ a {
   }
   h1,
   h2 {
-    @apply text-5xl; /* it's 6xl in the design system  */
+    @apply text-4xl; /* it's 6xl in the design system  */
   }
   h3 {
     @apply text-2xl;
@@ -184,9 +181,6 @@ h1,
 h2 {
   @apply pt-6; /* for breathing room when unsing nav */
 }
-h3 {
-  @apply mt-6;
-}
 
 @screen lg {
   h1,
@@ -207,9 +201,6 @@ h3 {
   h1,
   h2 {
     @apply pt-12; /* padding to give some breathing room when using nav anchor links */
-  }
-  h3 {
-    @apply mt-16;
   }
 }
 
@@ -881,9 +872,7 @@ nav .logo {
 #section-3 .card > * {
   @apply text-white;
 }
-.header-title {
-  @apply text-white;
-}
+
 #section-4 .symbol::after,
 .nav-section-4.nav-parent.active .symbol::after,
 .nav-section-5.nav-parent.active .symbol::after,
@@ -948,29 +937,14 @@ nav .logo {
   @apply bg-pink;
 }
 
-#section-1 h2 {
-  @apply sticky top-24 z-30 bg-white w-full;
+.header-1 {
+  @apply sticky top-16 z-30 p-1 bg-white w-full;
 }
-#section-2 h2 {
-  @apply sticky top-24 z-30 bg-white w-full;
+.header-2 {
+  @apply sticky top-44 z-20 p-1 bg-white w-full;
 }
-#section-2 h3 {
-  @apply sticky top-48 z-20 bg-white w-full;
-}
-#section-2 h4 {
-  @apply sticky top-56 z-10 bg-white w-full;
-}
-#section-3 h2 {
-  @apply sticky top-24 z-30 bg-white w-full;
-}
-#section-3 h3 {
-  @apply sticky top-48 z-20 bg-white w-full;
-}
-#section-4 h2 {
-  @apply sticky top-24 z-30 bg-white w-full;
-}
-#section-4 h3 {
-  @apply sticky top-48 z-20 bg-white w-full;
+.header-3 {
+  @apply sticky top-36 z-10 p-1 bg-white w-full;
 }
 
 #section-0 .symbol,
