@@ -827,47 +827,61 @@ nav .logo {
 #section-1 .citations,
 #section-1 .section-head .symbol,
 .color_block-3 .symbol,
-.nav-section-1.nav-parent.active .symbol {
+.nav-section-1.nav-parent.active .symbol,
+.index-section-1.index-parent .symbol {
   @apply bg-pink;
 }
-.nav-section-1.nav-parent + ul {
+.nav-section-1.nav-parent + ul,
+.index-section-1.index-parent + ul {
   @apply border-l-pink;
 }
 #section-2 .card,
 #section-2 .citations,
 #section-2 .section-head .symbol,
 .nav-section-0.active .symbol,
-.nav-section-2.nav-parent.active .symbol {
+.nav-section-2.nav-parent.active .symbol,
+.index-section-0.index-parent .symbol,
+.index-section-2.index-parent .symbol {
   @apply bg-red;
 }
-.nav-section-2.nav-parent + ul {
+.nav-section-2.nav-parent + ul,
+.index-section-0.index-parent + ul,
+.index-section-2.index-parent + ul {
   @apply border-l-red;
 }
 #section-3 .card,
 #section-3 .citations,
 #section-3 .section-head .symbol,
 .color_block-2 .symbol,
-.nav-section-3.nav-parent.active .symbol {
+.nav-section-3.nav-parent.active .symbol,
+.index-section-3.index-parent .symbol {
   @apply bg-blue;
 }
-.nav-section-3.nav-parent + ul {
+.nav-section-3.nav-parent + ul,
+.index-section-3.index-parent + ul {
   @apply border-l-blue;
 }
 #section-4 .card,
 #section-4 .citations,
 #section-4 .section-head .symbol,
-.nav-section-4.nav-parent.active .symbol {
+.nav-section-4.nav-parent.active .symbol,
+.index-section-4.index-parent .symbol {
   @apply bg-lime;
 }
-.nav-section-4.nav-parent + ul {
+.nav-section-4.nav-parent + ul,
+.index-section-4.index-parent + ul {
   @apply border-l-lime;
 }
 .nav-section-5.nav-parent.active .symbol,
-.nav-section-6.nav-parent.active .symbol {
+.nav-section-6.nav-parent.active .symbol,
+.index-section-5.index-parent .symbol,
+.index-section-6.index-parent .symbol {
   @apply bg-white;
 }
 .nav-section-5.nav-parent + ul,
-.nav-section-6.nav-parent + ul {
+.nav-section-6.nav-parent + ul,
+.index-section-5.active.nav-parent + ul,
+.index-section-6.index-parent + ul {
   @apply border-l-white;
 }
 
@@ -880,7 +894,10 @@ nav .logo {
 #section-4 .symbol::after,
 .nav-section-4.nav-parent.active .symbol::after,
 .nav-section-5.nav-parent.active .symbol::after,
-.nav-section-6.nav-parent.active .symbol::after {
+.nav-section-6.nav-parent.active .symbol::after,
+.index-section-4.index-parent .symbol::after,
+.index-section-5.index-parent .symbol::after,
+.index-section-6.index-parent .symbol::after {
   filter: brightness(0%);
 }
 
@@ -954,4 +971,52 @@ nav .logo {
 #section-0 .symbol,
 #section-0 .symbol::after {
   @apply h-32 w-32;
+}
+
+#index .symbol,
+#index .symbol::after {
+  @apply h-8 w-8;
+}
+
+/*
+#Nav */
+.index ul {
+  padding: 0;
+  left: 0;
+  width: auto;
+}
+.index ul,
+.index li {
+  padding: 0;
+}
+.index li {
+  margin: 16px 0;
+  list-style: none;
+}
+.index a {
+  font-weight: normal;
+  text-decoration: none;
+  @apply text-lg text-white;
+}
+@screen md {
+  .index li {
+    margin: 8px 0;
+  }
+  .index a {
+    @apply text-base;
+  }
+}
+
+/* Scrollspy */
+.index-child {
+  text-decoration: underline;
+  font-weight: normal;
+}
+.index-parent + ul {
+  display: block;
+  border-left: 2px solid;
+  @apply border-gray;
+  @apply pl-4;
+  @apply ml-6;
+  margin-bottom: 0;
 }
