@@ -1,27 +1,21 @@
 # Jekyll Config
 
-# testing 123
-
 # Site settings
-title: Rise & Thrive Founderland Report 
-description: 
-baseurl: "/Report" # the subpath of your site, e.g. /blog
-url: "https://founderland.github.io" # the base hostname & protocol for your site
-
-
-# Sass settings
-#sass:
-#  add_charset: true
-#  sass_dir: assets/sass
-#  style: :compressed
+title: Rise & Thrive
+description:
+baseurl: '/Report' # the subpath of your site, e.g. /blog
+url: 'https://founderland.github.io' # the base hostname & protocol for your site
 
 # Build settings
 exclude:
   - package.json
+  - package-lock.json
   - README.md
   - CNAME
-#  - assets/sass
-
+  - tailwind.config.js
+  - styleguide.html
+  - assets/images/unused
+  - assets/styles/input.css
 # Plugin settings
 #plugins:
 #  - jekyll-feed

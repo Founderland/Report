@@ -1,6 +1,8 @@
-/node_modules
+node_modules
 .jekyll-cache
-/_site
+_site
+.vscode
+.DS_Store
 *.DS_Store
 assets/styles/output.css
 assets/images/unused

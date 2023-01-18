@@ -1,0 +1,296 @@
+<div id="index" x-data="{ expanded: false }"
+    class="title-head text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
+    x-intersect:enter="topColor='blue',content= ''">
+    <div class="w-full flex space-x-2 items-center cursor-pointer" @click="expanded = ! expanded">
+        <svg class="w-6 h-6 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
+            focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+        <h1 class="flex-grow m-0 pt-1 uppercase text-white text-xl">Index
+        </h1>
+    </div>
+    <div x-show="expanded" x-collapse class="w-full">
+        <ul class="index">
+            <li>
+                <a class="flex items-center space-x-2 index-section-0 index-parent" href="#section-0">
+                    <div class="symbol index Blooming"></div>
+                    <span>Foreword</span>
+                </a>
+                <ul>
+                    <li><a class="index-child" href="#0-1">Foreword by Rowan Barnett</a></li>
+                    <li><a class="index-child" href="#0-2">Foreword by Prof. Pisitta Vongswasdi</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="flex items-center space-x-2 index-section-1 index-parent" href="#section-1">
+                    <div class="symbol Visibility"></div><span>01. Our
+                        Lens</span>
+                </a>
+                <ul>
+                    <li><a class="nav-child" href="#1-1">Introduction</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="flex items-center space-x-2 index-section-2 index-parent" href="#section-2">
+                    <div class="symbol Forward"></div><span>02. Our Findings</span>
+                </a>
+                <ul>
+                    <li><a class="index-parent" href="#2-1">Intersectionality</a>
+                        <ul>
+                            <li><a class="index-child" href="#2-1-1">What is Intersectionality?</a></li>
+                            <li><a class="index-child" href="#2-1-2">Implications in the Entrepreneurial Ecosystem</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="index-parent" href="#2-2">Motivators</a>
+                        <ul>
+                            <li><a class="index-child" href="#2-2-1">Introduction</a></li>
+                            <li><a class="index-child" href="#2-2-2">The Glass Ceiling</a></li>
+                            <li><a class="index-child" href="#2-2-3">Mission. Purpose. Passion.</a></li>
+                        </ul>
+                    </li>
+                    <li><a class=" index-parent" href="#2-3">Challenges</a>
+                        <ul>
+                            <li><a class=" index-parent" href="#2-3-1">Homophily Networks</a>
+                                <ul>
+                                    <li><a class="index-child" href="#2-3-1-1">Opposites don’t always attract</a></li>
+                                    <li><a class="index-child" href="#2-3-1-2">Access to Information</a></li>
+                                    <li><a class="index-child" href="#2-3-1-3">Access to Network</a></li>
+                                    <li><a class="index-child" href="#2-3-1-4">Risk Perception</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="index-child" href="#2-3-2">Prejudice</a></li>
+                            <li><a class="index-child" href="#2-3-3">Funding</a></li>
+                            <li><a class="index-child" href="#2-3-4">Diversity Washing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="flex items-center space-x-2 index-section-3 index-parent" href="#section-3">
+                    <div class="symbol Emerging"></div><span>03.
+                        Implications</span>
+                </a>
+                <ul>
+                    <li><a class="index-child" href="#3-1">Founders</a></li>
+                    <li><a class="index-child" href="#3-2">Investors</a></li>
+                    <li><a class="index-child" href="#3-3">Policymakers</a></li>
+
+                </ul>
+            </li>
+            <li>
+                <a class="flex items-center space-x-2 index-section-4 index-parent" href="#section-4">
+                    <div class="symbol Goals"></div><span>04. The Makings of a Founder</span>
+                </a>
+                <ul>
+                    <li><a class="index-child" href="#4-1">Meet the Rise & Thrive Founders</a></li>
+                    <li><a class="index-child" href="#4-2">Making of a Founder (On a Macro Level)</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="flex items-center space-x-2 index-section-5 index-parent" href="#section-5">
+                    <div class="symbol Intersectional"></div><span>05.
+                        Behind the Report</span>
+                </a>
+                <ul>
+                    <li><a class="index-child" href="#5-1">Team</a></li>
+                    <li><a class="index-child" href="#5-2">Methodology</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="flex items-center space-x-2 index-section-6 index-parent" href="#section-6">
+                    <div class="symbol Security"></div><span>06. Appendices</span>
+                </a>
+                <ul>
+                    <li><a class="index-child" href="#6-1">Citations</a></li>
+                    <li><a class="index-child" href="#6-2">Glossary</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="title-head w-full flex items-center space-x-4 pl-8 py-8 mt-4 bg-black"
+    x-intersect:enter="topColor='blue',content= ''">
+    <div class="symbol Blooming symred"></div>
+    <h1 class="m-0 p-0 uppercase text-white">Foreword</h1>
+</div>
+<div id="0-1" x-data="{ expanded: false }" class="bg-black text-white">
+    <div class="flex items-center px-4 md:px-10 w-full mb-4 cursor-pointer" @click="expanded = ! expanded">
+        <h2 x-intersect:enter="topColor='red', content= 'Foreword'"
+            class="flex-grow pl-4 pt-0 border-l-red border-l-2 ">
+            Foreword by
+            Rowan Barnett</h2>
+        <svg class="w-6 h-6 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
+            focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+    </div>
+    <div x-show="expanded" x-collapse>
+        <div class="md:float-left px-4 mb-8 md:ml-8 md:mr-8">
+            <img class="w-96" src="assets/images/headshots/blank_Headshot.webp" alt="Portrait of Rowan">
+            <div class="flex w-full">
+                <div class="symbol Calm symred"></div>
+                <div class="symbol Calm symblue"></div>
+                <div class="symbol Calm symlime"></div>
+            </div>
+        </div>
+        <div class="section-content pt-8 md:pt-0">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
+                nemo,
+                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
+                perspiciatis eius deleniti?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
+                nemo,
+                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
+                perspiciatis eius deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut
+                officia,
+                omnis fugit ipsam rerum hic dignissimos in harum nostrum! Voluptates ut, dolorem maiores possimus
+                repudiandae dolore perferendis minima placeat!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
+                nemo,
+                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
+                perspiciatis eius deleniti?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
+                nemo,
+                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
+                perspiciatis eius deleniti?</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
+                nemo,
+                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
+                perspiciatis eius deleniti?</p>
+            <figcaption>Rowan Barnett</figcaption>
+        </div>
+    </div>
+</div>
+<div id="0-2" x-data="{ expanded: false }"
+    class="relative overflow-hidden transition-all ease-in duration-1000 bg-black text-white"
+    x-intersect="topColor= 'red',content= 'Foreword'" x-bind:class="{'max-h-[512px]': !expanded, 'h-full': expanded}"
+    x-ref="container">
+    <div class="pl-4 md:pl-10 w-full mb-4">
+        <h2 class="pl-4 pt-0 border-l-red border-l-2 ">Foreword by Prof. Pisitta Vongswasdi, PhD</h2>
+    </div>
+    <div class="md:float-left px-4 mb-8 md:ml-8 md:mr-8">
+        <img class="w-96 " src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
+            alt="Portrait of Prof. Pisitta Vongswasdi, PhD">
+        <div class="flex w-full">
+            <div class="symbol Calm sympink"></div>
+            <div class="symbol Connective symred"></div>
+            <div class="symbol Energized symlime"></div>
+        </div>
+    </div>
+    <div class="px-4 md:px-10 xl:px-20 pt-8 md:pt-0 mb-10">
+        <p>
+            The modern stereotypical startup founder is typically characterized as a middle-to-upper-class,
+            young,
+            highly-educated,
+            white male leading a high-growth, high-tech enterprise. This imagery of what constitutes bona fide
+            entrepreneurship had
+            and continued to inform and influence startup institutional environments—best serving those that fit
+            this
+            prototype.
+        </p>
+        <p>
+            This report takes a close examination of the “other” type of founders—those who identify as Women of
+            Colour
+            and
+            thereby
+            defy such entrepreneurial stereotypes. Based on empirical accounts of these underrepresented
+            founders,
+            the
+            report
+            unveils several structural constraints that impede resource acquisition as the founders navigate
+            their
+            journeys
+            in the
+            Berlin startup scene. It highlights that however much they ‘lean into’ making their startup plans
+            happen,
+            there
+            are
+            daunting systemic barriers preventing them from enacting their full aspirations.
+        </p>
+        <p>
+            Nonetheless, despite their marginalized position, the report’s chronicles suggest that many of these
+            women
+            found
+            ways to
+            start and grow their ventures—an effort indicative of their unrelenting agency and adept
+            resourcefulness
+            in
+            the
+            contexts
+            of inequality. Some, informed by their own experiences of discrimination but also their better
+            understanding
+            of
+            entrepreneurship, started to challenge the status quo by starting their own venture and contributing
+            to
+            practices that
+            make their community more inclusive. That is a true ‘disruption’.</p>
+
+        <p>
+            But such a feat would by no means be achieved without the paramount support by organizations like
+            Founderland
+            who orchestrated this report. Their work helps to mobilize the collective power of these
+            underrepresented
+            founders, amplify their voices, and catalyze the ingenious ventures for all of us to see.
+        </p>
+        <p>The report further highlights the pivotal role of educational institutions. For example, WHU, while
+            being
+            a
+            small
+            private business school, is the alma mater of an astonishingly high proportion of VCs and founders
+            in
+            general,
+            and
+            unicorn founders in particular. This fact underlines the responsibility of educational institutions
+            at
+            the
+            center of the
+            entrepreneurship ecosystem. They need to take on a leading role as agents of change by contributing
+            to
+            creating
+            a more
+            inclusive entrepreneurial ecosystem, which leverages the full potential of founder diversity. They
+            can
+            fulfill
+            their
+            role by enabling underrepresented groups to become part of their student body and grow into the
+            network,
+            by
+            living
+            diversity, and including related topics in their teaching to fight existing stereotypes and
+            inequalities.
+        </p>
+        <p>It is not only the educational institutions the report offers food for thought and calls to action
+            for.
+            The
+            report
+            outlines a comprehensive agenda to bring more equity. It spans a set of repertoires for founders
+            themselves,
+            and
+            the
+            responsibilities of the policymakers, VCs, and other stakeholders to not just become allies but to
+            play
+            an
+            active part
+            in making the European startup ecosystem even more competitive and dynamic by enabling
+            underrepresented
+            founders
+            to
+            flourish and grow their unique ventures.</p>
+        <p>We challenge ourselves, the policy makers, and the VC investors to create an inclusive and equitable
+            environment
+            for
+            everyone to thrive.</p>
+        <figcaption>Prof. Pisitta Vongswasdi, PhD
+        </figcaption>
+        <figcaption>Prof. Julia de Groote, PhD</figcaption>
+        <figcaption>WHU Otto Beisheim School of Management</figcaption>
+
+    </div>
+    <button type="button" class="bg-red text-base m-0 px-4 py-2 absolute z-20 bottom-0 right-10"
+        @click="expanded = !expanded">
+        <span x-text="expanded ? 'Close' : 'Read More'"></span>
+    </button>
+</div>
