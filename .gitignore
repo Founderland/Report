@@ -4,5 +4,4 @@ _site
 .vscode
 .DS_Store
 *.DS_Store
-assets/styles/output.css
 assets/images/unused
