@@ -71,8 +71,7 @@ layout: default
     <div x-data="scrollProgress()" x-init="init()" x-cloak
       class="fixed z-50 inline-flex items-center justify-center overflow-hidden rounded-full bottom-2 right-2"
       :class="{'cursor-pointer': bottom}" x-on:click="if (bottom) {window.scrollTo(0, 0)}">
-      <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
-      <svg class="w-20 h-20 transform -rotate-90 scale-75">
+      <svg class="w-20 h-20 transform -rotate-90">
         <circle class="text-black" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40" />
         <circle class="text-lime" stroke-width="5" :stroke-dasharray="circumference"
           :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round"
@@ -109,7 +108,7 @@ layout: default
     <section id="section-5">
       {% include section-5.html %}
     </section>
-    <section id="section-6">
+    <section id="section-6" class="m-0">
       {% include section-6.html %}
     </section>
   </main>
