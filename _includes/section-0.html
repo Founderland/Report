@@ -116,72 +116,204 @@
     <div class="symbol Blooming symred"></div>
     <h1 class="m-0 p-0 uppercase text-white">Foreword</h1>
 </div>
-<div id="0-1" x-data="{ expanded: false }" class="bg-black text-white">
-    <div class="flex items-center px-4 md:px-10 w-full mb-4 cursor-pointer" @click="expanded = ! expanded">
-        <h2 x-intersect:enter="topColor='red', content= 'Foreword'"
-            class="flex-grow pl-4 pt-0 border-l-red border-l-2 ">
+<div id="0-1" x-data="{ expanded: false }"
+    class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white mb-8"
+    x-bind:class="{'max-h-[640px]': !expanded, 'h-full': expanded}" x-ref="container">
+    <div class="flex items-center px-4 md:px-10 w-full mb-4 cursor-pointer">
+        <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2 ">
             Foreword by
-            Rowan Barnett</h2>
-        <svg class="w-6 h-6 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
-            focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-        </svg>
+            Rowan Barnett & Nicole Danna</h2>
     </div>
-    <div x-show="expanded" x-collapse>
-        <div class="md:float-left px-4 mb-8 md:ml-8 md:mr-8">
-            <img class="w-96 object-left-top" src="assets/images/headshots/RowanBarnett_Headshot.webp"
-                alt="Portrait of Rowan">
-            <div class="flex w-full">
+    <div id="portrait" class="md:float-left flex justify-center items-center mb-8 md:mx-8">
+        <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
+            <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                src="assets/images/headshots/RowanBarnett_Headshot.webp" alt="Portrait of  Barnett">
+            <div class=" flex w-full">
                 <div class="symbol Calm symred"></div>
                 <div class="symbol Calm symblue"></div>
                 <div class="symbol Calm symlime"></div>
             </div>
+            <div class="pt-4 h-28">
+                <h5
+                    class="text-center mb-2  text-sm lg:text-base  font-bold tracking-tight text-gray-900 dark:text-white">
+                    Rowan
+                    Barnett
+                </h5>
+                <h5
+                    class="w-full text-center mb-3 text-xs lg:text-sm font-normal s text-gray-700 dark:text-gray-400 px-2">
+                    Director,
+                    Google.org -
+                    Europe,
+                    Middle East & Africa </h5>
+            </div>
         </div>
-        <div class="section-content pt-8 md:pt-0">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
-                nemo,
-                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
-                perspiciatis eius deleniti?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
-                nemo,
-                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
-                perspiciatis eius deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aut
-                officia,
-                omnis fugit ipsam rerum hic dignissimos in harum nostrum! Voluptates ut, dolorem maiores possimus
-                repudiandae dolore perferendis minima placeat!</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
-                nemo,
-                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
-                perspiciatis eius deleniti?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
-                nemo,
-                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
-                perspiciatis eius deleniti?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus eos numquam consequatur mollitia
-                nemo,
-                tempore suscipit nisi fugit ab fuga asperiores corrupti! Porro laudantium eligendi vero corporis
-                perspiciatis eius deleniti?</p>
-            <figcaption>Rowan Barnett</figcaption>
+        <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
+            <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                src="assets/images/headshots/NicoleDanna_Headshot.webp" alt="Portrait of Nicole Danna" />
+            <div class="flex w-full">
+                <div class="symbol Warmth symlime"></div>
+                <div class="symbol Visibility symblue"></div>
+                <div class="symbol FDL"></div>
+            </div>
+            <div class="pt-4 h-28">
+                <h5
+                    class="w-full mb-2 text-center text-sm lg:text-base font-bold tracking-tight text-gray-900 dark:text-white">
+                    Nicole Danna
+                </h5>
+                <h5
+                    class="w-full text-center mb-3 text-xs lg:text-sm font-normal text-gray-700 dark:text-gray-400 px-2">
+                    Impact
+                    Challenge Lead,
+                    Google.org</h5>
+            </div>
         </div>
     </div>
+    <div class="px-4 md:px-10 xl:px-20 pt-0 mb-8">
+        <p>At Google, when we think about a problem, we always start by looking at the data. When you look at the
+            data regarding
+            progress for women and particularly for women of colour, a clear pattern emerges: We’ve made progress,
+            but it’s been
+            uneven, frustratingly slow, and equality is a long way off.</p>
+        <p>Looking back on the last few decades we’ve seen some progress realized. To start with, more girls are
+            going to school
+            than ever before, and increasing women’s and girls’ education contributes both to their empowerment and
+            accounts for 50%
+            of the economic growth in OECD countries over the past 50 years. Plus, not only are women in the
+            workforce more than
+            ever before, they’re also getting paid more. 50 years ago, women made 60 cents for every dollar a man
+            made. Today,
+            thankfully that gap has shrunk - yet as the report states, a white woman still only makes around 78
+            cents to a white
+            man’s dollar, and for women and men of colour, it’s even less.</p>
+        <p>So it’s meaningful progress - but it’s not enough. And these improvements are fragile, as recent crises
+            have shown. For
+            example, globally, women were almost twice as likely to lose their jobs as a result of COVID-19.</p>
+        <p>There is also a new urgency. We are facing a plethora of challenges globally and in Europe - from
+            climate, to energy
+            security, to the rising cost of living and inequality. Not only will women and women of colour face the
+            brunt of these
+            crises, but they are being held back in being able to effectively respond to them. We need to take
+            action now.
+            In practice, this means we need two critical things. Firstly, we need socially-minded entrepreneurs -
+            who are putting
+            people, purpose and the planet at the centre of business goals. Second, we need to support people from
+            underserved
+            communities to be successful entrepreneurs - and come up with the solutions. Because if there is one
+            thing we’ve learnt
+            from our work at Google.org - it’s that it’s those that are closest to the problem that will come up
+            with the most
+            effective solution to it.</p>
+        <p>The data is clear that organisations with a woman in the founding team are more successful. And founders
+            who are women
+            of colour tend also to be impact-driven, with research showing that they create businesses that solve
+            problems that they
+            and their communities are confronted with. And yet as this report clearly shows, these founders continue
+            to face a
+            multitude of barriers and aren’t getting the investment they need to build businesses that can change
+            the world for the
+            better.</p>
+        <p>It’s a huge missed opportunity - one that hinders innovation and limits opportunities for economic
+            opportunity, wealth
+            generation and upward mobility and equity for women of colour. And, investors are also missing out on
+            new business
+            opportunities for return, while being able to make a positive difference.</p>
+        <p>
+            Clearly therefore, we need to do far more to unlock investment in the organisations that women of colour
+            build, both in
+            support of critical ecosystem-strengthening organisations like Founderland, as well as investment in the
+            founders
+            themselves. Our Women & Girls Impact Challenge, of which Founderland was a grantee, was one of our most
+            popular
+            programmes ever, with thousands of organisations applying. We know that there are groups out there,
+            ready to make a
+            difference, they just need the funding and expertise to make their ideas a reality.</p>
+        <p>
+            Some people may argue that there is already a plethora of DEI initiatives and accelerators and programs
+            for female
+            founders. Well, compared to 10 or 20 years ago yes, but we’re far from having solved the issue and the
+            number of women
+            participating pales compared to male participation in similar programs. And critically, while support
+            programs are very
+            important, investment is the number one need. Women of colour tend to report being over-mentored and
+            under-funded -
+            without funding, a great idea remains an idea.</p>
+        <p>
+            We therefore need to look closer to home - at ourselves, as funders, investors and philanthropists. If
+            you are a funder
+            - and particularly a white male - the first step is to recognise your own privilege and bias, the second
+            is to educate
+            yourself, and the third is to take action. By reading this, you are already on step two. Step three is
+            the harder one.
+            So take a moment once you have read this report and ask yourself, what can you do, and what are you
+            willing to do, to
+            make a positive difference to support women, and particularly women of colour entrepreneurs, to help
+            make our world a
+            better place by building great ventures.</p>
+        <figcaption>Rowan Barnett - Director, Google.org - Europe, Middle East & Africa</figcaption>
+        <figcaption>Nicole Danna - Impact Challenge Lead, Google.org</figcaption>
+
+    </div>
+    <button type="button"
+        class="flex space-x-2 justify-center items-center bg-black text-base m-0 left-0 right-0 px-4 py-2 absolute z-20 bottom-0"
+        @click="expanded = !expanded; document.getElementById('0-1').scrollIntoView();">
+        <span x-text="expanded ? 'Close' : 'Read More'"></span>
+        <svg class="w-4 h-4 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
+            focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
+    </button>
 </div>
 <div id="0-2" x-data="{ expanded: false }"
-    class="relative overflow-hidden transition-all ease-in duration-1000 bg-black text-white"
-    x-intersect="topColor= 'red',content= 'Foreword'" x-bind:class="{'max-h-[512px]': !expanded, 'h-full': expanded}"
+    class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white"
+    x-intersect="topColor= 'red',content= 'Foreword'" x-bind:class="{'max-h-[640px]': !expanded, 'h-full': expanded}"
     x-ref="container">
     <div class="pl-4 md:pl-10 w-full mb-4">
-        <h2 class="pl-4 pt-0 border-l-red border-l-2 ">Foreword by Prof. Pisitta Vongswasdi, PhD</h2>
+        <h2 class="pl-4 pt-0 border-l-red border-l-2 ">Foreword by Prof. Pisitta Vongswasdi, PhD & Prof. Julia de
+            Groote, PhD</h2>
     </div>
-    <div class="md:float-left px-4 mb-8 md:ml-8 md:mr-8">
-        <img class="w-96 object-left-top" src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
-            alt="Portrait of Prof. Pisitta Vongswasdi, PhD">
-        <div class="flex w-full">
-            <div class="symbol Calm sympink"></div>
-            <div class="symbol Connective symred"></div>
-            <div class="symbol Energized symlime"></div>
+    <div id="portrait" class="md:float-left flex justify-center items-center mb-8 md:mx-8">
+        <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
+            <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
+                alt="Portrait of Prof. Pisitta Vongswasdi, PhD">
+            <div class=" flex w-full">
+                <div class="symbol Calm symred"></div>
+                <div class="symbol Calm symblue"></div>
+                <div class="symbol Calm symlime"></div>
+            </div>
+            <div class="pt-4 h-22">
+                <h5
+                    class="text-center mb-2  text-sm lg:text-base  font-bold tracking-tight text-gray-900 dark:text-white">
+                    Prof. Pisitta Vongswasdi
+                </h5>
+                <h5
+                    class="w-full text-center mb-3 text-xs lg:text-sm font-normal s text-gray-700 dark:text-gray-400 px-2">
+                    PhD</h5>
+            </div>
+        </div>
+        <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
+            <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                src="assets/images/headshots/JuliadeGroote_Headshot.webp"
+                alt="Portrait of Prof. Julia de Groote, PhD" />
+            <div class="flex w-full">
+                <div class="symbol Warmth symlime"></div>
+                <div class="symbol Visibility symblue"></div>
+                <div class="symbol FDL"></div>
+            </div>
+            <div class="pt-4 h-22">
+                <h5
+                    class="w-full mb-2 text-center text-sm lg:text-base font-bold tracking-tight text-gray-900 dark:text-white">
+                    Prof. Julia de
+                    Groote
+                </h5>
+                <h5
+                    class="w-full text-center mb-3 text-xs lg:text-sm font-normal text-gray-700 dark:text-gray-400 px-2">
+                    PhD</h5>
+            </div>
         </div>
     </div>
-    <div class="px-4 md:px-10 xl:px-20 pt-8 md:pt-0 mb-10">
+
+    <div class="px-4 md:px-10 xl:px-20 pt-0 mb-10">
         <p>
             The modern stereotypical startup founder is typically characterized as a middle-to-upper-class,
             young,
@@ -290,8 +422,13 @@
         <figcaption>WHU Otto Beisheim School of Management</figcaption>
 
     </div>
-    <button type="button" class="bg-red text-base m-0 px-4 py-2 absolute z-20 bottom-0 right-10"
-        @click="expanded = !expanded">
+    <button type="button"
+        class="flex space-x-2 justify-center items-center bg-black text-base m-0 left-0 right-0 px-4 py-2 absolute z-20 bottom-0"
+        @click="expanded = !expanded; document.getElementById('0-2').scrollIntoView();">
         <span x-text="expanded ? 'Close' : 'Read More'"></span>
+        <svg class="w-4 h-4 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
+            focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+        </svg>
     </button>
 </div>
