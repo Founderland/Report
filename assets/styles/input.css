@@ -82,7 +82,7 @@ sup,
   font-weight: bold;
 }
 h5 {
-  font-weight: normal;
+  font-weight: bold;
 }
 html,
 body,
@@ -285,7 +285,7 @@ blockquote {
 }
 blockquote,
 blockquote p {
-  @apply text-2xl;
+  @apply text-xl;
   font-weight: bold;
   margin-bottom: 16px;
   text-align: left;
@@ -974,7 +974,7 @@ nav .logo {
   @apply sticky top-36 md:top-44 z-20 p-1 px-10 bg-white w-full;
 }
 .header-3 {
-  @apply sticky top-[180px] md:top-56 z-10 p-1 px-10 bg-white w-full;
+  @apply sticky top-[160px] md:top-56 z-10 p-1 px-10 bg-white w-full;
 }
 
 #section-0 .symbol,
@@ -1057,7 +1057,7 @@ nav .logo {
   @apply text-red;
 }
 #section-1 .highlight {
-  @apply text-pink;
+  color: #ee93b5;
 }
 #section-2 .highlight {
   @apply text-red;
@@ -1078,4 +1078,21 @@ nav .logo {
   .highlight {
     @apply text-xl;
   }
+}
+
+.made,
+.made p {
+  @apply text-xs m-0;
+}
+.made img {
+  @apply w-20;
+}
+
+.made .symbol,
+.made .symbol::after {
+  @apply h-9 w-9;
+}
+
+[x-cloak] {
+  display: none;
 }
