@@ -795,7 +795,7 @@ nav .logo {
     display: none;
   }
   .swiper img {
-    padding: 0 2.5rem 2rem;
+    @apply p-5 w-1/2 m-0;
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -1114,4 +1114,11 @@ nav .logo {
   #portrait .symbol::after {
     @apply w-20 h-20;
   }
+}
+
+.swiper-slide {
+  @apply text-center;
+  @apply flex flex-col justify-center items-center;
+  @apply h-full;
+  @apply w-full;
 }
