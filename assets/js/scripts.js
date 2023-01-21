@@ -126,3 +126,9 @@ const scrollProgress = () => {
     percent: 0,
   }
 }
+
+// Charts with chart.js
+
+// 'rgba(238, 147, 181, 1)',
+//         'rgba(0, 99, 226, 1)',
+//         'rgba(223, 248, 81, 1)',

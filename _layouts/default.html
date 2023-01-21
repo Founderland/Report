@@ -16,6 +16,10 @@
   <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
   <!--Alpine Js framework-->
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <!-- chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+    integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- typefaces -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +37,7 @@
 <body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true, content: '', bottom: false}"
   x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
   @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false; if (window.pageYOffset <= 50) { topColor = 'blue', content='' }"
-  x-on:resize.window="fullScreen = (window.innerHeight < 800) ? false : true">
+  x-on:resize.window="fullScreen = (window.innerHeight < 975) ? false : true">
   <!-- see index.html -->
   {{ content }}
   <div x-data="scrollProgress()" x-init="init()" x-cloak x-show="!bottom" class="fixed inset-x-0 bottom-0 z-50">
@@ -41,10 +45,9 @@
       <div class="h-2 bg-lime" :style="`width: ${percent}%`"></div>
     </div>
   </div>
-  <div x-data="scrollProgress()" x-init="init()" x-cloak
+  <!-- <div x-data="scrollProgress()" x-init="init()" x-cloak
     class="fixed z-50 inline-flex items-center justify-center overflow-hidden rounded-full bottom-2 right-2"
     :class="{'cursor-pointer': bottom}" x-on:click="if (bottom) {window.scrollTo(0, 0)}">
-    <!-- Building a Progress Ring: https://css-tricks.com/building-progress-ring-quickly/ -->
     <svg class="w-20 h-20 transform -rotate-90 scale-75">
       <circle class="text-black" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40" />
       <circle class="text-lime" stroke-width="5" :stroke-dasharray="circumference"
@@ -55,13 +58,10 @@
       class="absolute w-6 h-6 text-black transition-all ease-in-out duration-300" :class="{'rotate-180': bottom}">
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
     </svg>
-  </div>
+  </div> -->
   <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <!-- chart.js replaced w static charts from figma
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js" integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    -->
   <!--slider-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!--custom scripts-->
