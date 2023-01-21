@@ -93,23 +93,28 @@ li,
 ol,
 table,
 figcaption {
-  @apply text-sm;
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
 }
 h1 {
-  @apply text-xl;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
 }
 h2,
 button,
 .cta {
-  @apply text-2xl;
+  font-size: 1.5rem /* 24px */;
+  line-height: 2rem /* 32px */;
 }
 h3 {
-  @apply text-lg;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
   border-left: 4px solid black;
   padding-left: 12px;
 }
 .lead {
-  @apply text-lg;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
 }
 a {
   text-decoration: underline;
@@ -117,7 +122,8 @@ a {
 }
 sup a {
   text-decoration: none;
-  @apply text-xs;
+  font-size: 0.75rem /* 12px */;
+  line-height: 1rem /* 16px */;
 }
 
 @screen md {
@@ -146,14 +152,17 @@ sup a {
   ol,
   table,
   figcaption {
-    @apply text-lg;
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
   }
   h1,
   h2 {
-    @apply text-4xl; /* it's 6xl in the design system  */
+    font-size: 2.25rem /* 36px */;
+    line-height: 2.5rem /* 40px */;
   }
   h3 {
-    @apply text-2xl;
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
   }
   button,
   .cta {
@@ -164,7 +173,8 @@ sup a {
     /* @apply text-2xl; */
   }
   sup a {
-    @apply text-base;
+    font-size: 1rem /* 16px */;
+    line-height: 1.5rem /* 24px */;
   }
 }
 
@@ -173,8 +183,10 @@ sup a {
 
 p,
 .lead {
-  text-align: Justify;
+  text-align: justify;
   hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05em;
 }
 
 /*
@@ -191,15 +203,15 @@ ul,
 li,
 button,
 .cta {
-  @apply mb-2;
+  margin-bottom: 0.5rem /* 8px */;
 }
 ol,
 ol li {
-  @apply pl-4;
+  padding-left: 1rem /* 16px */;
 }
 h1,
 h2 {
-  @apply pt-6; /* for breathing room when unsing nav */
+  padding-top: 1.5rem /* 24px */;
 }
 
 @screen lg {
@@ -213,14 +225,14 @@ h2 {
   li,
   button,
   .cta {
-    @apply mb-4;
+    margin-bottom: 1rem /* 16px */;
   }
   h1 {
-    @apply mb-10;
+    margin-bottom: 2.5rem /* 40px */;
   }
   h1,
   h2 {
-    @apply pt-12; /* padding to give some breathing room when using nav anchor links */
+    padding-top: 3rem /* 48px */;
   }
 }
 
@@ -230,29 +242,29 @@ section {
   scroll-margin-top: 96px;
 }
 .section-content {
-  @apply px-10 pb-4 mt-4;
+  @apply px-10 pb-4 my-4;
 }
 
 @screen md {
   .section-content {
-    @apply px-20 pb-6 mt-6;
+    @apply px-20 my-8;
   }
 }
 
 @screen lg {
   .section-content {
-    @apply px-40 pb-8 mt-8;
+    @apply px-40 my-10;
   }
 }
 
 /*
 #LISTS */
 ul {
-  @apply pl-4;
+  padding-left: 1rem /* 16px */;
 }
 ul li {
   list-style: square;
-  @apply pl-4;
+  padding-left: 1rem /* 16px */;
 }
 
 /*
@@ -765,13 +777,14 @@ nav .logo {
 .swiper {
   width: 100%;
 }
-.swiper h3 {
+.swiper h5 {
   border-bottom: none;
   text-align: center;
 }
 .swiper img {
   max-width: 100%;
   width: 100%;
+  @apply px-12 md:px-0;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -791,11 +804,11 @@ nav .logo {
     width: 75%;
     margin: 0 auto;
   }
-  .swiper h3 br {
+  .swiper h5 br {
     display: none;
   }
   .swiper img {
-    @apply p-5 w-1/2 m-0;
+    @apply w-1/2 m-0;
   }
   .swiper-button-next,
   .swiper-button-prev {
@@ -952,6 +965,9 @@ nav .logo {
 .headshots .symbol::after {
   @apply h-20 w-20;
 }
+.headshots h5 {
+  @apply text-white;
+}
 
 .symred,
 .symred::after {
@@ -1039,11 +1055,14 @@ nav .logo {
 }
 
 .citations ul > li {
-  @apply font-bold text-lg p-0;
+  @apply font-bold text-lg p-0 list-none;
   @apply text-black;
 }
 .citations ol {
   @apply pl-8;
+}
+.citations h2 {
+  @apply text-base;
 }
 .citations ol > li {
   @apply list-decimal pl-2 font-bold z-30;
@@ -1121,4 +1140,40 @@ nav .logo {
   @apply flex flex-col justify-center items-center;
   @apply h-full;
   @apply w-full;
+}
+
+.fdl-wrapper {
+  @apply max-w-7xl mx-auto;
+}
+
+.implications ul {
+  @apply list-none;
+  @apply pl-8 md:pl-4 my-4;
+}
+
+.implications ul > li {
+  @apply list-none text-left text-xs;
+  @apply text-gray-800;
+}
+.implications h5 {
+  @apply text-gray-800 text-left pl-4 my-4 md:text-sm;
+  @apply font-bold;
+}
+
+.implications p {
+  @apply text-gray-800 text-justify break-words pl-4 mb-4 md:text-sm;
+}
+.implications a {
+  @apply text-gray-800 text-left mb-2 md:text-sm;
+}
+.implications h3 {
+  @apply sticky top-24 z-30 py-4;
+}
+
+.footer .symbol,
+.footer .symbol::after {
+  @apply w-16 h-16;
+}
+.footer a {
+  @apply no-underline hover:underline;
 }
