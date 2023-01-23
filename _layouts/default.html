@@ -37,7 +37,7 @@
 <body x-data="{navOpen: false, scrolledFromTop: false, topColor: 'blue', fullScreen: true, content: '', bottom: false}"
   x-init="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false"
   @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false; if (window.pageYOffset <= 50) { topColor = 'blue', content='' }"
-  x-on:resize.window="fullScreen = (window.innerHeight < 975) ? false : true">
+  x-on:resize.window="fullScreen = (window.innerHeight < 736) ? false : true">
   <!-- see index.html -->
   {{ content }}
   <div x-data="scrollProgress()" x-init="init()" x-cloak x-show="!bottom" class="fixed inset-x-0 bottom-0 z-50">

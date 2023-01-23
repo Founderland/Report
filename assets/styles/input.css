@@ -710,7 +710,7 @@ nav.active {
 }
 .color_block-4 {
   @apply bg-white flex-grow;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .logo {
   @apply origin-top w-24 h-24 m-3 transition-all duration-500;
@@ -960,7 +960,7 @@ nav .logo {
     @apply h-20 w-20;
   }
 }
-@media (min-height: 950px) {
+@media (min-height: 850px) {
   .color_block-2 {
     @apply h-28;
   }
