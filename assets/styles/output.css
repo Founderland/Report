@@ -686,11 +686,6 @@ video {
   margin-right: 2rem;
 }
 
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -915,10 +910,6 @@ video {
 
 .w-6 {
   width: 1.5rem;
-}
-
-.w-2 {
-  width: 0.5rem;
 }
 
 .max-w-4xl {
@@ -3340,10 +3331,6 @@ nav .logo {
 }
 
 @media (min-width: 768px) {
-  .md\:left-8 {
-    left: 2rem;
-  }
-
   .md\:top-16 {
     top: 4rem;
   }
@@ -3461,10 +3448,6 @@ nav .logo {
 }
 
 @media (min-width: 1024px) {
-  .lg\:left-12 {
-    left: 3rem;
-  }
-
   .lg\:block {
     display: block;
   }
