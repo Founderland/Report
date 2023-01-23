@@ -325,15 +325,15 @@ figcaption {
 /*
 #Cards */
 .card {
-  @apply px-4;
-  @apply py-8;
+  @apply p-4 h-48;
   @apply my-8;
 }
 .card p {
   text-align: center;
+  @apply text-base;
 }
 .card .title {
-  @apply text-4xl mb-4;
+  @apply text-xl mb-4 md:text-2xl;
 }
 .card .stat {
   @apply mb-4;
