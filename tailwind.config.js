@@ -51,6 +51,10 @@ module.exports = {
         //'8xl': '96rem',
         //'9xl': '128rem',
       },
+      fontSize: {
+        xxs: ['0.50rem', '0.75rem'],
+        '2.5xl': ['32px', '40px'],
+      },
     },
   },
   plugins: [],
