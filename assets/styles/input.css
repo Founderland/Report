@@ -290,10 +290,10 @@ html.edit-on span.edit {
 #Blockquotes */
 
 figure {
-  @apply my-12 pb-4 pr-6;
+  @apply my-12;
 }
 blockquote {
-  @apply pl-12 pt-16;
+  @apply pl-12 pt-16 pr-8;
 }
 blockquote,
 blockquote p {
@@ -318,7 +318,7 @@ blockquote p {
   }
 }
 figcaption {
-  @apply text-gray-dark;
+  @apply text-gray-dark  pb-4 pr-6;
   text-align: right;
 }
 
@@ -950,6 +950,18 @@ nav .logo {
 
 @screen lg {
   .color_block-2 {
+    @apply h-20;
+  }
+  .color_block-3 {
+    @apply h-20;
+  }
+  .title-page .symbol,
+  .title-page .symbol::after {
+    @apply h-20 w-20;
+  }
+}
+@media (min-height: 950px) {
+  .color_block-2 {
     @apply h-28;
   }
   .color_block-3 {
@@ -1070,7 +1082,7 @@ nav .logo {
   @apply text-gray-800;
 }
 .citations a {
-  @apply no-underline hover:underline;
+  @apply no-underline hover:underline decoration-white;
 }
 .info {
   @apply text-xs text-gray-600;
@@ -1123,14 +1135,14 @@ nav .logo {
   display: none;
 }
 
-#portrait .symbol,
-#portrait .symbol::after {
+#foreword .symbol,
+#foreword .symbol::after {
   @apply w-16 h-16;
 }
 
 @screen lg {
-  #portrait .symbol,
-  #portrait .symbol::after {
+  #foreword .symbol,
+  #foreword .symbol::after {
     @apply w-20 h-20;
   }
 }
@@ -1175,5 +1187,5 @@ nav .logo {
   @apply w-16 h-16;
 }
 .footer a {
-  @apply no-underline hover:underline;
+  @apply no-underline hover:underline decoration-white;
 }
