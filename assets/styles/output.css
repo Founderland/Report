@@ -667,6 +667,10 @@ video {
   margin: 1rem;
 }
 
+.m-8 {
+  margin: 2rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -687,14 +691,14 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .ml-2 {
@@ -721,6 +725,10 @@ video {
   margin-top: 4rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -739,10 +747,6 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-0 {
-  margin-bottom: 0px;
 }
 
 .mt-0 {
@@ -801,8 +805,8 @@ video {
   height: 1rem;
 }
 
-.h-6 {
-  height: 1.5rem;
+.h-5 {
+  height: 1.25rem;
 }
 
 .h-full {
@@ -833,6 +837,10 @@ video {
   height: 9rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -843,6 +851,10 @@ video {
 
 .max-h-\[640px\] {
   max-height: 640px;
+}
+
+.max-h-96 {
+  max-height: 24rem;
 }
 
 .max-h-80 {
@@ -881,8 +893,8 @@ video {
   width: 3rem;
 }
 
-.w-6 {
-  width: 1.5rem;
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-48 {
@@ -899,6 +911,14 @@ video {
 
 .w-60 {
   width: 15rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.w-2 {
+  width: 0.5rem;
 }
 
 .max-w-4xl {
@@ -1140,10 +1160,6 @@ video {
   padding: 1rem;
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1225,10 +1241,6 @@ video {
   padding-top: 0.25rem;
 }
 
-.pl-8 {
-  padding-left: 2rem;
-}
-
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1239,6 +1251,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .pl-0 {
@@ -1316,10 +1332,6 @@ video {
   font-weight: 400;
 }
 
-.font-extrabold {
-  font-weight: 800;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -1361,11 +1373,6 @@ video {
 .text-gray-50 {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
-}
-
-.text-blue {
-  --tw-text-opacity: 1;
-  color: rgb(0 99 226 / var(--tw-text-opacity));
 }
 
 .text-pink {
@@ -1771,13 +1778,12 @@ html.edit-on span.edit {
 figure {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  padding-bottom: 1rem;
-  padding-right: 1.5rem;
 }
 
 blockquote {
   padding-left: 3rem;
   padding-top: 4rem;
+  padding-right: 2rem;
 }
 
 blockquote, 
@@ -1818,6 +1824,8 @@ blockquote p {
 }
 
 figcaption {
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
   --tw-text-opacity: 1;
   color: rgb(112 112 112 / var(--tw-text-opacity));
   text-align: right;
@@ -2838,6 +2846,22 @@ nav .logo {
 
 @media (min-width: 1024px) {
   .color_block-2 {
+    height: 5rem;
+  }
+
+  .color_block-3 {
+    height: 5rem;
+  }
+
+  .title-page .symbol, 
+  .title-page .symbol::after {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+@media (min-height: 950px) {
+  .color_block-2 {
     height: 7rem;
   }
 
@@ -3058,6 +3082,8 @@ nav .logo {
 .citations a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
 }
 
 .citations a:hover {
@@ -3137,15 +3163,15 @@ nav .logo {
   display: none;
 }
 
-#portrait .symbol, 
-#portrait .symbol::after {
+#foreword .symbol, 
+#foreword .symbol::after {
   height: 4rem;
   width: 4rem;
 }
 
 @media (min-width: 1024px) {
-  #portrait .symbol, 
-  #portrait .symbol::after {
+  #foreword .symbol, 
+  #foreword .symbol::after {
     height: 5rem;
     width: 5rem;
   }
@@ -3257,6 +3283,8 @@ nav .logo {
 .footer a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none;
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
 }
 
 .footer a:hover {
@@ -3362,10 +3390,6 @@ nav .logo {
     display: grid;
   }
 
-  .md\:h-20 {
-    height: 5rem;
-  }
-
   .md\:h-64 {
     height: 16rem;
   }
@@ -3376,10 +3400,6 @@ nav .logo {
 
   .md\:w-2\/3 {
     width: 66.666667%;
-  }
-
-  .md\:w-52 {
-    width: 13rem;
   }
 
   .md\:w-40 {
@@ -3434,22 +3454,8 @@ nav .logo {
     padding-bottom: 2rem;
   }
 
-  .md\:pl-10 {
-    padding-left: 2.5rem;
-  }
-
   .md\:text-xl {
     font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-
-  .md\:text-lg {
-    font-size: 1.125rem;
     line-height: 1.75rem;
   }
 }
@@ -3463,20 +3469,12 @@ nav .logo {
     display: block;
   }
 
-  .lg\:h-24 {
-    height: 6rem;
-  }
-
   .lg\:h-64 {
     height: 16rem;
   }
 
   .lg\:h-80 {
     height: 20rem;
-  }
-
-  .lg\:w-64 {
-    width: 16rem;
   }
 
   .lg\:w-60 {
@@ -3501,11 +3499,6 @@ nav .logo {
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
   }
 
   .lg\:text-base {
