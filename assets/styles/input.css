@@ -325,7 +325,7 @@ figcaption {
 /*
 #Cards */
 .card {
-  @apply p-4 h-48;
+  @apply p-4;
   @apply my-8;
 }
 .card p {
@@ -596,12 +596,12 @@ nav a.active {
 .burger.active {
   background-image: url('../images/elements/Nav-Close.svg');
 }
-.burger.active:after {
-  content: '+';
+/* .burger.active:after {
+  content: '';
   transform: rotate(45deg);
   display: block;
   margin-right: -1px;
-}
+} */
 
 /* Off canvas */
 nav {

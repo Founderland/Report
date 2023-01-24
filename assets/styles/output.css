@@ -756,6 +756,14 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
 .block {
   display: block;
 }
@@ -1830,7 +1838,6 @@ figcaption {
 #Cards */
 
 .card {
-  height: 12rem;
   padding: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -2188,12 +2195,12 @@ nav a.active {
   background-image: url('../images/elements/Nav-Close.svg');
 }
 
-.burger.active:after {
-  content: '+';
+/* .burger.active:after {
+  content: '';
   transform: rotate(45deg);
   display: block;
   margin-right: -1px;
-}
+} */
 
 /* Off canvas */
 
@@ -3337,14 +3344,6 @@ nav .logo {
     grid-column: span 7 / span 7;
   }
 
-  .md\:col-span-5 {
-    grid-column: span 5 / span 5;
-  }
-
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .md\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -3381,6 +3380,10 @@ nav .logo {
 
   .md\:h-64 {
     height: 16rem;
+  }
+
+  .md\:h-48 {
+    height: 12rem;
   }
 
   .md\:w-full {
@@ -3427,6 +3430,10 @@ nav .logo {
     justify-content: space-between;
   }
 
+  .md\:justify-around {
+    justify-content: space-around;
+  }
+
   .md\:gap-4 {
     gap: 1rem;
   }
@@ -3435,6 +3442,12 @@ nav .logo {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .md\:px-10 {

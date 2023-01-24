@@ -1,6 +1,5 @@
 $(document).ready(function () {
   // Off Canvas Navigation
-
   // note:
   //    - menu items without children must be
   //    referenced directly (to close the nav on click)
@@ -8,9 +7,7 @@ $(document).ready(function () {
   //    must be removed (otherwise nav will close before
   //    children are available)
   //    ex. "nav a.nav-section-4"
-  $(
-    '.burger, .overlay, nav li li a, nav a.nav-section-1, nav a.nav-section-2, nav a.nav-section-3, nav a.nav-section-4, nav a.nav-section-5'
-  ).click(function () {
+  $('.burger, .overlay, nav a.nav-parent').click(function () {
     $('nav, .overlay, .burger').toggleClass('active')
   })
 
