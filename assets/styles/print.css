@@ -33,7 +33,57 @@
   body .overlay {
     display: none !important;
   }
-
+  .color_block-1 {
+    position: relative;
+  }
+  .readmore {
+    display: none;
+  }
+  .forewordprint {
+    display: block;
+    height: fit-content;
+    background-color: white;
+    color: black;
+  }
+  .noprint {
+    display: none;
+  }
+  .index {
+    display: block;
+    height: auto;
+    font-size: small;
+  }
+  .index li {
+    @apply text-black;
+  }
+  figure {
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 20px;
+    padding: 0;
+  }
+  .footer {
+    display: none;
+  }
+  .section-content {
+    display: block;
+    height: auto;
+  }
+  #index {
+    display: block;
+    background-color: white;
+    color: black;
+    @apply text-black;
+  }
+  .index a {
+    font-weight: normal;
+    text-decoration: none;
+    @apply text-base text-black;
+  }
+  #index svg {
+    display: none;
+  }
   /*
     #UTILITIES */
 

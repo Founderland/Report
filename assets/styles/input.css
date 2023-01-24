@@ -700,7 +700,8 @@ nav.active {
   @apply h-16 w-16;
 }
 .color_block-1 {
-  @apply fixed z-50 w-full transition-all duration-500;
+  position: fixed;
+  @apply z-50 w-full transition-all duration-500;
 }
 .color_block-2 {
   @apply bg-blue mt-32 flex w-full h-16;
