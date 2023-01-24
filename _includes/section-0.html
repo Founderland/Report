@@ -1,5 +1,5 @@
 <div id="index" x-data="{ expanded: false }"
-    class=" text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
+    class="print-break-after text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
     x-intersect:enter="topColor='blue',content= ''">
     <div class="w-full flex space-x-2 items-center cursor-pointer" @click="expanded = ! expanded">
         <svg class="w-5 h-5 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
@@ -122,7 +122,7 @@
         <div class="title-card">
             <h1 class="w-full mb-0 uppercase">Foreword</h1>
         </div>
-        <div class="flex flex-col justify-center items-center img">
+        <div class=" noprint flex flex-col justify-center items-center img">
             <div class="flex">
                 <div class="symbol4 symbol No symred"></div>
                 <div class="symbol5 symbol Moving symred"></div>
@@ -133,8 +133,8 @@
     </div>
     <div id="foreword" class="mt-10">
         <div id="0-1" x-data="{ expanded: false }"
-            class="print-break-after forewordprint relative overflow-hidden transition-all ease-in duration-500 bg-black text-white mb-8"
-            x-bind:class="{'max-h-[640px]': !expanded, 'h-full': expanded}" x-ref="container">
+            class="print-break-after relative overflow-hidden transition-all ease-in duration-500 bg-black text-white mb-8 forewordprint"
+            x-show="expanded" x-collapse.min.600px x-ref="container">
             <div class="px-4 md:px-10 w-full mb-4">
                 <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2">
                     Foreword by
@@ -301,8 +301,7 @@
         </div>
         <div id="0-2" x-data="{ expanded: false }"
             class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white print-break-after forewordprint "
-            x-intersect="topColor= 'red',content= 'Foreword'"
-            x-bind:class="{'max-h-[640px]': !expanded, 'h-full': expanded}" x-ref="container">
+            x-intersect="topColor= 'red',content= 'Foreword'" x-collapse.min.600px x-ref="container">
             <div class="px-4 md:px-10 w-full mb-4">
                 <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2">
                     Foreword by Prof. Pisitta Vongswasdi, PhD & Prof. Julia de
