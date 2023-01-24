@@ -6,7 +6,8 @@ layout: default
   <div class="color_block-1 text-white"
     :class="{'h-32': !scrolledFromTop, 'h-24': scrolledFromTop, 'bg-black': topColor === 'black', 'bg-blue': topColor === 'blue', 'bg-red': topColor === 'red', 'bg-pink': topColor === 'pink', 'bg-lime': topColor === 'lime'}">
     <div class="flex">
-      <div class="logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+      <div class="logo cursor-pointer" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+        x-on:click="window.scrollTo(0, 0)">
       </div>
       <div class="w-full flex items-center">
         <p class="w-52 break-words md:w-full transition-all duration-300 ease-in-out text-base md:text-xl uppercase text-hanson"
@@ -99,11 +100,8 @@ layout: default
     <p class="w-full md:w-2/3 xl:w-1/2 px-4 m-0">Featuring Insights from Berlin-Based
       Founders</p>
   </div>
-  <div class="bg-white flex justify-between pr-28 pb-4">
+  <div class="bg-white flex justify-between pr-28 pb-4 pt-8">
     <div class="flex-grow"></div>
-    <!-- <div class=" cursor-pointer scrollarrow w-40 h-12 left-0 hover:bg-blue hover:text-white">
-      <span class="m-0 text-xs text-center">Download the PDF</span>
-    </div> -->
     <div class="made flex justify-end items-center space-x-2 px-4">
       <div>
         <p>Made by</p>
