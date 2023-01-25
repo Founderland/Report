@@ -6,12 +6,12 @@
 } */
 
 @media print {
-  @page {
+  /* @page {
     size: 794px 1123px;
   }
   @page {
     margin: 1.25cm 1.25cm 0.75cm;
-  }
+  } */
   /* 
     #PRINT OVERRIDES */
   * {
@@ -55,25 +55,30 @@
   /* Index */
 
   .index {
-    display: block !important;
+    display: flex !important;
     height: auto !important;
-    font-size: small !important;
-  }
-  .index li {
-    @apply text-black;
+    font-size: x-small !important;
   }
   #index {
     display: block !important;
     height: auto !important;
     background-color: white !important;
     color: black !important;
-    @apply text-black;
+  }
+  .index ul > li {
+    display: block !important;
+    height: min-content !important;
+    background-color: white !important;
+    color: black !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .index a {
     font-weight: normal !important;
     text-decoration: none !important;
     color: black !important;
-    @apply text-base text-black;
+    font-size: 1rem /* 8px */ !important;
+    line-height: 1.5rem /* 12px */ !important;
   }
   #index svg {
     display: none;
@@ -103,9 +108,62 @@
   /* Section 1 */
 
   /* Section 2 */
+  .print-resize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+  }
+  .print-resize img {
+    width: 75% !important;
+    height: auto;
+    margin: 10px;
+    padding: 0;
+  }
+  .print-correction {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    height: auto !important;
+  }
+
+  .print-visible {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto !important;
+  }
+  .print-visible h5 {
+    width: 100%;
+    text-align: center;
+    margin: 1.5rem 0 0.5rem 0;
+  }
+  .print-visible h5 br {
+    display: none;
+  }
+  .print-visible img {
+    display: block !important;
+    height: auto !important;
+    width: 75% !important;
+  }
+  .print-padding {
+    width: 200px !important;
+    height: 200px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   /* Section 3 */
-
+  .implications h3 {
+    display: block !important;
+    position: top !important;
+  }
   /* Section 4 */
 
   /* Section 5 */
@@ -120,15 +178,13 @@
   /* 
     #GENERAL OVERRIDES */
   figure {
-    display: block;
-    height: auto;
-    width: 100%;
-    margin: 20px;
+    margin: 10px !important;
     padding: 0;
   }
   .section-content {
     display: block;
     height: auto;
+    padding: 0 8rem !important;
   }
   /* Section headers */
   .section-head {
@@ -145,11 +201,7 @@
     color: black;
     break-after: page;
   }
-  .section-head .symbol,
-  .section-head .symbol::after {
-    width: 220px !important;
-    height: 220px !important;
-  }
+
   .section-head img,
   .section-head .title-card {
     margin: 0;

@@ -1,12 +1,12 @@
 <div id="index" x-data="{ expanded: false }"
-    class="print-break-after text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
+    class="print-break-after hidden text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
     x-intersect:enter="topColor='blue',content= ''">
     <div class="w-full flex space-x-2 items-center cursor-pointer" @click="expanded = ! expanded">
         <svg class="w-5 h-5 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
             focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
         </svg>
-        <h2 class="flex-grow m-0 pt-1 uppercase text-xl">Index
+        <h2 class="flex-grow m-0 pt-1 uppercase text-xl print-break-after">Index
         </h2>
     </div>
     <div x-show="expanded" x-collapse class="index w-full mt-4">
@@ -140,7 +140,7 @@
                     Foreword by
                     Rowan Barnett & Nicole Danna</h2>
             </div>
-            <div class="md:float-left flex justify-center items-center m-8 md:mx-8">
+            <div class="md:float-left flex justify-center items-center mb-14 mt-4 mx-4">
                 <div class="relative w-48 lg:w-60 m-4">
                     <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
                         src="assets/images/headshots/RowanBarnett_Headshot.webp" alt="Portrait of  Barnett">
@@ -150,11 +150,11 @@
                         <div class="symbol Emerging symlime"></div>
                     </div>
                     <div class="absolute -bottom-14 right-0 h-14">
-                        <h5 class="text-right mb-1 text-xs px-2">
+                        <h5 class="text-right mb-1 text-sm">
                             Rowan
                             Barnett
                         </h5>
-                        <p class="text-right mb-1 text-xxs px-2">
+                        <p class="text-right mb-1 text-xs">
                             Director,
                             Google.org -
                             Europe,
@@ -170,10 +170,10 @@
                         <div class="symbol Connective symred"></div>
                     </div>
                     <div class="absolute -bottom-14 right-0 h-14">
-                        <h5 class="text-right mb-1 text-xs px-2">
+                        <h5 class="text-right mb-1 text-sm">
                             Nicole Danna
                         </h5>
-                        <p class="text-right mb-1 text-xxs px-2">
+                        <p class="text-right mb-1 text-xs">
                             Impact
                             Challenge Lead,
                             Google.org <br></p>
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="px-4 md:px-10 xl:px-20 pt-0 mb-10 mt-10 md:mt-0">
+            <div class="px-20 md:px-28 xl:px-40 pt-0 mb-10 mt-10 md:mt-0">
                 <p>At Google, when we think about a problem, we always start by looking at the data. When you look at
                     the
                     data regarding
@@ -307,7 +307,7 @@
                     Foreword by Prof. Pisitta Vongswasdi, PhD & Prof. Julia de
                     Groote, PhD</h2>
             </div>
-            <div class="md:float-left flex justify-center items-center m-8 md:mx-8">
+            <div class="md:float-left flex justify-center items-center mb-14 mt-4 mx-4">
                 <div class="relative w-48 lg:w-60 m-4">
                     <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
                         src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
@@ -318,10 +318,10 @@
                         <div class="symbol Inclusive symblue"></div>
                     </div>
                     <div class="absolute -bottom-14 right-0 h-14">
-                        <h5 class="text-right mb-1 text-xs  px-2">
+                        <h5 class="text-right mb-1 text-sm">
                             Prof. Pisitta Vongswasdi
                         </h5>
-                        <p class="text-right mb-1 text-xxs  px-2">
+                        <p class="text-right mb-1 text-xs">
                             PhD</p>
                     </div>
                 </div>
@@ -335,17 +335,17 @@
                         <div class="symbol Moving sympink"></div>
                     </div>
                     <div class="absolute -bottom-14 right-0 h-14">
-                        <h5 class="text-right mb-1 text-xs  px-2">
+                        <h5 class="text-right mb-1 text-sm">
                             Prof. Julia de
                             Groote
                         </h5>
-                        <p class="text-right mb-1 text-xxs  px-2">
+                        <p class="text-right mb-1 text-xs">
                             PhD</p>
                     </div>
                 </div>
             </div>
 
-            <div class="px-4 md:px-10 xl:px-20 pt-0 mb-10 mt-10 md:mt-0">
+            <div class="px-20 md:px-28 xl:px-40 pt-0 mb-10 mt-10 md:mt-0">
                 <p>
                     The modern stereotypical startup founder is typically characterized as a middle-to-upper-class,
                     young,
