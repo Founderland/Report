@@ -6,11 +6,10 @@ layout: default
   <div class="color_block-1 text-white"
     :class="{'h-32': !scrolledFromTop, 'h-24': scrolledFromTop, 'bg-black': topColor === 'black', 'bg-blue': topColor === 'blue', 'bg-red': topColor === 'red', 'bg-pink': topColor === 'pink', 'bg-lime': topColor === 'lime'}">
     <div class="flex">
-      <div class="logo cursor-pointer" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
-        x-on:click="window.scrollTo(0, 0)">
-      </div>
+      <img class="logo cursor-pointer" src="assets/images/logos/riseandthrive_logo.webp"
+        :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}" x-on:click="window.scrollTo(0, 0)">
       <div class="w-full flex items-center">
-        <p class="mb-4 w-52 break-words md:w-full transition-all duration-300 ease-in-out text-base md:text-xl uppercase text-hanson noprint"
+        <p class="mb-4 w-44 text-sm break-words md:w-full transition-all duration-300 ease-in-out md:text-xl uppercase text-hanson noprint text-left"
           :class="{'text-black': topColor === 'lime'}" x-html="content">
         </p>
       </div>
@@ -101,7 +100,7 @@ layout: default
       Founders</p>
   </div>
   <div class="bg-white flex flex-grow">
-    <a class="no-underline" href="assets/pdf/rise&thrive-v2b.pdf" download="Rise & Thrive.pdf">
+    <a class="no-underline" href="assets/pdf/riseandthrive-v2b.pdf" download="Rise & Thrive.pdf">
       <div class=" cursor-pointer scrollarrow w-40 h-12 left-0 hover:bg-blue hover:text-white">
         <span class="m-0 text-xs text-center">Download the PDF</span>
       </div>
