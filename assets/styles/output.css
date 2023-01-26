@@ -687,14 +687,22 @@ video {
   margin-right: 2rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .ml-2 {
@@ -725,16 +733,8 @@ video {
   margin-bottom: 0px;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mb-8 {
   margin-bottom: 2rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
 }
 
 .mb-14 {
@@ -763,10 +763,6 @@ video {
 
 .mb-3 {
   margin-bottom: 0.75rem;
-}
-
-.block {
-  display: block;
 }
 
 .inline-block {
@@ -911,6 +907,10 @@ video {
 
 .w-44 {
   width: 11rem;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-36 {
@@ -1136,21 +1136,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-blue-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 246 255 / var(--tw-bg-opacity));
-}
-
-.bg-lime-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 254 231 / var(--tw-bg-opacity));
-}
-
 .bg-gray-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -1239,10 +1224,6 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
-}
-
-.pb-16 {
-  padding-bottom: 4rem;
 }
 
 .pb-6 {
@@ -1786,14 +1767,12 @@ h3 {
 h4 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 3.5rem;
 }
 
 @media (min-width: 1024px) {
   h4 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 4rem;
   }
 }
 
@@ -3352,12 +3331,9 @@ nav .logo {
 }
 
 .implications h3 {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 6rem;
-  z-index: 30;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  margin: 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .footer .symbol, 
@@ -3449,16 +3425,8 @@ nav .logo {
     grid-column: span 7 / span 7;
   }
 
-  .md\:col-span-1 {
-    grid-column: span 1 / span 1;
-  }
-
   .md\:float-left {
     float: left;
-  }
-
-  .md\:m-0 {
-    margin: 0px;
   }
 
   .md\:mx-8 {
@@ -3475,16 +3443,12 @@ nav .logo {
     margin-top: 0px;
   }
 
+  .md\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .md\:mr-8 {
     margin-right: 2rem;
-  }
-
-  .md\:grid {
-    display: grid;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:h-64 {
@@ -3523,10 +3487,6 @@ nav .logo {
     width: 33.333333%;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3547,10 +3507,6 @@ nav .logo {
     justify-content: space-around;
   }
 
-  .md\:gap-4 {
-    gap: 1rem;
-  }
-
   .md\:space-x-4 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -3563,14 +3519,14 @@ nav .logo {
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
-  .md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .md\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:px-24 {
@@ -3590,8 +3546,8 @@ nav .logo {
 }
 
 @media (min-width: 1024px) {
-  .lg\:m-0 {
-    margin: 0px;
+  .lg\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .lg\:block {
@@ -3637,8 +3593,8 @@ nav .logo {
 }
 
 @media (min-width: 1280px) {
-  .xl\:m-0 {
-    margin: 0px;
+  .xl\:mb-0 {
+    margin-bottom: 0px;
   }
 
   .xl\:w-1\/2 {

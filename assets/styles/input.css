@@ -153,7 +153,7 @@ h3 {
   @apply my-8 lg:my-12 ml-12 lg:ml-14;
 }
 h4 {
-  @apply my-8 lg:my-12 ml-14 lg:ml-16;
+  @apply my-8 lg:my-12;
 }
 /* h5 {
   @apply mb-8 lg:mb-12;
@@ -1079,7 +1079,7 @@ nav .logo {
   @apply text-gray-800 text-left mb-2 md:text-sm;
 }
 .implications h3 {
-  @apply sticky top-24 z-30 py-4;
+  @apply m-0 px-4;
 }
 
 .footer .symbol,
