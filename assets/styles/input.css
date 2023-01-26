@@ -49,15 +49,15 @@ html {
   /* src: url(/assets/typefaces/hanson-bold.woff2); didn't work */
   font-weight: bold;
 }
-html,
+
 h3,
 h4,
 h5,
-p,
 blockquote,
 .text-grotesk {
   font-family: 'Space Grotesk', sans-serif;
 }
+
 .cta,
 .lead {
   font-family: 'Space Mono', monospace;
@@ -93,7 +93,7 @@ table {
   @apply text-base md:text-lg lg:text-xl;
 }
 figcaption {
-  @apply text-xs md:text-sm lg:text-base;
+  @apply text-xs md:text-sm lg:text-base text-grotesk;
 }
 h1 {
   @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
@@ -994,7 +994,7 @@ nav .logo {
   @apply no-underline hover:underline decoration-white;
 }
 .info {
-  @apply text-xs text-gray-600;
+  @apply text-xs text-gray-600 text-grotesk;
 }
 
 .highlight {
