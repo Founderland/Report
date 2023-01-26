@@ -89,9 +89,11 @@ a,
 ul,
 li,
 ol,
-table,
-figcaption {
+table {
   @apply text-base md:text-lg lg:text-xl;
+}
+figcaption {
+  @apply text-xs md:text-sm lg:text-base;
 }
 h1 {
   @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
@@ -212,7 +214,7 @@ html.edit-on span.edit {
 #Blockquotes */
 
 figure {
-  @apply my-12;
+  @apply my-10;
 }
 blockquote {
   @apply pl-12 pt-16 pr-8;
@@ -240,7 +242,7 @@ blockquote p {
   }
 }
 figcaption {
-  @apply text-gray-dark  pb-4 pr-6;
+  @apply text-gray-dark pb-4 pr-6;
   text-align: right;
 }
 
