@@ -884,10 +884,6 @@ video {
   width: 12rem;
 }
 
-.w-2\/4 {
-  width: 50%;
-}
-
 .w-1\/2 {
   width: 50%;
 }
@@ -1751,28 +1747,24 @@ h1 {
 h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
 }
 
 @media (min-width: 1024px) {
   h2 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 2.5rem;
   }
 }
 
 h3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 3rem;
 }
 
 @media (min-width: 1024px) {
   h3 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 3.5rem;
   }
 }
 
@@ -3066,12 +3058,27 @@ nav .logo {
 
 /* sticky top-44 md:top-56 z-10 p-1  */
 
-/* .header-1 {
-  @apply px-8 md:px-10 lg:px-12 w-full;
+.header-1 {
+  margin-left: 2rem;
 }
+
+@media (min-width: 1024px) {
+  .header-1 {
+    margin-left: 2.5rem;
+  }
+}
+
 .header-2 {
-  @apply px-10 md:px-12 lg:px-14 w-full;
+  margin-left: 3rem;
 }
+
+@media (min-width: 1024px) {
+  .header-2 {
+    margin-left: 3.5rem;
+  }
+}
+
+/*
 .header-3 {
   @apply px-12 md:px-14 lg:px-16 w-full;
 } */
