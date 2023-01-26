@@ -300,11 +300,9 @@
         <div id="0-2" x-data="{ expanded: false }"
             class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white print-break-after forewordprint"
             x-intersect="topColor= 'red',content= 'Foreword'" x-show="expanded" x-collapse.min.600px x-ref="container">
-            <div class="px-4 md:px-10 w-full mb-4">
-                <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2">
-                    Foreword by Prof. Pisitta Vongswasdi, PhD & Prof. Julia de
-                    Groote, PhD</h2>
-            </div>
+            <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4">
+                Foreword by Prof. Pisitta Vongswasdi, PhD & Prof. Julia de
+                Groote, PhD</h2>
             <div class="md:float-left flex justify-center items-center mb-14 mt-4 mx-4">
                 <div class="relative w-48 lg:w-60 m-4">
                     <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
