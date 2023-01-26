@@ -3424,6 +3424,12 @@ nav .logo {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-min {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
