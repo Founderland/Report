@@ -178,7 +178,7 @@ section {
   scroll-margin-top: 96px;
 }
 .section-content {
-  @apply px-20 pb-4 md:px-36 lg:px-48 xl:px-56 2xl:px-64;
+  @apply px-20 md:px-36 lg:px-48 xl:px-56 2xl:px-64;
 }
 
 /*
@@ -678,7 +678,7 @@ nav .logo {
 .section-head {
   position: relative;
   display: flex;
-  @apply bg-black mb-12 lg:mb-14 xl:mb-16;
+  @apply bg-black;
 }
 .img {
   @apply hidden md:block;
