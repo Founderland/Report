@@ -49,15 +49,15 @@ html {
   /* src: url(/assets/typefaces/hanson-bold.woff2); didn't work */
   font-weight: bold;
 }
-html,
+
 h3,
 h4,
 h5,
-p,
 blockquote,
 .text-grotesk {
   font-family: 'Space Grotesk', sans-serif;
 }
+
 .cta,
 .lead {
   font-family: 'Space Mono', monospace;
@@ -93,7 +93,7 @@ table {
   @apply text-base md:text-lg lg:text-xl;
 }
 figcaption {
-  @apply text-xs md:text-sm lg:text-base;
+  @apply text-xs md:text-sm lg:text-base text-grotesk;
 }
 h1 {
   @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
@@ -252,9 +252,12 @@ figcaption {
   @apply p-4;
   @apply my-8;
 }
+.card {
+  @apply text-grotesk;
+}
 .card p {
   text-align: center;
-  @apply text-base;
+  @apply text-base mb-0 lg:mb-0;
 }
 .card .title {
   @apply text-xl mb-4 md:text-2xl;
@@ -994,7 +997,7 @@ nav .logo {
   @apply no-underline hover:underline decoration-white;
 }
 .info {
-  @apply text-xs text-gray-600;
+  @apply text-xs text-gray-600 text-grotesk;
 }
 
 .highlight {
@@ -1053,7 +1056,7 @@ nav .logo {
 .fdl-wrapper {
   @apply max-w-6xl mx-auto;
 }
-
+/* 
 .implications ul {
   @apply list-none;
   @apply pl-8 md:pl-4 my-4;
@@ -1062,7 +1065,8 @@ nav .logo {
 .implications ul > li {
   @apply list-none text-left text-xs;
   @apply text-gray-800;
-}
+} */
+
 .implications h5 {
   @apply text-gray-800 text-left pl-4 my-4 md:text-sm;
   @apply font-bold;

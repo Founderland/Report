@@ -65,138 +65,156 @@
             <h3 class="bg-red text-white py-4">For Founders</h3>
             <div class="px-4 pb-4 flex-grow">
                 <div class="flex my-4 space-x-2 items-center">
-                    <span class="font-bold m-0 text-left">
-
-                        Find your community:</span>
+                    <span class="font-bold m-0 text-left text-grotesk">
+                        1. Find your community:</span>
                 </div>
-                <div>
-                    <p>Join mission-aligned organisations:</p>
+                <div x-data="{ expanded: false }">
                     <ul>
-                        <li>
-                            <a href="https://community.founderland.org/form/founder" target="_blank">Join
-                                Founderland Community</a>
-                        </li>
-                        <li>
-                            <a href="https://www.female-founders.org/" target="_blank">Female Founders</a>
-                        </li>
-                        <li>
-                            <a href="https://migrapreneur.org/" target="_blank">Migrapreneur</a>
-                        </li>
-                        <li>
-                            <a href="https://women-in-tech.org/" target="_blank">Women in Tech</a>
-                        </li>
-                        <li>
-                            <a href="https://startup.google.com/" target="_blank">Google for Startups</a>
-                        </li>
-                        <li>
-                            <a href="https://hatchenterprise.org/" target="_blank">Hatch Enterprise</a>
-                        </li>
-                        <li>
-                            <a href="https://wegate.eu/" target="_blank">WeGate</a>
-                        </li>
-                        <li>
-                            <a href="https://www.foundervine.com/" target="_blank">Foundervine</a>
-                        </li>
-                        <li>
-                            <a href="https://www.grace-accelerator.de/" target="_blank">Grace</a>
-                        </li>
-                        <li>
-                            <a href="https://factoryberlin.com/stealth-mode/" target="_blank">StealthMode</a>
-                        </li>
-                        <li>
-                            <a href="https://parentpreneurs.net/en/" target="_blank">Parentpreneurs</a>
-                        </li>
-                        <li>
-                            <a href="https://www.allbrightcollective.com/" target="_blank">Allbright</a>
-                        </li>
-                        <li>
-                            <a href="https://wearesista.com/en/" target="_blank">Sista</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/groups/13835222/" target="_blank">FemTech and
-                                Women’s
-                                Health</a>
-                        </li>
+                        <div class="flex space-x-4 cursor-pointer items-center" @click="expanded = ! expanded">
+                            <li class="text-grotesk text-sm md:text-base lg:text-lg">Join mission-aligned organisations
+                            </li>
+                            <svg class="mb-4 w-6 h-6 transition-all duration-300"
+                                x-bind:class="{'rotate-180': expanded}" aria-hidden="true" focusable="false"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <ul class="ml-8" x-show="expanded" x-collapse>
+                            <li>
+                                <a href="https://community.founderland.org/form/founder" target="_blank">Join
+                                    Founderland Community</a>
+                            </li>
+                            <li>
+                                <a href="https://www.female-founders.org/" target="_blank">Female Founders</a>
+                            </li>
+                            <li>
+                                <a href="https://migrapreneur.org/" target="_blank">Migrapreneur</a>
+                            </li>
+                            <li>
+                                <a href="https://women-in-tech.org/" target="_blank">Women in Tech</a>
+                            </li>
+                            <li>
+                                <a href="https://startup.google.com/" target="_blank">Google for Startups</a>
+                            </li>
+                            <li>
+                                <a href="https://hatchenterprise.org/" target="_blank">Hatch Enterprise</a>
+                            </li>
+                            <li>
+                                <a href="https://wegate.eu/" target="_blank">WeGate</a>
+                            </li>
+                            <li>
+                                <a href="https://www.foundervine.com/" target="_blank">Foundervine</a>
+                            </li>
+                            <li>
+                                <a href="https://www.grace-accelerator.de/" target="_blank">Grace</a>
+                            </li>
+                            <li>
+                                <a href="https://factoryberlin.com/stealth-mode/" target="_blank">StealthMode</a>
+                            </li>
+                            <li>
+                                <a href="https://parentpreneurs.net/en/" target="_blank">Parentpreneurs</a>
+                            </li>
+                            <li>
+                                <a href="https://www.allbrightcollective.com/" target="_blank">Allbright</a>
+                            </li>
+                            <li>
+                                <a href="https://wearesista.com/en/" target="_blank">Sista</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/groups/13835222/" target="_blank">FemTech and
+                                    Women’s
+                                    Health</a>
+                            </li>
 
+                        </ul>
+                        <li class="text-grotesk text-sm md:text-base lg:text-lg">Participate in events: Pitch
+                            competitions,
+                            networking, and office hours with VCs
+                        </li>
                     </ul>
-                    <p>Participate in events: Pitch competitions, networking, and office hours with VCs
-                    </p>
+
                 </div>
-                <div class="my-4 text-left">
-                    <span class="font-bold m-0 text-left"> Practice tactics to address and respond to
-                        prejudice:</span> <a
-                        href="https://www.furtherfaster.design/blog/gender-biased-questions-in-vc-and-how-to-respond"
-                        target="_blank">Find
-                        tips here</a>
+                <div class="my-8 text-left">
+                    <span class="font-bold m-0 text-left text-grotesk">2. Practice tactics to address and respond to
+                        prejudice:</span>
+                </div>
+                <ul>
+                    <li> <a href="https://www.furtherfaster.design/blog/gender-biased-questions-in-vc-and-how-to-respond"
+                            target="_blank">Gender-Biased Questions in VC and How To Respond</a></li>
                     <li><a
                             href="https://assets.ctfassets.net/05rp6sc1nib7/5rcVGBccUahcx7pcjZ75lg/2bd1610fd8b7e21a99d38f0fa85a8f5d/A_DEI_Playbook_for_Early-Stage_Startups__V.01-18-2023__1_.pdf">DEI
                             Playbook for early-stage startups</a></li>
-                </div>
+                </ul>
                 <div class="flex my-4 space-x-2 items-center">
-                    <span class="font-bold m-0 text-left">Don’t be afraid to promote yourself:</span>
-                </div>
-                <div>
-                    <p>
-                        Did you know that self-promotion has a plethora of benefits ranging from taking
-                        control
-                        of
-                        how
-                        you’re perceived to opening doors to new opportunities? <a
-                            href="https://iamremarkable.withgoogle.com/" target="_blank">#IAmRemarkable</a>
-                        workshop
-                    </p>
-                </div>
-
-                <div class="flex my-4 space-x-2 items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
-                    </svg>
-                    <span class="font-bold m-0">
-
-                        Further Ressources</span>
-                </div>
-                <div>
-                    <ul class="list-none text-left">
-                        <li>
-                            <a href="https://marker.medium.com/how-to-raise-startup-funds-as-a-woman-of-color-da70a5487902"
-                                target="_blank">How
-                                to
-                                Raise Startup Funds as a Woman of Colour</a>
-                        </li>
-                        <li>
-                            <a href="https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2021/04/19/fundraising-opportunities-for-minorities-and-women-of-color/?sh=71669eaa2ea1"
-                                target="_blank">Fundraising Opportunities for minorities and Women of Colour</a>
-                        </li>
-                    </ul>
+                    <span class="font-bold m-0 text-left text-grotesk">3. Don’t be afraid to promote yourself:</span>
                 </div>
             </div>
-            <div class="w-full flex items-center justify-center footer">
-                <a class="w-1/2 bg-red flex justify-start items-center space-x-2"
-                    href="https://community.founderland.org/form/founder" target="_blank">
-                    <div class="symbol For symred"></div>
-                    <span class="text-white text-center mx-auto text-xs px-2 md:text-sm lg:text-base">Join Founderland
-                        as Founder</span>
-                </a>
+
+            <div>
+                <p>
+                    Did you know that self-promotion has a plethora of benefits ranging from taking
+                    control
+                    of
+                    how
+                    you’re perceived to opening doors to new opportunities? <br><a
+                        href="https://iamremarkable.withgoogle.com/" target="_blank">#IAmRemarkable</a>
+                    workshop
+                </p>
+            </div>
+
+            <div class="flex my-4 space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                </svg>
+                <span class="font-bold m-0">
+
+                    Further Ressources</span>
+            </div>
+            <div>
+                <ul class="list-none text-left">
+                    <li>
+                        <a href="https://marker.medium.com/how-to-raise-startup-funds-as-a-woman-of-color-da70a5487902"
+                            target="_blank">How
+                            to
+                            Raise Startup Funds as a Woman of Colour</a>
+                    </li>
+                    <li>
+                        <a href="https://www.forbes.com/sites/forbesbusinessdevelopmentcouncil/2021/04/19/fundraising-opportunities-for-minorities-and-women-of-color/?sh=71669eaa2ea1"
+                            target="_blank">Fundraising Opportunities for minorities and Women of Colour</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div id="3-2" class="implications flex flex-col">
+        <div class="w-full flex items-center justify-center footer">
+            <a class="w-60 bg-red flex justify-start items-center space-x-2"
+                href="https://community.founderland.org/form/founder" target="_blank">
+                <div class="symbol For symred"></div>
+                <span class="text-white text-center mx-auto text-xs px-2 md:text-sm lg:text-base">Join Founderland
+                    as Founder</span>
+            </a>
+        </div>
+        <div id="3-2" class="mt-8 implications flex flex-col print-break-after">
             <h3 class=" bg-blue text-white border-l-0 py-4">For Investors</h3>
-            <div class="flex-grow px-4 pb-4">
+            <div class="px-4 pb-4 flex-grow">
                 <div class="flex my-4 space-x-2 items-center">
-                    <span class="font-bold m-0 text-left">Implement (un)conscious bias training</span>
+                    <span class="font-bold m-0 text-left text-grotesk">1. Implement (un)conscious bias training</span>
                 </div>
                 <div class="flex my-4 space-x-2 items-center">
-                    <span class="font-bold m-0 text-left">Listen to underrepresented voices in your organisation and
+                    <span class="font-bold m-0 text-left text-grotesk">2. Listen to underrepresented voices in your
+                        organisation and
                         community</span>
                 </div>
                 <div class="flex my-4 space-x-2 items-center">
-                    <span class="font-bold m-0 text-left">Hire diverse talent for all levels of your firm</span>
+                    <span class="font-bold m-0 text-left text-grotesk">3. Hire diverse talent for all levels of your
+                        firm</span>
                 </div>
                 <div class="flex my-4 space-x-2 items-center">
-                    <span class="font-bold m-0 text-left">
-                        Get involved:</span>
+                    <span class="font-bold m-0 text-left text-grotesk">
+                        4. Get involved:</span>
                 </div>
                 <div>
                     <p>Offer pro-bono mentoring
@@ -222,14 +240,15 @@
                         </li>
                         <li>
                             <a href="https://hbr.org/2020/06/a-vcs-guide-to-investing-in-black-founders"
-                                target="_blank">A VC’s Guide to Investing
+                                target="_blank">A
+                                VC’s Guide to Investing
                                 in Black Founders</a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="w-full flex items-center justify-center footer">
-                <a class="w-1/2 bg-blue flex justify-start items-center"
+                <a class="w-60 bg-blue flex justify-start items-center"
                     href="https://community.founderland.org/form/investor" target="_blank">
                     <div class="symbol Invest symblue"></div>
                     <span class="text-white text-center mx-auto text-xs px-2 md:text-sm lg:text-base">Join Founderland
@@ -238,9 +257,9 @@
                 </a>
             </div>
         </div>
-        <div id="3-3" class="implications flex flex-col print-break-after">
+        <div id="3-3" class="mt-8 implications flex flex-col print-break-after">
             <h3 class="bg-lime border-l-0 py-4">For Policymakers</h3>
-            <div class="px-4 pb-4 flex-grow">
+            <div class="mt-8 px-4 pb-4 flex-grow">
                 <div>
                     <p>Collect basic demographic data on ethnicity and gender <sup>
                             <a href="https://www.opennetwork.net/minority-businesses-matter-europe/"
@@ -273,7 +292,7 @@
                 </div>
             </div>
             <div class="w-full flex items-center justify-center footer">
-                <a class="w-1/2 bg-lime flex justify-start items-center"
+                <a class="w-60 bg-lime flex justify-start items-center"
                     href="https://community.founderland.org/form/ally" target="_blank">
                     <div class="symbol Moving symlime"></div><span
                         class="text-black mx-auto text-center text-xs px-2 md:text-sm lg:text-base">Join
@@ -282,4 +301,6 @@
             </div>
         </div>
     </div>
+
+</div>
 </div>

@@ -820,8 +820,16 @@ video {
   height: 10rem;
 }
 
+.h-full {
+  height: 100%;
+}
+
 .h-44 {
   height: 11rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-56 {
@@ -830,10 +838,6 @@ video {
 
 .h-36 {
   height: 9rem;
-}
-
-.h-6 {
-  height: 1.5rem;
 }
 
 .h-2 {
@@ -884,6 +888,10 @@ video {
   width: 12rem;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -894,10 +902,6 @@ video {
 
 .w-60 {
   width: 15rem;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .w-20 {
@@ -1241,6 +1245,10 @@ video {
   padding-left: 1.25rem;
 }
 
+.pt-8 {
+  padding-top: 2rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -1449,11 +1457,9 @@ html {
   font-weight: bold;
 }
 
-html,
 h3,
 h4,
 h5,
-p,
 blockquote,
 .text-grotesk {
   font-family: 'Space Grotesk', sans-serif;
@@ -1530,6 +1536,11 @@ table {
 figcaption {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+
+figcaption {
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -1955,10 +1966,22 @@ figcaption {
   margin-bottom: 2rem;
 }
 
+
+.card {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .card p {
   text-align: center;
+  margin-bottom: 0px;
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .card p {
+    margin-bottom: 0px;
+  }
 }
 
 .card .title {
@@ -3194,6 +3217,11 @@ nav .logo {
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
+
+.info {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .highlight {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -3272,27 +3300,16 @@ nav .logo {
   max-width: 72rem;
 }
 
+/* 
 .implications ul {
-  list-style-type: none;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-}
-
-@media (min-width: 768px) {
-  .implications ul {
-    padding-left: 1rem;
-  }
+  @apply list-none;
+  @apply pl-8 md:pl-4 my-4;
 }
 
 .implications ul > li {
-  list-style-type: none;
-  text-align: left;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  --tw-text-opacity: 1;
-  color: rgb(31 41 55 / var(--tw-text-opacity));
-}
+  @apply list-none text-left text-xs;
+  @apply text-gray-800;
+} */
 
 .implications h5 {
   margin-top: 1rem;
@@ -3440,6 +3457,12 @@ nav .logo {
     margin-right: calc(0.5rem * var(--tw-space-x-reverse));
     margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
+
+  .sm\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
 }
 
 @media (min-width: 768px) {
@@ -3525,6 +3548,14 @@ nav .logo {
     width: 50%;
   }
 
+  .md\:w-52 {
+    width: 13rem;
+  }
+
+  .md\:w-60 {
+    width: 15rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3563,6 +3594,12 @@ nav .logo {
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .md\:px-28 {
     padding-left: 7rem;
     padding-right: 7rem;
@@ -3581,6 +3618,11 @@ nav .logo {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .md\:text-sm {
@@ -3633,6 +3675,11 @@ nav .logo {
   .lg\:py-12 {
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-base {
