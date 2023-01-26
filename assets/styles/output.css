@@ -864,8 +864,8 @@ video {
   width: 1rem;
 }
 
-.w-2\/4 {
-  width: 50%;
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .w-40 {
@@ -874,10 +874,6 @@ video {
 
 .w-44 {
   width: 11rem;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .w-32 {
@@ -1030,16 +1026,16 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-2 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1156,6 +1152,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1174,11 +1175,6 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .px-12 {
@@ -1551,8 +1547,15 @@ figcaption {
 }
 
 h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1577,8 +1580,15 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1596,8 +1606,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 1.75rem;
+}
+
+@media (min-width: 640px) {
+  h3 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1730,28 +1747,24 @@ h1 {
 h2 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 2rem;
 }
 
 @media (min-width: 1024px) {
   h2 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 2.5rem;
   }
 }
 
 h3 {
   margin-top: 2rem;
   margin-bottom: 2rem;
-  margin-left: 3rem;
 }
 
 @media (min-width: 1024px) {
   h3 {
     margin-top: 3rem;
     margin-bottom: 3rem;
-    margin-left: 3.5rem;
   }
 }
 
@@ -2030,8 +2043,16 @@ nav .symbol::after {
 
 .section-head .symbol, 
 .section-head .symbol:after {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+@media (min-width: 640px) {
+  .section-head .symbol, 
+.section-head .symbol:after {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2548,19 +2569,19 @@ nav .logo {
 
 .title-card {
   display: flex;
-  height: 18rem;
-  width: 100%;
+  flex-grow: 1;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .title-card {
-    height: 24rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
@@ -3037,21 +3058,30 @@ nav .logo {
 
 /* sticky top-44 md:top-56 z-10 p-1  */
 
-/* .header-1 {
-  @apply px-8 md:px-10 lg:px-12 w-full;
+.header-1 {
+  margin-left: 2rem;
 }
+
+@media (min-width: 1024px) {
+  .header-1 {
+    margin-left: 2.5rem;
+  }
+}
+
 .header-2 {
-  @apply px-10 md:px-12 lg:px-14 w-full;
+  margin-left: 3rem;
 }
+
+@media (min-width: 1024px) {
+  .header-2 {
+    margin-left: 3.5rem;
+  }
+}
+
+/*
 .header-3 {
   @apply px-12 md:px-14 lg:px-16 w-full;
 } */
-
-#section-0 .symbol, 
-#section-0 .symbol::after {
-  height: 8rem;
-  width: 8rem;
-}
 
 #index .symbol, 
 #index .symbol::after {
@@ -3397,6 +3427,24 @@ nav .logo {
   .print\:bg-white {
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+}
+
+@media (min-width: 640px) {
+  .sm\:w-min {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
+  }
+
+  .sm\:space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 }
 
