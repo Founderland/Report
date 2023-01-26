@@ -6,10 +6,11 @@ layout: default
   <div class="color_block-1 text-white"
     :class="{'h-32': !scrolledFromTop, 'h-24': scrolledFromTop, 'bg-black': topColor === 'black', 'bg-blue': topColor === 'blue', 'bg-red': topColor === 'red', 'bg-pink': topColor === 'pink', 'bg-lime': topColor === 'lime'}">
     <div class="flex">
-      <div class="logo" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}">
+      <div class="logo cursor-pointer" :class="{'scale-100': !scrolledFromTop, 'scale-75': scrolledFromTop}"
+        x-on:click="window.scrollTo(0, 0)">
       </div>
       <div class="w-full flex items-center">
-        <p class="w-52 break-words md:w-full transition-all duration-300 ease-in-out text-base md:text-xl uppercase text-hanson"
+        <p class="mb-4 w-52 break-words md:w-full transition-all duration-300 ease-in-out text-base md:text-xl uppercase text-hanson noprint"
           :class="{'text-black': topColor === 'lime'}" x-html="content">
         </p>
       </div>
@@ -17,6 +18,24 @@ layout: default
 
   </div>
   <div class="color_block-2 overflow-hidden" x-intersect="topColor= 'blue', content=''">
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
+    <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
     <div class="symbol Calm"></div>
@@ -55,27 +74,38 @@ layout: default
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
     <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
+    <div class="symbol Forward"></div>
   </div>
   <div class="color_block-4 flex flex-col justify-center items-center" x-intersect="topColor= 'blue', content=''">
-    <h1 class="w-full md:w-2/3 xl:w-1/2 text-left px-4 m-0">An Intersectional Exploration of the Experiences of <br
-        class="hidden lg:block">Women of
+    <h1 class="w-full md:w-2/3 xl:w-1/2 text-left px-4 m-0 mt-4">An Intersectional Exploration of <br
+        class="hidden lg:block">The Experiences of <br class="hidden lg:block">Women of
       Colour Founders</h1>
-    <p class="w-full md:w-2/3 xl:w-1/2 px-4">Featuring Insights from Berlin-Based
+    <p class="w-full md:w-2/3 xl:w-1/2 px-4 m-0">Featuring Insights from Berlin-Based
       Founders</p>
   </div>
-  <div class="bg-white flex justify-between pr-28">
-    <div class="flex-grow"></div>
-    <!-- <div class=" cursor-pointer scrollarrow w-40 h-12 left-0 hover:bg-blue hover:text-white">
-      <span class="m-0 text-xs text-center">Download the PDF</span>
-    </div> -->
-    <div class="made flex justify-end items-center space-x-2 px-4">
-      <div>
-        <p>Made by</p>
-        <img class="w-20 md:w-40" src="assets/images/logos/Founderland_Logo.svg" alt="Founderland Logo">
+  <div class="bg-white flex flex-grow">
+    <a class="no-underline" href="assets/pdf/rise&thrive-v2b.pdf" download="Rise & Thrive.pdf">
+      <div class=" cursor-pointer scrollarrow w-40 h-12 left-0 hover:bg-blue hover:text-white">
+        <span class="m-0 text-xs text-center">Download the PDF</span>
       </div>
-      <div class="symbol Warmth symred"></div>
-    </div>
-
+    </a>
   </div>
 </header>
 <!-- navigation -->
@@ -84,7 +114,7 @@ layout: default
 <div class="fdl-wrapper mx-auto">
   <!-- main content -->
   <main class="w-full md:col-span-4">
-    <section id="section-0" class="bg-black m-0 pb-16">
+    <section id="section-0" class="mt-10 bg-black print-break-after">
       {% include section-0.html %}
     </section>
     <section id="section-1">

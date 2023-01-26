@@ -50,23 +50,20 @@ html {
   font-weight: bold;
 }
 html,
-h2,
 h3,
 h4,
+h5,
 p,
 blockquote,
 .text-grotesk {
   font-family: 'Space Grotesk', sans-serif;
 }
 .cta,
-h5,
-.text-mono {
-  font-family: 'Space Mono', monospace;
-}
 .lead {
   font-family: 'Space Mono', monospace;
 }
 h1,
+h2,
 .text-hanson {
   font-family: 'Hanson', sans-serif;
 }
@@ -82,8 +79,9 @@ sup,
   font-weight: bold;
 }
 h5 {
-  font-weight: bold;
+  font-weight: normal;
 }
+
 html,
 body,
 p,
@@ -91,26 +89,30 @@ a,
 ul,
 li,
 ol,
-table,
+table {
+  @apply text-base md:text-lg lg:text-xl;
+}
 figcaption {
-  font-size: 0.875rem /* 14px */;
-  line-height: 1.25rem /* 20px */;
+  @apply text-xs md:text-sm lg:text-base;
 }
 h1 {
-  font-size: 1.25rem /* 20px */;
-  line-height: 1.75rem /* 28px */;
+  @apply text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
 }
-h2,
-button,
-.cta {
-  font-size: 1.5rem /* 24px */;
-  line-height: 2rem /* 32px */;
+h2 {
+  @apply text-2xl md:text-3xl lg:text-4xl;
 }
 h3 {
-  font-size: 1.125rem /* 18px */;
-  line-height: 1.75rem /* 28px */;
-  border-left: 4px solid black;
-  padding-left: 12px;
+  @apply text-xl md:text-2xl lg:text-3xl;
+}
+h4 {
+  @apply text-lg md:text-xl lg:text-2xl;
+}
+h5 {
+  @apply text-lg md:text-xl lg:text-2xl;
+}
+button,
+.cta {
+  @apply text-xl lg:text-2xl;
 }
 .lead {
   font-size: 1.125rem /* 18px */;
@@ -122,60 +124,10 @@ a {
 }
 sup a {
   text-decoration: none;
-  font-size: 0.75rem /* 12px */;
-  line-height: 1rem /* 16px */;
+  @apply text-sm lg:text-base;
 }
-
-@screen md {
-  html,
-  body,
-  p,
-  a,
-  ul,
-  li,
-  ol,
-  table,
-  figcaption {
-    @apply text-base; /* it's 20px in the design system */
-  }
-  sup a {
-    @apply text-sm;
-  }
-}
-@screen lg {
-  html,
-  body,
-  p,
-  a,
-  ul,
-  li,
-  ol,
-  table,
-  figcaption {
-    font-size: 1.125rem /* 18px */;
-    line-height: 1.75rem /* 28px */;
-  }
-  h1,
-  h2 {
-    font-size: 2.25rem /* 36px */;
-    line-height: 2.5rem /* 40px */;
-  }
-  h3 {
-    font-size: 1.5rem /* 24px */;
-    line-height: 2rem /* 32px */;
-  }
-  button,
-  .cta {
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .lead {
-    /* @apply text-2xl; */
-  }
-  sup a {
-    font-size: 1rem /* 16px */;
-    line-height: 1.5rem /* 24px */;
-  }
+.info sup a {
+  @apply text-xxs lg:text-xs;
 }
 
 /*
@@ -193,47 +145,31 @@ p,
 #SPACING */
 
 /* text spacing */
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+  @apply mb-10 lg:mb-16;
+}
+h2 {
+  @apply my-8 lg:my-12 ml-8 lg:ml-10;
+}
+h3 {
+  @apply my-8 lg:my-12 ml-12 lg:ml-14;
+}
+h4 {
+  @apply my-8 lg:my-12;
+}
+/* h5 {
+  @apply mb-8 lg:mb-12;
+} */
 p,
-ul,
-li,
 button,
 .cta {
-  margin-bottom: 0.5rem /* 8px */;
+  @apply mb-8 lg:mb-12;
 }
 ol,
+ul,
+ul li,
 ol li {
-  padding-left: 1rem /* 16px */;
-}
-h1,
-h2 {
-  padding-top: 1.5rem /* 24px */;
-}
-
-@screen lg {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p,
-  ul,
-  li,
-  button,
-  .cta {
-    margin-bottom: 1rem /* 16px */;
-  }
-  h1 {
-    margin-bottom: 2.5rem /* 40px */;
-  }
-  h1,
-  h2 {
-    padding-top: 3rem /* 48px */;
-  }
+  @apply mb-2 lg:mb-4;
 }
 
 /* section spacing */
@@ -242,19 +178,7 @@ section {
   scroll-margin-top: 96px;
 }
 .section-content {
-  @apply px-10 pb-4 my-4;
-}
-
-@screen md {
-  .section-content {
-    @apply px-20 my-8;
-  }
-}
-
-@screen lg {
-  .section-content {
-    @apply px-40 my-10;
-  }
+  @apply px-20 md:px-36 lg:px-48 xl:px-56 2xl:px-64;
 }
 
 /*
@@ -290,7 +214,7 @@ html.edit-on span.edit {
 #Blockquotes */
 
 figure {
-  @apply my-12;
+  @apply my-10;
 }
 blockquote {
   @apply pl-12 pt-16 pr-8;
@@ -318,22 +242,22 @@ blockquote p {
   }
 }
 figcaption {
-  @apply text-gray-dark  pb-4 pr-6;
+  @apply text-gray-dark pb-4 pr-6;
   text-align: right;
 }
 
 /*
 #Cards */
 .card {
-  @apply px-4;
-  @apply py-8;
+  @apply p-4;
   @apply my-8;
 }
 .card p {
   text-align: center;
+  @apply text-base;
 }
 .card .title {
-  @apply text-4xl mb-4;
+  @apply text-xl mb-4 md:text-2xl;
 }
 .card .stat {
   @apply mb-4;
@@ -377,7 +301,7 @@ blockquote .symbol {
   top: 1px;
 }
 nav .symbol {
-  @apply mr-2;
+  @apply mr-2 hidden;
 }
 nav .symbol,
 nav .symbol::after {
@@ -386,14 +310,7 @@ nav .symbol::after {
 
 .section-head .symbol,
 .section-head .symbol:after {
-  @apply w-24 h-24;
-}
-
-@screen md {
-  .section-head .symbol,
-  .section-head .symbol:after {
-    @apply w-32 h-32;
-  }
+  @apply w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40;
 }
 
 @screen lg {
@@ -404,10 +321,6 @@ nav .symbol::after {
   }
   blockquote .symbol {
     top: 5px;
-  }
-  .section-head .symbol,
-  .section-head .symbol:after {
-    @apply w-40 h-40;
   }
 }
 
@@ -596,12 +509,12 @@ nav a.active {
 .burger.active {
   background-image: url('../images/elements/Nav-Close.svg');
 }
-.burger.active:after {
-  content: '+';
+/* .burger.active:after {
+  content: '';
   transform: rotate(45deg);
   display: block;
   margin-right: -1px;
-}
+} */
 
 /* Off canvas */
 nav {
@@ -700,7 +613,8 @@ nav.active {
   @apply h-16 w-16;
 }
 .color_block-1 {
-  @apply fixed z-50 w-full transition-all duration-500;
+  position: fixed;
+  @apply z-50 w-full transition-all duration-500;
 }
 .color_block-2 {
   @apply bg-blue mt-32 flex w-full h-16;
@@ -710,7 +624,7 @@ nav.active {
 }
 .color_block-4 {
   @apply bg-white flex-grow;
-  padding: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 0px;
 }
 .logo {
   @apply origin-top w-24 h-24 m-3 transition-all duration-500;
@@ -960,7 +874,7 @@ nav .logo {
     @apply h-20 w-20;
   }
 }
-@media (min-height: 950px) {
+@media (min-height: 850px) {
   .color_block-2 {
     @apply h-28;
   }
@@ -1002,7 +916,7 @@ nav .logo {
 /* sticky top-20 md:top-16 z-30 p-1 */
 /* sticky top-36 md:top-44 z-20 p-1 */
 /* sticky top-44 md:top-56 z-10 p-1  */
-.header-1 {
+/* .header-1 {
   @apply px-8 md:px-10 lg:px-12 w-full;
 }
 .header-2 {
@@ -1010,7 +924,7 @@ nav .logo {
 }
 .header-3 {
   @apply px-12 md:px-14 lg:px-16 w-full;
-}
+} */
 
 #section-0 .symbol,
 #section-0 .symbol::after {
@@ -1023,7 +937,8 @@ nav .logo {
 }
 
 /*
-#Nav */
+#index */
+
 .index ul {
   padding: 0;
   left: 0;
@@ -1118,19 +1033,6 @@ nav .logo {
   }
 }
 
-.made,
-.made p {
-  @apply text-xs m-0;
-}
-.made img {
-  @apply w-20;
-}
-
-.made .symbol,
-.made .symbol::after {
-  @apply h-9 w-9;
-}
-
 [x-cloak] {
   display: none;
 }
@@ -1155,7 +1057,7 @@ nav .logo {
 }
 
 .fdl-wrapper {
-  @apply max-w-7xl mx-auto;
+  @apply max-w-6xl mx-auto;
 }
 
 .implications ul {
@@ -1179,7 +1081,7 @@ nav .logo {
   @apply text-gray-800 text-left mb-2 md:text-sm;
 }
 .implications h3 {
-  @apply sticky top-24 z-30 py-4;
+  @apply m-0 px-4;
 }
 
 .footer .symbol,
@@ -1188,4 +1090,17 @@ nav .logo {
 }
 .footer a {
   @apply no-underline hover:underline decoration-white;
+}
+
+.made,
+.made p {
+  @apply text-xs m-0;
+}
+.made img {
+  @apply w-32;
+}
+
+.made .symbol,
+.made .symbol::after {
+  @apply h-9 w-9;
 }

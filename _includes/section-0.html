@@ -1,16 +1,16 @@
 <div id="index" x-data="{ expanded: false }"
-    class=" text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
+    class="print-break-after hidden text-white collapse w-full flex flex-col items-start justify-start space-x-4 p-8 mt-16 bg-black"
     x-intersect:enter="topColor='blue',content= ''">
     <div class="w-full flex space-x-2 items-center cursor-pointer" @click="expanded = ! expanded">
         <svg class="w-5 h-5 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
             focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
         </svg>
-        <h2 class="flex-grow m-0 pt-1 uppercase text-white text-xl">Index
+        <h2 class="flex-grow m-0 pt-1 uppercase text-xl print-break-after">Index
         </h2>
     </div>
-    <div x-show="expanded" x-collapse class="w-full mt-4">
-        <ul class="index">
+    <div x-show="expanded" x-collapse class="index w-full mt-4">
+        <ul>
             <li>
                 <a class="flex items-center space-x-2 index-section-0 index-parent" href="#section-0">
                     <div class="symbol index Blooming"></div>
@@ -112,342 +112,354 @@
         </ul>
     </div>
 </div>
-<div class="section-head">
-    <div>
-        <div class="symbol1 symbol Forward symred"></div>
-        <div class="symbol2 symbol Blooming symred"></div>
-        <div class="symbol3 symbol Value symred"></div>
-    </div>
-    <div class="title-card">
-        <h1 class="w-full mb-0 uppercase">Foreword</h1>
-    </div>
-    <div class="flex flex-col justify-center items-center img">
-        <div class="flex">
-            <div class="symbol4 symbol No symred"></div>
-            <div class="symbol5 symbol Moving symred"></div>
+<div id="section-0-content">
+    <div class="section-head">
+        <div>
+            <div class="symbol1 symbol Forward symred"></div>
+            <div class="symbol2 symbol Blooming symred"></div>
+            <div class="symbol3 symbol Value symred"></div>
         </div>
-        <div class="flex flex-grow img">
+        <div class="title-card">
+            <h1 class="w-full mb-0 uppercase">Foreword</h1>
+        </div>
+        <div class=" noprint flex flex-col justify-center items-center img">
+            <div class="flex">
+                <div class="symbol4 symbol No symred"></div>
+                <div class="symbol5 symbol Moving symred"></div>
+            </div>
+            <div class="flex flex-grow img">
+            </div>
         </div>
     </div>
-</div>
-<div id="foreword" class="mt-8">
-    <div id="0-1" x-data="{ expanded: false }"
-        class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white mb-8"
-        x-bind:class="{'max-h-[640px]': !expanded, 'h-full': expanded}" x-ref="container">
-        <div class="px-4 md:px-10 w-full mb-4">
-            <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2">
+    <div id="foreword" class="mt-10">
+        <div id="0-1" x-data="{ expanded: false }"
+            class="print-break-after relative overflow-hidden transition-all ease-in duration-500 bg-black text-white mb-8 forewordprint"
+            x-show="expanded" x-collapse.min.600px x-ref="container">
+            <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4">
                 Foreword by
                 Rowan Barnett & Nicole Danna</h2>
-        </div>
-        <div class="md:float-left flex justify-center items-center m-4 md:mx-8">
-            <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
-                <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
-                    src="assets/images/headshots/RowanBarnett_Headshot.webp" alt="Portrait of  Barnett">
-                <div class=" flex w-full">
-                    <div class="symbol Calm symred"></div>
-                    <div class="symbol Connected symblue"></div>
-                    <div class="symbol Emerging symlime"></div>
+            <div class="md:float-left flex justify-center items-center mb-14 mt-4 mx-4">
+                <div class="relative w-48 lg:w-60 m-4">
+                    <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                        src="assets/images/headshots/RowanBarnett_Headshot.webp" alt="Portrait of  Barnett">
+                    <div class=" flex w-full">
+                        <div class="symbol Calm symred"></div>
+                        <div class="symbol Connected symblue"></div>
+                        <div class="symbol Emerging symlime"></div>
+                    </div>
+                    <div class="absolute -bottom-14 right-0 h-14">
+                        <h5 class="text-right mb-1 text-sm">
+                            Rowan
+                            Barnett
+                        </h5>
+                        <p class="text-right mb-1 text-xs">
+                            Director,
+                            Google.org -
+                            Europe,
+                            Middle East & Africa </p>
+                    </div>
                 </div>
-                <div class="pt-4 h-28">
-                    <h5
-                        class="text-center mb-2  text-sm lg:text-base  font-bold tracking-tight text-gray-900 dark:text-white">
-                        Rowan
-                        Barnett
-                    </h5>
-                    <p
-                        class="w-full text-center mb-3 text-xs lg:text-sm font-normal s text-gray-700 dark:text-gray-400 px-2">
-                        Director,
-                        Google.org -
-                        Europe,
-                        Middle East & Africa </p>
-                </div>
-            </div>
-            <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
-                <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
-                    src="assets/images/headshots/NicoleDanna_Headshot.webp" alt="Portrait of Nicole Danna" />
-                <div class="flex w-full">
-                    <div class="symbol Warmth symlime"></div>
-                    <div class="symbol Visibility symblue"></div>
-                    <div class="symbol Connective symred"></div>
-                </div>
-                <div class="pt-4 h-28">
-                    <h5
-                        class="w-full mb-2 text-center text-sm lg:text-base font-bold tracking-tight text-gray-900 dark:text-white">
-                        Nicole Danna
-                    </h5>
-                    <p
-                        class="w-full text-center mb-3 text-xs lg:text-sm font-normal text-gray-700 dark:text-gray-400 px-2">
-                        Impact
-                        Challenge Lead,
-                        Google.org</p>
-                </div>
-            </div>
-        </div>
-        <div class="px-4 md:px-10 xl:px-20 pt-0 mb-10">
-            <p>At Google, when we think about a problem, we always start by looking at the data. When you look at the
-                data regarding
-                progress for women and particularly for women of colour, a clear pattern emerges: We’ve made progress,
-                but it’s been
-                uneven, frustratingly slow, and equality is a long way off.</p>
-            <p>Looking back on the last few decades we’ve seen some progress realized. To start with, more girls are
-                going to school
-                than ever before, and increasing women’s and girls’ education contributes both to their empowerment and
-                accounts for 50%
-                of the economic growth in OECD countries over the past 50 years. Plus, not only are women in the
-                workforce more than
-                ever before, they’re also getting paid more. 50 years ago, women made 60 cents for every dollar a man
-                made. Today,
-                thankfully that gap has shrunk - yet as the report states, a white woman still only makes around 78
-                cents to a white
-                man’s dollar, and for women and men of colour, it’s even less.</p>
-            <p>So it’s meaningful progress - but it’s not enough. And these improvements are fragile, as recent crises
-                have shown. For
-                example, globally, women were almost twice as likely to lose their jobs as a result of COVID-19.</p>
-            <p>There is also a new urgency. We are facing a plethora of challenges globally and in Europe - from
-                climate, to energy
-                security, to the rising cost of living and inequality. Not only will women and women of colour face the
-                brunt of these
-                crises, but they are being held back in being able to effectively respond to them. We need to take
-                action now.
-                In practice, this means we need two critical things. Firstly, we need socially-minded entrepreneurs -
-                who are putting
-                people, purpose and the planet at the centre of business goals. Second, we need to support people from
-                underserved
-                communities to be successful entrepreneurs - and come up with the solutions. Because if there is one
-                thing we’ve learnt
-                from our work at Google.org - it’s that it’s those that are closest to the problem that will come up
-                with the most
-                effective solution to it.</p>
-            <p>The data is clear that organisations with a woman in the founding team are more successful. And founders
-                who are women
-                of colour tend also to be impact-driven, with research showing that they create businesses that solve
-                problems that they
-                and their communities are confronted with. And yet as this report clearly shows, these founders continue
-                to face a
-                multitude of barriers and aren’t getting the investment they need to build businesses that can change
-                the world for the
-                better.</p>
-            <p>It’s a huge missed opportunity - one that hinders innovation and limits opportunities for economic
-                opportunity, wealth
-                generation and upward mobility and equity for women of colour. And, investors are also missing out on
-                new business
-                opportunities for return, while being able to make a positive difference.</p>
-            <p>
-                Clearly therefore, we need to do far more to unlock investment in the organisations that women of colour
-                build, both in
-                support of critical ecosystem-strengthening organisations like Founderland, as well as investment in the
-                founders
-                themselves. Our Women & Girls Impact Challenge, of which Founderland was a grantee, was one of our most
-                popular
-                programmes ever, with thousands of organisations applying. We know that there are groups out there,
-                ready to make a
-                difference, they just need the funding and expertise to make their ideas a reality.</p>
-            <p>
-                Some people may argue that there is already a plethora of DEI initiatives and accelerators and programs
-                for female
-                founders. Well, compared to 10 or 20 years ago yes, but we’re far from having solved the issue and the
-                number of women
-                participating pales compared to male participation in similar programs. And critically, while support
-                programs are very
-                important, investment is the number one need. Women of colour tend to report being over-mentored and
-                under-funded -
-                without funding, a great idea remains an idea.</p>
-            <p>
-                We therefore need to look closer to home - at ourselves, as funders, investors and philanthropists. If
-                you are a funder
-                - and particularly a white male - the first step is to recognise your own privilege and bias, the second
-                is to educate
-                yourself, and the third is to take action. By reading this, you are already on step two. Step three is
-                the harder one.
-                So take a moment once you have read this report and ask yourself, what can you do, and what are you
-                willing to do, to
-                make a positive difference to support women, and particularly women of colour entrepreneurs, to help
-                make our world a
-                better place by building great ventures.</p>
-            <figcaption>Rowan Barnett - Director, Google.org - Europe, Middle East & Africa</figcaption>
-            <figcaption>Nicole Danna - Impact Challenge Lead, Google.org</figcaption>
+                <div class="relative w-48 lg:w-60 m-4">
+                    <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                        src="assets/images/headshots/NicoleDanna_Headshot.webp" alt="Portrait of Nicole Danna" />
+                    <div class="flex w-full">
+                        <div class="symbol Warmth symlime"></div>
+                        <div class="symbol Visibility symblue"></div>
+                        <div class="symbol Connective symred"></div>
+                    </div>
+                    <div class="absolute -bottom-14 right-0 h-14">
+                        <h5 class="text-right mb-1 text-sm">
+                            Nicole Danna
+                        </h5>
+                        <p class="text-right mb-1 text-xs">
+                            Impact
+                            Challenge Lead,
+                            Google.org <br></p>
 
+                    </div>
+                </div>
+            </div>
+            <div class="px-20 md:px-28 xl:px-40 pt-0 mb-10 mt-10 md:mt-0">
+                <p>At Google, when we think about a problem, we always start by looking at the data. When you look at
+                    the
+                    data regarding
+                    progress for women and particularly for women of colour, a clear pattern emerges: We’ve made
+                    progress,
+                    but it’s been
+                    uneven, frustratingly slow, and equality is a long way off.</p>
+                <p>Looking back on the last few decades we’ve seen some progress realized. To start with, more girls are
+                    going to school
+                    than ever before, and increasing women’s and girls’ education contributes both to their empowerment
+                    and
+                    accounts for 50%
+                    of the economic growth in OECD countries over the past 50 years. Plus, not only are women in the
+                    workforce more than
+                    ever before, they’re also getting paid more. 50 years ago, women made 60 cents for every dollar a
+                    man
+                    made. Today,
+                    thankfully that gap has shrunk - yet as the report states, a white woman still only makes around 78
+                    cents to a white
+                    man’s dollar, and for women and men of colour, it’s even less.</p>
+                <p>So it’s meaningful progress - but it’s not enough. And these improvements are fragile, as recent
+                    crises
+                    have shown. For
+                    example, globally, women were almost twice as likely to lose their jobs as a result of COVID-19.</p>
+                <p>There is also a new urgency. We are facing a plethora of challenges globally and in Europe - from
+                    climate, to energy
+                    security, to the rising cost of living and inequality. Not only will women and women of colour face
+                    the
+                    brunt of these
+                    crises, but they are being held back in being able to effectively respond to them. We need to take
+                    action now.
+                    In practice, this means we need two critical things. Firstly, we need socially-minded entrepreneurs
+                    -
+                    who are putting
+                    people, purpose and the planet at the centre of business goals. Second, we need to support people
+                    from
+                    underserved
+                    communities to be successful entrepreneurs - and come up with the solutions. Because if there is one
+                    thing we’ve learnt
+                    from our work at Google.org - it’s that it’s those that are closest to the problem that will come up
+                    with the most
+                    effective solution to it.</p>
+                <p>The data is clear that organisations with a woman in the founding team are more successful. And
+                    founders
+                    who are women
+                    of colour tend also to be impact-driven, with research showing that they create businesses that
+                    solve
+                    problems that they
+                    and their communities are confronted with. And yet as this report clearly shows, these founders
+                    continue
+                    to face a
+                    multitude of barriers and aren’t getting the investment they need to build businesses that can
+                    change
+                    the world for the
+                    better.</p>
+                <p>It’s a huge missed opportunity - one that hinders innovation and limits opportunities for economic
+                    opportunity, wealth
+                    generation and upward mobility and equity for women of colour. And, investors are also missing out
+                    on
+                    new business
+                    opportunities for return, while being able to make a positive difference.</p>
+                <p>
+                    Clearly therefore, we need to do far more to unlock investment in the organisations that women of
+                    colour
+                    build, both in
+                    support of critical ecosystem-strengthening organisations like Founderland, as well as investment in
+                    the
+                    founders
+                    themselves. Our Women & Girls Impact Challenge, of which Founderland was a grantee, was one of our
+                    most
+                    popular
+                    programmes ever, with thousands of organisations applying. We know that there are groups out there,
+                    ready to make a
+                    difference, they just need the funding and expertise to make their ideas a reality.</p>
+                <p>
+                    Some people may argue that there is already a plethora of DEI initiatives and accelerators and
+                    programs
+                    for female
+                    founders. Well, compared to 10 or 20 years ago yes, but we’re far from having solved the issue and
+                    the
+                    number of women
+                    participating pales compared to male participation in similar programs. And critically, while
+                    support
+                    programs are very
+                    important, investment is the number one need. Women of colour tend to report being over-mentored and
+                    under-funded -
+                    without funding, a great idea remains an idea.</p>
+                <p>
+                    We therefore need to look closer to home - at ourselves, as funders, investors and philanthropists.
+                    If
+                    you are a funder
+                    - and particularly a white male - the first step is to recognise your own privilege and bias, the
+                    second
+                    is to educate
+                    yourself, and the third is to take action. By reading this, you are already on step two. Step three
+                    is
+                    the harder one.
+                    So take a moment once you have read this report and ask yourself, what can you do, and what are you
+                    willing to do, to
+                    make a positive difference to support women, and particularly women of colour entrepreneurs, to help
+                    make our world a
+                    better place by building great ventures.</p>
+                <figcaption>Rowan Barnett - Director, Google.org - Europe, Middle East & Africa</figcaption>
+                <figcaption>Nicole Danna - Impact Challenge Lead, Google.org</figcaption>
+
+            </div>
+            <button type="button"
+                class="readmore flex space-x-2 justify-center items-center bg-black text-base m-0 left-0 right-0 px-4 py-2 absolute z-20 bottom-0"
+                @click="expanded = !expanded; document.getElementById('0-1').scrollIntoView();">
+                <span x-text="expanded ? 'Close' : 'Read More'"></span>
+                <svg class="w-4 h-4 transition-all duration-300" x-bind:class="{'rotate-180': expanded}"
+                    aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
         </div>
-        <button type="button"
-            class="flex space-x-2 justify-center items-center bg-black text-base m-0 left-0 right-0 px-4 py-2 absolute z-20 bottom-0"
-            @click="expanded = !expanded; document.getElementById('0-1').scrollIntoView();">
-            <span x-text="expanded ? 'Close' : 'Read More'"></span>
-            <svg class="w-4 h-4 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
-                focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
-    </div>
-    <div id="0-2" x-data="{ expanded: false }"
-        class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white"
-        x-intersect="topColor= 'red',content= 'Foreword'"
-        x-bind:class="{'max-h-[640px]': !expanded, 'h-full': expanded}" x-ref="container">
-        <div class="px-4 md:px-10 w-full mb-4">
-            <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4 pt-0 border-l-red border-l-2">
+        <div id="0-2" x-data="{ expanded: false }"
+            class="relative overflow-hidden transition-all ease-in duration-500 bg-black text-white print-break-after forewordprint"
+            x-intersect="topColor= 'red',content= 'Foreword'" x-show="expanded" x-collapse.min.600px x-ref="container">
+            <h2 x-intersect:enter="topColor='red', content= 'Foreword'" class="pl-4">
                 Foreword by Prof. Pisitta Vongswasdi, PhD & Prof. Julia de
                 Groote, PhD</h2>
-        </div>
-        <div class="md:float-left flex justify-center items-center m-4 md:mx-8">
-            <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
-                <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
-                    src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
-                    alt="Portrait of Prof. Pisitta Vongswasdi, PhD">
-                <div class=" flex w-full">
-                    <div class="symbol Open symlime"></div>
-                    <div class="symbol Direction sympink"></div>
-                    <div class="symbol Inclusive symblue"></div>
+            <div class="md:float-left flex justify-center items-center mb-14 mt-4 mx-4">
+                <div class="relative w-48 lg:w-60 m-4">
+                    <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                        src="assets/images/headshots/PisittaVongswasdi_Headshot.webp"
+                        alt="Portrait of Prof. Pisitta Vongswasdi, PhD">
+                    <div class=" flex w-full">
+                        <div class="symbol Open symlime"></div>
+                        <div class="symbol Direction sympink"></div>
+                        <div class="symbol Inclusive symblue"></div>
+                    </div>
+                    <div class="absolute -bottom-14 right-0 h-14">
+                        <h5 class="text-right mb-1 text-sm">
+                            Prof. Pisitta Vongswasdi
+                        </h5>
+                        <p class="text-right mb-1 text-xs">
+                            PhD</p>
+                    </div>
                 </div>
-                <div class="pt-4 h-22">
-                    <h5
-                        class="text-center mb-2  text-sm lg:text-base  font-bold tracking-tight text-gray-900 dark:text-white">
-                        Prof. Pisitta Vongswasdi
-                    </h5>
-                    <p
-                        class="w-full text-center mb-3 text-xs lg:text-sm font-normal s text-gray-700 dark:text-gray-400 px-2">
-                        PhD</p>
-                </div>
-            </div>
-            <div class="w-48 lg:w-60 overflow-hidden m-4 bg-white dark:bg-gray-800">
-                <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
-                    src="assets/images/headshots/JuliadeGroote_Headshot.webp"
-                    alt="Portrait of Prof. Julia de Groote, PhD" />
-                <div class="flex w-full">
-                    <div class="symbol Warmth symlime"></div>
-                    <div class="symbol Visibility symblue"></div>
-                    <div class="symbol Moving sympink"></div>
-                </div>
-                <div class="pt-4 h-22">
-                    <h5
-                        class="w-full mb-2 text-center text-sm lg:text-base font-bold tracking-tight text-gray-900 dark:text-white">
-                        Prof. Julia de
-                        Groote
-                    </h5>
-                    <p
-                        class="w-full text-center mb-3 text-xs lg:text-sm font-normal text-gray-700 dark:text-gray-400 px-2">
-                        PhD</p>
+                <div class="relative w-48 lg:w-60 m-4">
+                    <img class="w-48 lg:w-60 h-52 lg:h-64 object-cover object-top"
+                        src="assets/images/headshots/JuliadeGroote_Headshot.webp"
+                        alt="Portrait of Prof. Julia de Groote, PhD" />
+                    <div class="flex w-full">
+                        <div class="symbol Warmth symlime"></div>
+                        <div class="symbol Visibility symblue"></div>
+                        <div class="symbol Moving sympink"></div>
+                    </div>
+                    <div class="absolute -bottom-14 right-0 h-14">
+                        <h5 class="text-right mb-1 text-sm">
+                            Prof. Julia de
+                            Groote
+                        </h5>
+                        <p class="text-right mb-1 text-xs">
+                            PhD</p>
+                    </div>
                 </div>
             </div>
+
+            <div class="px-20 md:px-28 xl:px-40 pt-0 mb-10 mt-10 md:mt-0">
+                <p>
+                    The modern stereotypical startup founder is typically characterized as a middle-to-upper-class,
+                    young,
+                    highly-educated,
+                    white male leading a high-growth, high-tech enterprise. This imagery of what constitutes bona fide
+                    entrepreneurship had
+                    and continued to inform and influence startup institutional environments—best serving those that fit
+                    this
+                    prototype.
+                </p>
+                <p>
+                    This report takes a close examination of the “other” type of founders—those who identify as Women of
+                    Colour
+                    and
+                    thereby
+                    defy such entrepreneurial stereotypes. Based on empirical accounts of these underrepresented
+                    founders,
+                    the
+                    report
+                    unveils several structural constraints that impede resource acquisition as the founders navigate
+                    their
+                    journeys
+                    in the
+                    Berlin startup scene. It highlights that however much they ‘lean into’ making their startup plans
+                    happen,
+                    there
+                    are
+                    daunting systemic barriers preventing them from enacting their full aspirations.
+                </p>
+                <p>
+                    Nonetheless, despite their marginalized position, the report’s chronicles suggest that many of these
+                    women
+                    found
+                    ways to
+                    start and grow their ventures—an effort indicative of their unrelenting agency and adept
+                    resourcefulness
+                    in
+                    the
+                    contexts
+                    of inequality. Some, informed by their own experiences of discrimination but also their better
+                    understanding
+                    of
+                    entrepreneurship, started to challenge the status quo by starting their own venture and contributing
+                    to
+                    practices that
+                    make their community more inclusive. That is a true ‘disruption’.</p>
+
+                <p>
+                    But such a feat would by no means be achieved without the paramount support by organizations like
+                    Founderland
+                    who orchestrated this report. Their work helps to mobilize the collective power of these
+                    underrepresented
+                    founders, amplify their voices, and catalyze the ingenious ventures for all of us to see.
+                </p>
+                <p>The report further highlights the pivotal role of educational institutions. For example, WHU, while
+                    being
+                    a
+                    small
+                    private business school, is the alma mater of an astonishingly high proportion of VCs and founders
+                    in
+                    general,
+                    and
+                    unicorn founders in particular. This fact underlines the responsibility of educational institutions
+                    at
+                    the
+                    center of the
+                    entrepreneurship ecosystem. They need to take on a leading role as agents of change by contributing
+                    to
+                    creating
+                    a more
+                    inclusive entrepreneurial ecosystem, which leverages the full potential of founder diversity. They
+                    can
+                    fulfill
+                    their
+                    role by enabling underrepresented groups to become part of their student body and grow into the
+                    network,
+                    by
+                    living
+                    diversity, and including related topics in their teaching to fight existing stereotypes and
+                    inequalities.
+                </p>
+                <p>It is not only the educational institutions the report offers food for thought and calls to action
+                    for.
+                    The
+                    report
+                    outlines a comprehensive agenda to bring more equity. It spans a set of repertoires for founders
+                    themselves,
+                    and
+                    the
+                    responsibilities of the policymakers, VCs, and other stakeholders to not just become allies but to
+                    play
+                    an
+                    active part
+                    in making the European startup ecosystem even more competitive and dynamic by enabling
+                    underrepresented
+                    founders
+                    to
+                    flourish and grow their unique ventures.</p>
+                <p>We challenge ourselves, the policy makers, and the VC investors to create an inclusive and equitable
+                    environment
+                    for
+                    everyone to thrive.</p>
+                <figcaption>Prof. Pisitta Vongswasdi, PhD
+                </figcaption>
+                <figcaption>Prof. Julia de Groote, PhD</figcaption>
+                <figcaption>WHU Otto Beisheim School of Management</figcaption>
+
+            </div>
+            <button type="button"
+                class="readmore flex space-x-2 justify-center items-center bg-black text-base m-0 left-0 right-0 px-4 py-2 absolute z-20 bottom-0"
+                @click="expanded = !expanded; document.getElementById('0-2').scrollIntoView();">
+                <span x-text="expanded ? 'Close' : 'Read More'"></span>
+                <svg class="w-4 h-4 transition-all duration-300" x-bind:class="{'rotate-180': expanded}"
+                    aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </button>
         </div>
-
-        <div class="px-4 md:px-10 xl:px-20 pt-0 mb-10">
-            <p>
-                The modern stereotypical startup founder is typically characterized as a middle-to-upper-class,
-                young,
-                highly-educated,
-                white male leading a high-growth, high-tech enterprise. This imagery of what constitutes bona fide
-                entrepreneurship had
-                and continued to inform and influence startup institutional environments—best serving those that fit
-                this
-                prototype.
-            </p>
-            <p>
-                This report takes a close examination of the “other” type of founders—those who identify as Women of
-                Colour
-                and
-                thereby
-                defy such entrepreneurial stereotypes. Based on empirical accounts of these underrepresented
-                founders,
-                the
-                report
-                unveils several structural constraints that impede resource acquisition as the founders navigate
-                their
-                journeys
-                in the
-                Berlin startup scene. It highlights that however much they ‘lean into’ making their startup plans
-                happen,
-                there
-                are
-                daunting systemic barriers preventing them from enacting their full aspirations.
-            </p>
-            <p>
-                Nonetheless, despite their marginalized position, the report’s chronicles suggest that many of these
-                women
-                found
-                ways to
-                start and grow their ventures—an effort indicative of their unrelenting agency and adept
-                resourcefulness
-                in
-                the
-                contexts
-                of inequality. Some, informed by their own experiences of discrimination but also their better
-                understanding
-                of
-                entrepreneurship, started to challenge the status quo by starting their own venture and contributing
-                to
-                practices that
-                make their community more inclusive. That is a true ‘disruption’.</p>
-
-            <p>
-                But such a feat would by no means be achieved without the paramount support by organizations like
-                Founderland
-                who orchestrated this report. Their work helps to mobilize the collective power of these
-                underrepresented
-                founders, amplify their voices, and catalyze the ingenious ventures for all of us to see.
-            </p>
-            <p>The report further highlights the pivotal role of educational institutions. For example, WHU, while
-                being
-                a
-                small
-                private business school, is the alma mater of an astonishingly high proportion of VCs and founders
-                in
-                general,
-                and
-                unicorn founders in particular. This fact underlines the responsibility of educational institutions
-                at
-                the
-                center of the
-                entrepreneurship ecosystem. They need to take on a leading role as agents of change by contributing
-                to
-                creating
-                a more
-                inclusive entrepreneurial ecosystem, which leverages the full potential of founder diversity. They
-                can
-                fulfill
-                their
-                role by enabling underrepresented groups to become part of their student body and grow into the
-                network,
-                by
-                living
-                diversity, and including related topics in their teaching to fight existing stereotypes and
-                inequalities.
-            </p>
-            <p>It is not only the educational institutions the report offers food for thought and calls to action
-                for.
-                The
-                report
-                outlines a comprehensive agenda to bring more equity. It spans a set of repertoires for founders
-                themselves,
-                and
-                the
-                responsibilities of the policymakers, VCs, and other stakeholders to not just become allies but to
-                play
-                an
-                active part
-                in making the European startup ecosystem even more competitive and dynamic by enabling
-                underrepresented
-                founders
-                to
-                flourish and grow their unique ventures.</p>
-            <p>We challenge ourselves, the policy makers, and the VC investors to create an inclusive and equitable
-                environment
-                for
-                everyone to thrive.</p>
-            <figcaption>Prof. Pisitta Vongswasdi, PhD
-            </figcaption>
-            <figcaption>Prof. Julia de Groote, PhD</figcaption>
-            <figcaption>WHU Otto Beisheim School of Management</figcaption>
-
-        </div>
-        <button type="button"
-            class="flex space-x-2 justify-center items-center bg-black text-base m-0 left-0 right-0 px-4 py-2 absolute z-20 bottom-0"
-            @click="expanded = !expanded; document.getElementById('0-2').scrollIntoView();">
-            <span x-text="expanded ? 'Close' : 'Read More'"></span>
-            <svg class="w-4 h-4 transition-all duration-300" x-bind:class="{'rotate-180': expanded}" aria-hidden="true"
-                focusable="false" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-        </button>
     </div>
 </div>

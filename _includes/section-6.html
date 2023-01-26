@@ -1,4 +1,4 @@
-<div class="section-head">
+<div class="section-head mb-0 md:mb-0 lg:mb-0 xl:mb-0">
         <div>
                 <div class="symbol1 symbol Forward"></div>
                 <div class="symbol2 symbol Calm"></div>
@@ -18,8 +18,8 @@
                 </div>
         </div>
 </div>
-<div class="bg-lime text-black py-8">
-        <div id="6-1" class="citations" x-intersect="topColor='black', content= '06. Appendices'"
+<div class="bg-lime print:bg-white text-black py-8" id="section-6-content">
+        <div id="6-1" class="citations noprint" x-intersect="topColor='black', content= '06. Appendices'"
                 x-data="{ expanded: false }">
                 <div class="sticky top-20 md:top-16 z-30 p-1 px-8 w-full flex items-center bg-lime cursor-pointer"
                         @click="expanded = ! expanded">
@@ -306,7 +306,7 @@
                 </div>
         </div>
         <div id="6-2" x-data="{ expanded: false }">
-                <div class="sticky top-20 md:top-16 z-30 p-1 px-8 w-full flex items-center bg-lime cursor-pointer"
+                <div class="sticky top-20 md:top-16 z-30 p-1 px-8 w-full flex items-center bg-lime cursor-pointer "
                         @click="expanded = ! expanded">
                         <h1 class="flex-grow  text-xl">Glossary</h1>
                         <svg class="w-6 h-6 transition-all duration-300" x-bind:class="{'rotate-180': expanded}"
@@ -316,26 +316,15 @@
                                         d="M19 9l-7 7-7-7" />
                         </svg>
                 </div>
-                <div class="section-content text-justify" x-show="expanded" x-collapse>
+                <div class="section-content text-justify print-visible" x-show="expanded" x-collapse>
                         <ul>
-                                <li><span class="highlight">Women of Colour:</span> Women who experience the effects and
-                                        processes of
-                                        racialisation, class, and gender
-                                        domination
-                                        as well
-                                        as other sources of inequality, particularly hierarchies of legal status (Bassel
-                                        and Emejulu 2017).
-                                        This
-                                        includes, but
-                                        is not limited to, women founders who hold ethnic backgrounds or heritage in
-                                        Africa, the Caribbean,
-                                        South &
-                                        Central
-                                        America, South & Southeast Asia, and the Middle East <sup><a
-                                                        href="https://www.founderland.org/faq"
-                                                        target="_blank">1</a></sup><sup>, </sup><sup><a
-                                                        href="http://www.wocresist.com/wp-content/uploads/2021/12/Women-of-Colour-Resist.pdf"
-                                                        target="_blank">2</a></sup></li>
+                                <li>
+                                        <span class="highlight">Accelerator:</span> Programs focused on speeding up the
+                                        growth of an
+                                        existing company that has a minimum
+                                        viable
+                                        product
+                                </li>
                                 <li>
                                         <span class="highlight">BAME:</span> Abbreviation for Black, Asian, and Minority
                                         Ethnic. This term
@@ -360,32 +349,34 @@
                                         oppression <sup><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7780538/"
                                                         target="_blank">3</a></sup></li>
                                 <li>
-                                        <span class="highlight">Impact Investing:</span> an investment strategy that
-                                        aims to create a
-                                        beneficial social and environmental
-                                        impact in
-                                        addition to
-                                        financial gains <sup><a
-                                                        href="https://www.investopedia.com/terms/i/impact-investing.asp"
-                                                        target="_blank">4</a></sup>
+                                        <span class="highlight">Bootstrapping:</span> A situation in which an
+                                        entrepreneur starts a company
+                                        with little capital, relying on
+                                        money
+                                        other
+                                        than
+                                        outside investment, such as using their personal finances or the operating
+                                        revenue to fund the
+                                        company
                                 </li>
                                 <li>
-                                        <span class="highlight">Social Entrepreneurship:</span> the process of
-                                        identifying social,
-                                        environmental, and cultural problems and
-                                        creating
-                                        solutions
-                                        through the development, implementation, and funding of entrepreneurial
-                                        projects. These endeavours
-                                        can
-                                        be
-                                        taken
-                                        by
-                                        individuals, groups, startups, or corporations <sup><a
-                                                        href="https://www.managementstudyguide.com/social-entrepreneurship.htm"
-                                                        target="_blank">5</a></sup><sup>, </sup><sup><a
-                                                        href="https://www.uschamber.com/co/start/startup/what-is-social-entrepreneurship"
-                                                        target="_blank">6</a></sup>
+                                        <span class="highlight">Business Angel/ Angel Investor:</span> A private
+                                        individual, often with a
+                                        high net worth and business
+                                        experience,
+                                        who
+                                        directly
+                                        invests capital into a startup in exchange for ownership equity or convertible
+                                        debt <sup><a href="https://single-market-economy.ec.europa.eu/access-finance/policy-areas/business-angels_en"
+                                                        target="_blank">12</a></sup><sup>, </sup><sup><a
+                                                        href="https://www.investopedia.com/terms/a/angelinvestor.asp#:~:text=Angel%20investors%20are%20also%20called,ownership%20equity%20or%20convertible%20debt."
+                                                        target="_blank">13</a></sup>
+                                </li>
+
+
+                                <li>
+                                        <span class="highlight">Exit:</span> The point where founders and/or investors
+                                        leave the startup
                                 </li>
                                 <li>
                                         <span class="highlight">Funding Stages:</span> Also known as funding rounds are
@@ -465,20 +456,59 @@
                                         </ul>
                                 </li>
                                 <li>
-                                        <span class="highlight">Exit:</span> The point where founders and/or investors
-                                        leave the startup
-                                </li>
-                                <li>
-                                        <span class="highlight">Accelerator:</span> Programs focused on speeding up the
-                                        growth of an
-                                        existing company that has a minimum
-                                        viable
-                                        product
+                                        <span class="highlight">Impact Investing:</span> an investment strategy that
+                                        aims to create a
+                                        beneficial social and environmental
+                                        impact in
+                                        addition to
+                                        financial gains <sup><a
+                                                        href="https://www.investopedia.com/terms/i/impact-investing.asp"
+                                                        target="_blank">4</a></sup>
                                 </li>
                                 <li>
                                         <span class="highlight">Incubator:</span> Programs focused on helping startups
                                         in the product
                                         development stage
+                                </li>
+                                <li><span class="highlight">Intersectionality:</span> Describes how systems of
+                                        inequality based on gender, race, ethnicity, sexual orientation, gender
+                                        identity, disability, class, and other forms of discrimination “intersect” to
+                                        create unique experiences of oppression
+                                        and privilege.</li>
+
+                                <li>
+                                        <span class="highlight">Social Entrepreneurship:</span> the process of
+                                        identifying social,
+                                        environmental, and cultural problems and
+                                        creating
+                                        solutions
+                                        through the development, implementation, and funding of entrepreneurial
+                                        projects. These endeavours
+                                        can
+                                        be
+                                        taken
+                                        by
+                                        individuals, groups, startups, or corporations <sup><a
+                                                        href="https://www.managementstudyguide.com/social-entrepreneurship.htm"
+                                                        target="_blank">5</a></sup><sup>, </sup><sup><a
+                                                        href="https://www.uschamber.com/co/start/startup/what-is-social-entrepreneurship"
+                                                        target="_blank">6</a></sup>
+                                </li>
+                                <li>
+                                        <span class="highlight">Traction:</span> The progress and momentum of a startup
+                                        company, which can
+                                        be measured in metrics such as
+                                        user
+                                        growth,
+                                        sales,
+                                        etc. <sup><a href="https://coresignal.com/blog/business-traction/"
+                                                        target="_blank">14</a></sup><sup>,
+                                        </sup><sup><a href="https://www.startups.com/library/expert-advice/startup-traction"
+                                                        target="_blank">15</a></sup>
+                                </li>
+                                <li>
+                                        <span class="highlight">Valuation:</span> An estimation of the worth of a
+                                        startup
                                 </li>
                                 <li>
                                         <span class="highlight">Venture Capital (VC):</span> a form of private equity
@@ -494,50 +524,40 @@
                                         and
                                         credibility for investors to eventually exit (e.g., sale of company or IPO)
                                         <sup><a href="https://www.investopedia.com/terms/v/venturecapital.asp"
-                                                        target="_blank">10</a></sup><sup>, </sup><sup><a
-                                                        href="https://hbr.org/1998/11/how-venture-capital-works"
+                                                        target="_blank">10</a></sup><sup>,
+                                        </sup><sup><a href="https://hbr.org/1998/11/how-venture-capital-works"
                                                         target="_blank">11</a></sup>
                                 </li>
-                                <li>
-                                        <span class="highlight">Business Angel/ Angel Investor:</span> A private
-                                        individual, often with a
-                                        high net worth and business
-                                        experience,
-                                        who
-                                        directly
-                                        invests capital into a startup in exchange for ownership equity or convertible
-                                        debt <sup><a href="https://single-market-economy.ec.europa.eu/access-finance/policy-areas/business-angels_en"
-                                                        target="_blank">12</a></sup><sup>, </sup><sup><a
-                                                        href="https://www.investopedia.com/terms/a/angelinvestor.asp#:~:text=Angel%20investors%20are%20also%20called,ownership%20equity%20or%20convertible%20debt."
-                                                        target="_blank">13</a></sup>
-                                </li>
-                                <li>
-                                        <span class="highlight">Bootstrapping:</span> A situation in which an
-                                        entrepreneur starts a company
-                                        with little capital, relying on
-                                        money
-                                        other
-                                        than
-                                        outside investment, such as using their personal finances or the operating
-                                        revenue to fund the
-                                        company
-                                </li>
-                                <li>
-                                        <span class="highlight">Traction:</span> The progress and momentum of a startup
-                                        company, which can
-                                        be measured in metrics such as
-                                        user
-                                        growth,
-                                        sales,
-                                        etc. <sup><a href="https://coresignal.com/blog/business-traction/"
-                                                        target="_blank">14</a></sup><sup>, </sup><sup><a
-                                                        href="https://www.startups.com/library/expert-advice/startup-traction"
-                                                        target="_blank">15</a></sup>
-                                </li>
-                                <li>
-                                        <span class="highlight">Valuation:</span> An estimation of the worth of a
-                                        startup
-                                </li>
+                                <li><span class="highlight">Women of Colour:</span> Women who experience the effects and
+                                        processes of
+                                        racialisation, class, and gender
+                                        domination
+                                        as well
+                                        as other sources of inequality, particularly hierarchies of legal status (Bassel
+                                        and Emejulu 2017).
+                                        This
+                                        includes, but
+                                        is not limited to, women founders who hold ethnic backgrounds or heritage in
+                                        Africa, the Caribbean,
+                                        South &
+                                        Central
+                                        America, South & Southeast Asia, and the Middle East <sup><a
+                                                        href="https://www.founderland.org/faq"
+                                                        target="_blank">1</a></sup><sup>, </sup><sup><a
+                                                        href="http://www.wocresist.com/wp-content/uploads/2021/12/Women-of-Colour-Resist.pdf"
+                                                        target="_blank">2</a></sup></li>
+
+
+
+
+
+
+
+
+
+
+
+
                         </ul>
                 </div>
         </div>
