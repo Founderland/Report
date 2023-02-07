@@ -1,0 +1,26 @@
+<div id="cookie-consent" aria-label="Cookie consent banner">
+    <p class="py-2 text-sm m-0">We use cookies to understand how
+        visitors are using this site and to improve its experience</p>
+    <div class="flex space-x-2 items-center">
+        <button id="cookie-consent-dismiss" class="text-sm m-0 px-4 bg-blue text-white hover:bg-lime hover:text-black"
+            onclick="recordConsent();
+                   document.getElementById('cookie-consent').style.display = 'none';">
+            OK
+        </button>
+        <a class="text-sm no-underline" href="https://www.founderland.org/privacy-policy" target="_blank">Learn More</a>
+        <button id="cookie-consent-customize-btn" class="text-sm m-0 px-4  text-white hover:bg-lime hover:text-black"
+            onclick="document.getElementById('cookie-consent-customize').style.display = 'grid';
+                           document.getElementById('cookie-consent-customize-btn').style.display = 'none';">
+            Customize</button>
+
+    </div>
+    <div id="cookie-consent-customize" style="display:none; padding-top:.5rem; grid-gap:5px;
+                          grid-template-columns: max-content max-content;">
+        <span style="margin-bottom: 10px" class="text-sm">Select which cookies you accept:</span>
+        <span></span>
+        <span id="cookie-consent-label-analytics" aria-hidden="true" class="text-xs">Website usage statistics</span>
+        <label class="switch"><input id="cookie-consent-analytics" type="checkbox" checked
+                aria-labelledby="cookie-consent-label-analytics" /><span class="slider"></span></label>
+
+    </div>
+</div>

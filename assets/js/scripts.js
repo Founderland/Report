@@ -129,3 +129,60 @@ const scrollProgress = () => {
 // 'rgba(238, 147, 181, 1)',
 //         'rgba(0, 99, 226, 1)',
 //         'rgba(223, 248, 81, 1)',
+
+function recordConsent() {
+  var date = new Date()
+  // One year from now
+  date.setTime(date.getTime() + 365 * 24 * 3600 * 1000)
+  var suffix = '; expires=' + date.toUTCString() + '; path=/'
+
+  document.cookie =
+    'cookie_consent_analytics=' +
+    document.getElementById('cookie-consent-analytics').checked +
+    suffix
+  document.cookie = 'cookie_consent_cleared=true' + suffix
+
+  gtag('consent', 'update', {
+    analytics_storage: document.getElementById('cookie-consent-analytics')
+      .checked
+      ? 'granted'
+      : 'denied',
+  })
+}
+
+window.dataLayer = window.dataLayer || []
+function gtag() {
+  dataLayer.push(arguments)
+}
+gtag('consent', 'default', { ad_storage: 'denied' })
+gtag('consent', 'default', {
+  analytics_storage: 'denied',
+  region: ['EU', 'UK'],
+})
+
+if (readCookie('cookie_consent_cleared')) {
+  document.getElementById('cookie-consent').style.display = 'none'
+  document.getElementById('cookie-consent-analytics').checked =
+    readCookie('cookie_consent_analytics') == 'true'
+
+  gtag('consent', 'update', {
+    analytics_storage: document.getElementById('cookie-consent-analytics')
+      .checked
+      ? 'granted'
+      : 'denied',
+  })
+}
+
+gtag('js', new Date())
+gtag('config', 'G-Q749X5MH40')
+
+function readCookie(name) {
+  var nameEq = name + '='
+  var cookies = document.cookie.split(';')
+  for (var i = 0; i < cookies.length; i++) {
+    var c = cookies[i]
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length)
+    if (c.indexOf(nameEq) == 0) return c.substring(nameEq.length, c.length)
+  }
+  return null
+}
