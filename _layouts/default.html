@@ -39,6 +39,7 @@
   @scroll.window="window.pageYOffset >= 50 ? scrolledFromTop = true : scrolledFromTop = false; if (window.pageYOffset <= 50) { topColor = 'blue', content='' }"
   x-on:resize.window="fullScreen = (window.innerHeight < 650) ? false : true">
   <!-- see index.html -->
+
   {{ content }}
 
   <div x-data="scrollProgress()" x-init="init()" x-cloak x-show="!bottom" class="noprint fixed inset-x-0 bottom-0 z-50">
@@ -47,20 +48,7 @@
     </div>
   </div>
   {% include cookie-consent.html %}
-  <!-- <div x-data="scrollProgress()" x-init="init()" x-cloak
-    class="fixed z-50 inline-flex items-center justify-center overflow-hidden rounded-full bottom-2 right-2"
-    :class="{'cursor-pointer': bottom}" x-on:click="if (bottom) {window.scrollTo(0, 0)}">
-    <svg class="w-20 h-20 transform -rotate-90 scale-75">
-      <circle class="text-black" stroke-width="5" stroke="currentColor" fill="transparent" r="30" cx="40" cy="40" />
-      <circle class="text-lime" stroke-width="5" :stroke-dasharray="circumference"
-        :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round" stroke="currentColor"
-        fill="white" r="30" cx="40" cy="40" />
-    </svg>
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-      class="absolute w-6 h-6 text-black transition-all ease-in-out duration-300" :class="{'rotate-180': bottom}">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-    </svg>
-  </div> -->
+
   <!-- SCRIPTS -->
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>

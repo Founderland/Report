@@ -1146,18 +1146,9 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(20px);
 }
-#cookie-consent {
-  background: black;
-  color: white;
-  width: 100%;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 999;
-}
+
 @media print {
-  #cookie-consent {
+  #cookie-notice {
     display: none;
   }
 }

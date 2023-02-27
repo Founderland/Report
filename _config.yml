@@ -5,7 +5,7 @@ title: Rise & Thrive
 description:
 baseurl: '/Report' # the subpath of your site, e.g. /blog
 url: 'https://founderland.github.io' # the base hostname & protocol for your site
-
+google_analytics: G-Q749X5MH40
 # Build settings
 exclude:
   - package.json
