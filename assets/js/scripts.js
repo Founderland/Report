@@ -100,6 +100,7 @@ function eraseCookie(name) {
 }
 
 if (readCookie('cookie-notice-option') == 'true') {
+  document.getElementById('c-banner').style.display = 'none'
   function loadScriptAsync(scriptSrc, callback) {
     if (typeof callback !== 'function') {
       throw new Error('Not a valid callback for async script load')
@@ -119,7 +120,6 @@ if (readCookie('cookie-notice-option') == 'true') {
       function gtag() {
         dataLayer.push(arguments)
       }
-      document.getElementById('c-banner').style.display = 'none'
       gtag('js', new Date())
       gtag('config', 'G-Q749X5MH40', { anonymize_ip: true })
     }
