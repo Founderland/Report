@@ -923,10 +923,10 @@ nav .logo {
 .header-2 {
   @apply ml-12 lg:ml-14;
 }
-/*
+
 .header-3 {
-  @apply px-12 md:px-14 lg:px-16 w-full;
-} */
+  @apply ml-12 lg:ml-14;
+}
 
 #index .symbol,
 #index .symbol::after {

@@ -130,6 +130,17 @@ const scrollProgress = () => {
 //         'rgba(0, 99, 226, 1)',
 //         'rgba(223, 248, 81, 1)',
 
+function readCookie(name) {
+  var nameEq = name + '='
+  var cookies = document.cookie.split(';')
+  for (var i = 0; i < cookies.length; i++) {
+    var c = cookies[i]
+    while (c.charAt(0) == ' ') c = c.substring(1, c.length)
+    if (c.indexOf(nameEq) == 0) return c.substring(nameEq.length, c.length)
+  }
+  return null
+}
+
 function recordConsent() {
   var date = new Date()
   // One year from now
@@ -175,14 +186,3 @@ if (readCookie('cookie_consent_cleared')) {
 
 gtag('js', new Date())
 gtag('config', 'G-Q749X5MH40')
-
-function readCookie(name) {
-  var nameEq = name + '='
-  var cookies = document.cookie.split(';')
-  for (var i = 0; i < cookies.length; i++) {
-    var c = cookies[i]
-    while (c.charAt(0) == ' ') c = c.substring(1, c.length)
-    if (c.indexOf(nameEq) == 0) return c.substring(nameEq.length, c.length)
-  }
-  return null
-}
